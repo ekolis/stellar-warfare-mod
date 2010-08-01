@@ -1,0 +1,439 @@
+=======================================================================================
+DAMAGE TYPES DATA FILE - Stellar Warfare Mod
+=======================================================================================
+
+The first Damage Type must be "Normal" damage. 
+
+
+*** Damage Application ***
+1.  If there are special effects, execute them. Skip all remaining steps. 
+2.  Add Abilities to firing component (level is the level of the component). 
+3.  Find Vehicle Type (default value 100%) - 
+    a. If this is the target vehicle type (or planet) then dmg_amt = dmg_amt * damage percent. 
+4.  Find Shield Type (default values 0%, 100%) - 
+    a. If hitting this shield type:
+    b. Subtract (dmg_amt * Penetration Percent) from the current damage amount. This is the Penetration Damage. 
+    c. dmg_amt := dmg_amt * Damage Percent. 
+    d. Apply dmg_amt to the shields.
+    e. Remaining damage after application is set to dmg_amt := dmg_amt / Damage Percent.
+    f. Add to dmg_amt the Penetration Damage. Penetration damage skips the level and goes to the next. 
+5.  Find Armor Type (default values 0%, 100%) - 
+    a. If hitting this armor type:
+    b. Subtract (dmg_amt * Penetration Percent) from the current damage amount. This is the Penetration Damage. 
+    c. dmg_amt := dmg_amt * Damage Percent. 
+    d. Apply dmg_amt to the armor components of this armor type.
+    e. Remaining damage after application is set to dmg_amt := dmg_amt / Damage Percent.
+    f. Add to dmg_amt the Penetration Damage. Penetration damage skips the level and goes to the next. 
+6.  dmg_amt := dmg_amt * Internal Damage Percent. If damage amount is zero, then skip all remaining steps.   
+7.  Create a list of all components that meet the requirements from the outer hull. (facilities if this is a planet)
+8.  Apply damage to these components. If all components are destroyed and there is damage remaining, proceed to the next step. 
+9.  Create a list of all components that meet the requirements from the inner hull. (facilities if this is a planet)
+10. Apply damage to these components. If the ship is still alive after all damage applied, proceed to the next step. 
+
+*** If a section is left blank, default values apply. 
+*** Ex. If no shield types are listed, then the default of 100% damage, and 0% penetration is used for all shield types. 
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Damage Type Name                                := Normal
+Description                                     := Normal damage which must go through shields and armor before damaging a ship.
+Picture Number                                  := 1
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 0
+Number of Armor Types                           := 0
+Internal Damage Percent                         := 100
+Facility Damage Percent                         := 100
+Population Amount Killed Per Damage Point       := 0.001
+Crew Amount Killed Per Damage Point             := 0.01
+Is Viral Weapon                                 := FALSE
+Number Of Special Effects                       := 0
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Kinetic
+Description                                     := Kinetic damage inflicted by projectile weapons. Partially penetrates shields, though more advanced shields can mitigate this effect.
+Picture Number                                  := 32
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 3
+Shield Type 1 Name                              := Magneto Shields
+Shield Type 1 Penetration Percent               := 45
+Shield Type 1 Damage Percent                    := 55
+Shield Type 2 Name                              := Gravitic Shields
+Shield Type 2 Penetration Percent               := 30
+Shield Type 2 Damage Percent                    := 70
+Shield Type 3 Name                              := Nullspace Shields
+Shield Type 3 Penetration Percent               := 20
+Shield Type 3 Damage Percent                    := 80
+Number of Armor Types                           := 0
+Internal Damage Percent                         := 100
+Facility Damage Percent                         := 100
+Population Amount Killed Per Damage Point       := 0.001
+Crew Amount Killed Per Damage Point             := 0.01
+Is Viral Weapon                                 := FALSE
+Number Of Special Effects                       := 0
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Energy
+Description                                     := Energy damage inflicted by beam weapons. Partially penetrates armor, though more advanced armor can mitigate this effect.
+Picture Number                                  := 22
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 0
+Number of Armor Types                           := 5
+Armor Type 1 Name                               := Titanium Armor
+Armor Type 1 Penetration Percent                := 45
+Armor Type 1 Damage Percent                     := 55
+Armor Type 2 Name                               := Latium Armor
+Armor Type 2 Penetration Percent                := 30
+Armor Type 2 Damage Percent                     := 70
+Armor Type 3 Name                               := Living Armor
+Armor Type 3 Penetration Percent                := 25
+Armor Type 3 Damage Percent                     := 75
+Armor Type 4 Name                               := Crystalline Armor
+Armor Type 4 Penetration Percent                := 25
+Armor Type 4 Damage Percent                     := 75
+Armor Type 5 Name                               := Neutronium Armor
+Armor Type 5 Penetration Percent                := 20
+Armor Type 5 Damage Percent                     := 80
+Internal Damage Percent                         := 100
+Facility Damage Percent                         := 100
+Population Amount Killed Per Damage Point       := 0.001
+Crew Amount Killed Per Damage Point             := 0.01
+Is Viral Weapon                                 := FALSE
+Number Of Special Effects                       := 0
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Explosive
+Description                                     := Explosive damage inflicted by bombs and missiles. Partially penetrates both shields and armor, though not as much as kinetic or energy damage.
+Picture Number                                  := 22
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 3
+Shield Type 1 Name                              := Magneto Shields
+Shield Type 1 Penetration Percent               := 35
+Shield Type 1 Damage Percent                    := 65
+Shield Type 2 Name                              := Gravitic Shields
+Shield Type 2 Penetration Percent               := 20
+Shield Type 2 Damage Percent                    := 80
+Shield Type 3 Name                              := Nullspace Shields
+Shield Type 3 Penetration Percent               := 10
+Shield Type 3 Damage Percent                    := 90
+Number of Armor Types                           := 5
+Armor Type 1 Name                               := Titanium Armor
+Armor Type 1 Penetration Percent                := 35
+Armor Type 1 Damage Percent                     := 65
+Armor Type 2 Name                               := Latium Armor
+Armor Type 2 Penetration Percent                := 20
+Armor Type 2 Damage Percent                     := 80
+Armor Type 3 Name                               := Living Armor
+Armor Type 3 Penetration Percent                := 15
+Armor Type 3 Damage Percent                     := 85
+Armor Type 4 Name                               := Crystalline Armor
+Armor Type 4 Penetration Percent                := 15
+Armor Type 4 Damage Percent                     := 85
+Armor Type 5 Name                               := Neutronium Armor
+Armor Type 5 Penetration Percent                := 10
+Armor Type 5 Damage Percent                     := 90
+Internal Damage Percent                         := 100
+Facility Damage Percent                         := 100
+Population Amount Killed Per Damage Point       := 0.001
+Crew Amount Killed Per Damage Point             := 0.01
+Is Viral Weapon                                 := FALSE
+Number Of Special Effects                       := 0
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Nuclear
+Description                                     := Damage inflicted by nuclear weapons. Similar to explosive damage, but also kills many more population and crew.
+Picture Number                                  := 12
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 3
+Shield Type 1 Name                              := Magneto Shields
+Shield Type 1 Penetration Percent               := 35
+Shield Type 1 Damage Percent                    := 65
+Shield Type 2 Name                              := Gravitic Shields
+Shield Type 2 Penetration Percent               := 20
+Shield Type 2 Damage Percent                    := 80
+Shield Type 3 Name                              := Nullspace Shields
+Shield Type 3 Penetration Percent               := 10
+Shield Type 3 Damage Percent                    := 90
+Number of Armor Types                           := 5
+Armor Type 1 Name                               := Titanium Armor
+Armor Type 1 Penetration Percent                := 35
+Armor Type 1 Damage Percent                     := 65
+Armor Type 2 Name                               := Latium Armor
+Armor Type 2 Penetration Percent                := 20
+Armor Type 2 Damage Percent                     := 80
+Armor Type 3 Name                               := Living Armor
+Armor Type 3 Penetration Percent                := 15
+Armor Type 3 Damage Percent                     := 85
+Armor Type 4 Name                               := Crystalline Armor
+Armor Type 4 Penetration Percent                := 15
+Armor Type 4 Damage Percent                     := 85
+Armor Type 5 Name                               := Neutronium Armor
+Armor Type 5 Penetration Percent                := 10
+Armor Type 5 Damage Percent                     := 90
+Internal Damage Percent                         := 100
+Facility Damage Percent                         := 100
+Population Amount Killed Per Damage Point       := 0.02
+Crew Amount Killed Per Damage Point             := 0.2
+Is Viral Weapon                                 := FALSE
+Number Of Special Effects                       := 0
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Antimatter
+Description                                     := Damage inflicted by antimatter weapons. Weak versus shields, but powerful versus everything else, especially armor.
+Picture Number                                  := 33
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 3
+Shield Type 1 Name                              := Magneto Shields
+Shield Type 1 Penetration Percent               := 0
+Shield Type 1 Damage Percent                    := 45
+Shield Type 2 Name                              := Gravitic Shields
+Shield Type 2 Penetration Percent               := 0
+Shield Type 2 Damage Percent                    := 30
+Shield Type 3 Name                              := Nullspace Shields
+Shield Type 3 Penetration Percent               := 0
+Shield Type 3 Damage Percent                    := 20
+Number of Armor Types                           := 5
+Armor Type 1 Name                               := Titanium Armor
+Armor Type 1 Penetration Percent                := 0
+Armor Type 1 Damage Percent                     := 300
+Armor Type 2 Name                               := Latium Armor
+Armor Type 2 Penetration Percent                := 20
+Armor Type 2 Damage Percent                     := 300
+Armor Type 3 Name                               := Living Armor
+Armor Type 3 Penetration Percent                := 0
+Armor Type 3 Damage Percent                     := 300
+Armor Type 4 Name                               := Crystalline Armor
+Armor Type 4 Penetration Percent                := 0
+Armor Type 4 Damage Percent                     := 300
+Armor Type 5 Name                               := Neutronium Armor
+Armor Type 5 Penetration Percent                := 0
+Armor Type 5 Damage Percent                     := 300
+Internal Damage Percent                         := 200
+Facility Damage Percent                         := 200
+Population Amount Killed Per Damage Point       := 0.03
+Crew Amount Killed Per Damage Point             := 0.3
+Is Viral Weapon                                 := FALSE
+Number Of Special Effects                       := 0
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Nullspace
+Description                                     := Damage inflicted by nullspace weapons. Skips shields and armor, weakening them somewhat as it passes through.
+Picture Number                                  := 3
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 3
+Shield Type 1 Name                              := Magneto Shields
+Shield Type 1 Penetration Percent               := 100
+Shield Type 1 Damage Percent                    := 45
+Shield Type 2 Name                              := Gravitic Shields
+Shield Type 2 Penetration Percent               := 100
+Shield Type 2 Damage Percent                    := 30
+Shield Type 3 Name                              := Nullspace Shields
+Shield Type 3 Penetration Percent               := 100
+Shield Type 3 Damage Percent                    := 20
+Number of Armor Types                           := 5
+Armor Type 1 Name                               := Titanium Armor
+Armor Type 1 Penetration Percent                := 100
+Armor Type 1 Damage Percent                     := 45
+Armor Type 2 Name                               := Latium Armor
+Armor Type 2 Penetration Percent                := 100
+Armor Type 2 Damage Percent                     := 30
+Armor Type 3 Name                               := Living Armor
+Armor Type 3 Penetration Percent                := 100
+Armor Type 3 Damage Percent                     := 25
+Armor Type 4 Name                               := Crystalline Armor
+Armor Type 4 Penetration Percent                := 100
+Armor Type 4 Damage Percent                     := 25
+Armor Type 5 Name                               := Neutronium Armor
+Armor Type 5 Penetration Percent                := 100
+Armor Type 5 Damage Percent                     := 20
+Internal Damage Percent                         := 100
+Facility Damage Percent                         := 100
+Population Amount Killed Per Damage Point       := 0.02
+Crew Amount Killed Per Damage Point             := 0.2
+Is Viral Weapon                                 := FALSE
+Number Of Special Effects                       := 0
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Psionic
+Description                                     := Slows the target and prevents it from firing weapons temporarily.
+Picture Number                                  := 29
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 0
+Number of Armor Types                           := 0
+Internal Damage Percent                         := 0
+Facility Damage Percent                         := 0
+Population Amount Killed Per Damage Point       := 0
+Crew Amount Killed Per Damage Point             := 0
+Is Viral Weapon                                 := FALSE
+Number Of Special Effects                       := 2
+Special Effect 1 Type                           := Movement Slow Down
+Special Effect 1 Amount                         := 0
+Special Effect 2 Type                           := Increase Weapon Reload Time
+Special Effect 2 Amount                         := 0
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Poison
+Description                                     := Kills the crew or population of the target. Mitigated somewhat by non-living armor and by shields. Living armor will take heavy damage to protect the crew.
+Picture Number                                  := 11
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 3
+Shield Type 1 Name                              := Magneto Shields
+Shield Type 1 Penetration Percent               := 80
+Shield Type 1 Damage Percent                    := 0
+Shield Type 2 Name                              := Gravitic Shields
+Shield Type 2 Penetration Percent               := 70
+Shield Type 2 Damage Percent                    := 0
+Shield Type 3 Name                              := Nullspace Shields
+Shield Type 3 Penetration Percent               := 55
+Shield Type 3 Damage Percent                    := 0
+Number of Armor Types                           := 5
+Armor Type 1 Name                               := Titanium Armor
+Armor Type 1 Penetration Percent                := 99
+Armor Type 1 Damage Percent                     := 0
+Armor Type 2 Name                               := Latium Armor
+Armor Type 2 Penetration Percent                := 98
+Armor Type 2 Damage Percent                     := 80
+Armor Type 3 Name                               := Living Armor
+Armor Type 3 Penetration Percent                := 0
+Armor Type 3 Damage Percent                     := 500
+Armor Type 4 Name                               := Crystalline Armor
+Armor Type 4 Penetration Percent                := 97
+Armor Type 4 Damage Percent                     := 0
+Armor Type 5 Name                               := Neutronium Armor
+Armor Type 5 Penetration Percent                := 96
+Armor Type 5 Damage Percent                     := 0
+Internal Damage Percent                         := 0
+Facility Damage Percent                         := 0
+Population Amount Killed Per Damage Point       := 0.1
+Crew Amount Killed Per Damage Point             := 1
+Is Viral Weapon                                 := FALSE
+Number Of Special Effects                       := 0
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Plague Level 1
+Description                                     := Causes a level 1 plague on a planet. 
+Picture Number                                  := 6
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 0
+Number of Armor Types                           := 0
+Internal Damage Percent                         := 0
+Facility Damage Percent                         := 0
+Population Amount Killed Per Damage Point       := 0
+Crew Amount Killed Per Damage Point             := 0
+Is Viral Weapon                                 := TRUE
+Number Of Special Effects                       := 1
+Special Effect 1 Type                           := Add Plague
+Special Effect 1 Amount                         := 1
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Plague Level 2
+Description                                     := Causes a level 2 plague on a planet. 
+Picture Number                                  := 7
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 0
+Number of Armor Types                           := 0
+Internal Damage Percent                         := 0
+Facility Damage Percent                         := 0
+Population Amount Killed Per Damage Point       := 0
+Crew Amount Killed Per Damage Point             := 0
+Is Viral Weapon                                 := TRUE
+Number Of Special Effects                       := 1
+Special Effect 1 Type                           := Add Plague
+Special Effect 1 Amount                         := 2
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Plague Level 3
+Description                                     := Causes a level 3 plague on a planet. 
+Picture Number                                  := 8
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 0
+Number of Armor Types                           := 0
+Internal Damage Percent                         := 0
+Facility Damage Percent                         := 0
+Population Amount Killed Per Damage Point       := 0
+Crew Amount Killed Per Damage Point             := 0
+Is Viral Weapon                                 := TRUE
+Number Of Special Effects                       := 1
+Special Effect 1 Type                           := Add Plague
+Special Effect 1 Amount                         := 3
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Plague Level 4
+Description                                     := Causes a level 4 plague on a planet. 
+Picture Number                                  := 9
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 0
+Number of Armor Types                           := 0
+Internal Damage Percent                         := 0
+Facility Damage Percent                         := 0
+Population Amount Killed Per Damage Point       := 0
+Crew Amount Killed Per Damage Point             := 0
+Is Viral Weapon                                 := TRUE
+Number Of Special Effects                       := 1
+Special Effect 1 Type                           := Add Plague
+Special Effect 1 Amount                         := 4
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Plague Level 5
+Description                                     := Causes a level 5 plague on a planet. 
+Picture Number                                  := 10
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 0
+Number of Armor Types                           := 0
+Internal Damage Percent                         := 0
+Facility Damage Percent                         := 0
+Population Amount Killed Per Damage Point       := 0
+Crew Amount Killed Per Damage Point             := 0
+Is Viral Weapon                                 := TRUE
+Number Of Special Effects                       := 1
+Special Effect 1 Type                           := Add Plague
+Special Effect 1 Amount                         := 5
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+=======================================================================================
+*END*
+=======================================================================================
+

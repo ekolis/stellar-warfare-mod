@@ -1,0 +1,63 @@
+=======================================================================================
+COLONY STARTING FACILITIES DATA FILE
+=======================================================================================
+
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Name                                   := Low Tech Starting Game
+Percent Of Space To Use                := 100
+Number Of Facilities                   := 16
+Facility 1 Name                        := Capital
+Facility 2 Name                        := Mine
+Facility 3 Name                        := Farm
+Facility 4 Name                        := Refinery
+Facility 5 Name                        := Research Lab
+Facility 6 Name                        := Space Dock
+Facility 7 Name                        := Construction Yard
+// 10 MT  - small planet
+Facility 8 Name                        := Mine
+Facility 9 Name                        := Radar Station
+// 12 MT - small planet, advanced storage
+Facility 10 Name                        := Planetary Fortification
+// 15 MT - medium planet
+Facility 11 Name                       := Farm
+Facility 12 Name                       := Refinery
+Facility 13 Name                       := Research Lab
+// 18 MT - medium planet, advanced storage
+Facility 14 Name                       := Research Lab
+Facility 15 Name                       := Fabrication Plant
+// 20 MT - large planet
+Facility 16 Name                        := Research Lab
+Facility 17 Name                        := Energetics Laboratory
+// 24 MT - large planet, advanced storage
+
+Name                                   := All Tech Starting Game
+Percent Of Space To Use                := 100
+Number Of Facilities                   := 14
+Facility 1 Name                        := Capital
+Facility 2 Name                        := Mine
+Facility 3 Name                        := Farm
+Facility 4 Name                        := Refinery
+Facility 5 Name                        := Mine
+Facility 6 Name                        := Space Dock
+Facility 7 Name                        := Construction Yard
+// 10 MT  - small planet
+Facility 8 Name                        := Psionic Outpost
+// 12 MT - small planet, advanced storage
+Facility 9 Name                        := Planetary Fortification
+// 15 MT - medium planet
+Facility 10 Name                       := Fabrication Plant
+Facility 11 Name                       := Farm
+// 18 MT - medium planet, advanced storage
+Facility 12 Name                       := Security Agency
+Facility 13 Name                       := Refinery
+// 20 MT - large planet
+Facility 14 Name                        := Energetics Laboratory
+// 24 MT - large planet, advanced storage
+
+=======================================================================================
+*END*
+=======================================================================================

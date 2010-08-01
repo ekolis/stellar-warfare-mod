@@ -1,0 +1,26 @@
+=======================================================================================
+SHIELD AND ARMOR LEVELS DATA FILE - Stellar Warfare Mod
+=======================================================================================
+
+Shields and Armor take damage in the order they are listed below.  NOT!!!
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Number Of Shield Levels                       := 3
+Shield Level 1 Name                           := Magneto Shields
+Shield Level 2 Name                           := Gravitic Shields
+Shield Level 3 Name                           := Nullspace Shields
+
+Number Of Armor Levels                        := 6
+Armor Level 1 Name                            := Stealth Coating
+Armor Level 2 Name                            := Titanium Armor
+Armor Level 3 Name                            := Latium Armor
+Armor Level 4 Name                            := Living Armor
+Armor Level 5 Name                            := Crystalline Armor
+Armor Level 6 Name                            := Neutronium Armor
+
+=======================================================================================
+*END*
+=======================================================================================

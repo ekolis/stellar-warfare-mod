@@ -1,0 +1,174 @@
+=======================================================================================
+STELLAR ABILITY TYPES DATA FILE - Stellar Warfare Mod
+=======================================================================================
+
+Name:
+  Any identifying name for this Stellar Type. This will be used in the 
+  System Types file to specify this set of possible abilities.
+
+Number of Poss Abilities:
+  The number of possible abilities for this stellar type. This can range
+  from 0 - 100.
+
+Ability X Chance:
+  The chance that this ability will be present in the stellar object. 
+  This chance can range from 0 - 1000. The total of all the chances
+  for all of the abilities of this Stellar Object should be equal to or
+  less than 1000. Values are in 10ths of a percent.
+
+Ability X Type:
+  System - Sight Obscuration, System - Sensor Interference, System - Shield Disruption,
+  System - Damage, System - Ability Required
+
+Ability X Descr: 
+  Any general description of this ability.
+
+Ability X Val 1:
+  This value is dependent on the Ability X Type. See the Abilities description text 
+  file for more information.
+
+Ability X Val 2: 
+  This value is dependent on the Ability X Type. See the Abilities description text 
+  file for more information.
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Name                                            := Normal Planet
+Number Of Abilities                             := 8
+Ability 1 Chance                                := 1000
+Ability 1 Type                                  := Space Yard
+Ability 1 Description                           := All non-homeworld planets have automatic space yard capability.
+Ability 1 Scope                                 := Space Object
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 1
+Ability 1 Amount 2 Formula                      := 100
+Ability 2 Chance                                := 1000
+Ability 2 Type                                  := Space Yard
+Ability 2 Description                           := 
+Ability 2 Scope                                 := Space Object
+Ability 2 Range Formula                         := 0
+Ability 2 Amount 1 Formula                      := 2
+Ability 2 Amount 2 Formula                      := 100
+Ability 3 Chance                                := 1000
+Ability 3 Type                                  := Space Yard
+Ability 3 Description                           := 
+Ability 3 Scope                                 := Space Object
+Ability 3 Range Formula                         := 0
+Ability 3 Amount 1 Formula                      := 3
+Ability 3 Amount 2 Formula                      := 100
+Ability 4 Chance                                := 50
+Ability 4 Type                                  := Sight Level
+Ability 4 Description                           := Planet contains an ancient scout post which reveals all cloaked ships in sensor range in this system.
+Ability 4 Scope                                 := System - This Player
+Ability 4 Range Formula                         := 0
+Ability 4 Amount 1 Formula                      := 99
+Ability 4 Amount 2 Formula                      := 0
+Ability 5 Chance                                := 50
+Ability 5 Type                                  := Sight Range
+Ability 5 Description                           := Planet contains an ancient sensor relay which reveals the entire star system.
+Ability 5 Scope                                 := Space Object
+Ability 5 Range Formula                         := 0
+Ability 5 Amount 1 Formula                      := 99
+Ability 5 Amount 2 Formula                      := 0
+Ability 6 Chance                                := 1000
+Ability 6 Type                                  := Resource Storage - Minerals
+Ability 6 Description                           := All non-homeworld planets can store 1000 of each resource.
+Ability 6 Scope                                 := Space Object
+Ability 6 Range Formula                         := 0
+Ability 6 Amount 1 Formula                      := 1000
+Ability 6 Amount 2 Formula                      := 0
+Ability 7 Chance                                := 1000
+Ability 7 Type                                  := Resource Storage - Organics
+Ability 7 Description                           := 
+Ability 7 Scope                                 := Space Object
+Ability 7 Range Formula                         := 0
+Ability 7 Amount 1 Formula                      := 1000
+Ability 7 Amount 2 Formula                      := 0
+Ability 8 Chance                                := 1000
+Ability 8 Type                                  := Resource Storage - Radioactives
+Ability 8 Description                           := 
+Ability 8 Scope                                 := Space Object
+Ability 8 Range Formula                         := 0
+Ability 8 Amount 1 Formula                      := 1000
+Ability 8 Amount 2 Formula                      := 0
+
+Name                                            := Normal Asteroids
+Number of Abilities                             := 1
+Ability 1 Chance                                := 1000
+Ability 1 Type                                  := Sight Obscuration
+Ability 1 Description                           := Sector [%ScopeSector%] is opaque to most scanners.
+Ability 1 Scope                                 := Sector - All
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 10
+Ability 1 Amount 2 Formula                      := 0
+
+Name                                            := Normal Destroyed Star
+Number of Abilities                             := 0
+
+Name                                            := Normal Star
+Number Of Abilities                             := 2
+Ability 1 Chance                                := 100
+Ability 1 Type                                  := Star - Unstable
+Ability 1 Description                           := Star is unstable and could collapse at any time.
+Ability 1 Scope                                 := Space Object
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 0
+Ability 1 Amount 2 Formula                      := 0
+Ability 2 Chance                                := 100
+Ability 2 Type                                  := Star - Unstable
+Ability 2 Description                           := Star is prone to violent eruptions and has an unstable core.
+Ability 2 Scope                                 := Space Object
+Ability 2 Range Formula                         := 0
+Ability 2 Amount 1 Formula                      := 0
+Ability 2 Amount 2 Formula                      := 0
+
+Name                                            := Normal Storm
+Number Of Abilities                             := 4
+Ability 1 Chance                                := 250
+Ability 1 Type                                  := Damage Caused To Space Vehicles
+Ability 1 Description                           := Turbulence causes damage to space vehicles in sector [%ScopeSector%].
+Ability 1 Scope                                 := Sector - All
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 200
+Ability 1 Amount 2 Formula                      := 1
+Ability 2 Chance                                := 1000
+Ability 2 Type                                  := Sight Obscuration
+Ability 2 Description                           := Sector [%ScopeSector%] is opaque to most scanners.
+Ability 2 Scope                                 := Sector - All
+Ability 2 Range Formula                         := 0
+Ability 2 Amount 1 Formula                      := 10
+Ability 2 Amount 2 Formula                      := 0
+Ability 3 Chance                                := 250
+Ability 3 Type                                  := Sensor Interference
+Ability 3 Description                           := Sector [%ScopeSector%] has heavy radiation causing combat sensor interference.
+Ability 3 Scope                                 := Sector - All
+Ability 3 Range Formula                         := 0
+Ability 3 Amount 1 Formula                      := -50
+Ability 3 Amount 2 Formula                      := 0
+Ability 4 Chance                                := 250
+Ability 4 Type                                  := Shield Disruption
+Ability 4 Description                           := Ion radiation in sector [%ScopeSector%] renders all shields useless. 
+Ability 4 Scope                                 := Sector - All
+Ability 4 Range Formula                         := 0
+Ability 4 Amount 1 Formula                      := 5000
+Ability 4 Amount 2 Formula                      := 0
+
+Name                                            := Normal Warp Point
+Number of Abilities                             := 0
+
+Name                                            := Unstable Warp Point
+Number Of Abilities                             := 1
+Ability 1 Chance                                := 1000
+Ability 1 Type                                  := Warp Point - Turbulence
+Ability 1 Description                           := Strong gravitic fields causes damage to ships.
+Ability 1 Scope                                 := Space Object
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 200
+Ability 1 Amount 2 Formula                      := 0
+
+=======================================================================================
+*END*
+=======================================================================================
+
