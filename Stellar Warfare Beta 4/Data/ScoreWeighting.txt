@@ -1,0 +1,56 @@
+=======================================================================================
+SCORE WEIGHTING DATA FILE
+=======================================================================================
+
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Score Factor - Empire Cultural Points                                := 0
+Score Factor - Empire Minerals Available                             := 0.1
+Score Factor - Empire Organics Available                             := 0.1
+Score Factor - Empire Radioactives Available                         := 0.1
+Score Factor - Empire Research Points Available                      := 0
+Score Factor - Empire Intelligence Points Available                  := 0
+Score Factor - Empire Minerals Generated Per Turn                    := 1
+Score Factor - Empire Organics Generated Per Turn                    := 1
+Score Factor - Empire Radioactives Generated Per Turn                := 1
+Score Factor - Empire Research Points Generated Per Turn             := 1
+Score Factor - Empire Intelligence Points Generated Per Turn         := 1
+Score Factor - Empire Total Tech Levels                              := 0
+Score Factor - Empire Total Tech Level Cost                          := 0.1
+Score Factor - Total Systems Seen                                    := 0
+Score Factor - Total Systems With Colonies                           := 0
+Score Factor - Number Of Colonies                                    := 0
+Score Factor - Number Of Facilities                                  := 0
+Score Factor - Total Facility Tonnage                                := 0
+Score Factor - Total Facility Resource Cost                          := 1
+Score Factor - Total Population                                      := 1
+Score Factor - Number Of Units In Space                              := 0
+Score Factor - Number Of Units On Planets                            := 0
+Score Factor - Number Of Units In Ship Cargo                         := 0
+Score Factor - Number Of Ships                                       := 0
+Score Factor - Number Of Mothballed Ships                            := 0
+Score Factor - Number Of Bases                                       := 0
+Score Factor - Number Of Mothballed Bases                            := 0
+Score Factor - Total Unit Tonnage In Space                           := 0
+Score Factor - Total Unit Tonnage On Planets                         := 0
+Score Factor - Total Unit Tonnage In Ship Cargo                      := 0
+Score Factor - Total Ship Tonnage                                    := 0
+Score Factor - Total Mothballed Ship Tonnage                         := 0
+Score Factor - Total Base Tonnage                                    := 0
+Score Factor - Total Mothballed Base Tonnage                         := 0
+Score Factor - Total Unit Resource Cost In Space                     := 1
+Score Factor - Total Unit Resource Cost On Planets                   := 1
+Score Factor - Total Unit Resource Cost In Ship Cargo                := 1
+Score Factor - Total Ship Resource Cost                              := 1
+Score Factor - Total Mothballed Ship Resource Cost                   := 0.1
+Score Factor - Total Base Resource Cost                              := 1
+Score Factor - Total Mothballed Base Resource Cost                   := 0.1
+Score Factor - Number Of Allies                                      := 0
+Score Factor - Number Of Enemies                                     := 0
+
+=======================================================================================
+*END*
+=======================================================================================
