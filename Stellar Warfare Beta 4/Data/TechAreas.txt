@@ -372,21 +372,6 @@ Can Be Removed                                  := False
 Unique or Racial Tech                           := True
 Number of Requirements                          := 0
 
-Name                                            := Solar Sails
-Group                                           := Propulsion
-Category                                        := Propulsion
-Description                                     := Solar powered propulsion systems which generate extra power in systems with multiple stars. This tech is not used. To be removed in next savegame breaking version...
-Picture Number                                  := 127
-Maximum Level                                   := 5
-Level Cost                                      := 100
-Start Level                                     := 1
-Can Be Removed                                  := False
-Unique or Racial Tech                           := True
-Number of Requirements                          := 0
-Requirements Evaluation Availability            := FALSE
-Requirements Evaluation Allows Placement        := TRUE
-Requirements Evaluation Allows Usage            := TRUE
-
 Name                                            := Armor
 Group                                           := Defenses
 Category                                        := Defenses
