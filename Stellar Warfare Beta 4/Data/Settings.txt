@@ -212,10 +212,10 @@ Plr Planet Value High Resources                                       := 2000000
 //---------------------------------------------------------------------------------------
 Upgrade Facility Cost Percent                                         := 50
 //---------------------------------------------------------------------------------------
-Unpaid Maintenance Cost To Kill 1 Ship                                := 20000                  
-Empire Starting Ship Percent Maint Cost                               := 10
-Empire Starting Unit Percent Maint Cost                               := 10
-Empire Starting Facility Percent Maint Cost                           := 10
+Unpaid Maintenance Cost To Kill 1 Ship                                := 1000                  
+Empire Starting Ship Percent Maint Cost                               := 50
+Empire Starting Unit Percent Maint Cost                               := 50
+Empire Starting Facility Percent Maint Cost                           := 20
 Race Starting 1M Population Maint Cost Minerals                       := 0
 Race Starting 1M Population Maint Cost Organics                       := 0.1
 Race Starting 1M Population Maint Cost Radioactives                   := 0
