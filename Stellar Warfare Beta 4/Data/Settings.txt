@@ -121,9 +121,9 @@ Low Culture Level Cost Formula                                        := Formula
 Medium Culture Level Cost Formula                                     := Formula Medium Level Cost
 High Culture Level Cost Formula                                       := Formula High Level Cost
 //---------------------------------------------------------------------------------------
-Starting Player Tech Points Low                                       := 1000
-Starting Player Tech Points Medium                                    := 4000
-Starting Player Tech Points High                                      := 16000
+Starting Player Tech Points Low                                       := 250
+Starting Player Tech Points Medium                                    := 1000
+Starting Player Tech Points High                                      := 4000
 //---------------------------------------------------------------------------------------
 Starting Player Racial Points Low                                     := 1
 Starting Player Racial Points Medium                                  := 2
