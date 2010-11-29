@@ -302,23 +302,6 @@ Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires level 3 Nuclear Physics.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Nuclear Physics") >= 3
 
-Name                                            := Plague
-Group                                           := Weaponry
-Category                                        := Weaponry
-Description                                     := Biological weapons which infect and kill planetary populations and ship crews.
-Picture Number                                  := 109
-Maximum Level                                   := 5
-Level Cost                                      := 400
-Start Level                                     := 1
-Can Be Removed                                  := False
-Unique or Racial Tech                           := True
-Number of Requirements                          := 1
-Requirements Evaluation Availability            := AND
-Requirements Evaluation Allows Placement        := TRUE
-Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires level 1 Genetic Manipulation.
-Requirement 1 Formula                           := Get_Empire_Tech_Level("Genetic Manipulation") >= 1
-
 Name                                            := Telekinetics
 Group                                           := Weaponry
 Category                                        := Weaponry
