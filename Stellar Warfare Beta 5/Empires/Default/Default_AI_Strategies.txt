@@ -773,7 +773,7 @@ Target Type 33 Name                         := Building
 Target Type 33 Engage Distance              := Do Not Engage
 Target Type 33 Damage Amount                := 0%
 
-Name                                        := Point (120km)
+Name                                        := Point (30km)
 Break Formation Immediately                 := TRUE
 Break Formation If Core Ships Lost          := TRUE
 Reload Supplies During Combat If Needed     := TRUE
