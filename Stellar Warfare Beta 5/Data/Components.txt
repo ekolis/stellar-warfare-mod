@@ -2701,7 +2701,7 @@ Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Planetary Industry, or level 1 in Orbital Industry.
 Requirement 1 Formula                           := (Get_Empire_Tech_Level("Planetary Industry") >= [%Level%]) or (Get_Empire_Tech_Level("Orbital Industry") >= 1)
-Number Of Abilities                             := 3
+Number Of Abilities                             := 4
 Ability 1 Type                                  := Units - Launch
 Ability 1 Description                           := Can launch a fighter into space every [%Amount2%] milliseconds.
 Ability 1 Scope                                 := Space Object
@@ -2720,6 +2720,12 @@ Ability 3 Scope                                 := Space Object
 Ability 3 Range Formula                         := 0
 Ability 3 Amount 1 Formula                      := 100
 Ability 3 Amount 2 Formula                      := 0
+Ability 4 Type                                  := AI Tag 01
+Ability 4 Description                           := Requires [%Amount1%] crew.
+Ability 4 Scope                                 := Space Object
+Ability 4 Range Formula                         := 0
+Ability 4 Amount 1 Formula                      := 50
+Ability 4 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
 Name                                            := Mine Layer
@@ -2744,7 +2750,7 @@ Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Orbital Industry, or level 1 in Spaceborne Industry.
 Requirement 1 Formula                           := (Get_Empire_Tech_Level("Orbital Industry") >= [%Level%]) or (Get_Empire_Tech_Level("Spaceborne Industry") >= 1)
-Number Of Abilities                             := 3
+Number Of Abilities                             := 4
 Ability 1 Type                                  := Units - Launch
 Ability 1 Description                           := Can launch a mine into space every [%Amount2%] milliseconds.
 Ability 1 Scope                                 := Space Object
@@ -2763,6 +2769,12 @@ Ability 3 Scope                                 := Space Object
 Ability 3 Range Formula                         := 0
 Ability 3 Amount 1 Formula                      := 100
 Ability 3 Amount 2 Formula                      := 0
+Ability 4 Type                                  := AI Tag 01
+Ability 4 Description                           := Requires [%Amount1%] crew.
+Ability 4 Scope                                 := Space Object
+Ability 4 Range Formula                         := 0
+Ability 4 Amount 1 Formula                      := 20
+Ability 4 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
 ///////////////
