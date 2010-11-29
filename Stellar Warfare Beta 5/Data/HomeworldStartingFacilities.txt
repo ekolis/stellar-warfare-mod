@@ -1,0 +1,44 @@
+=======================================================================================
+COLONY STARTING FACILITIES DATA FILE
+=======================================================================================
+
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Name                                   := Low Tech Starting Game
+Percent Of Space To Use                := 100
+Number Of Facilities                   := 12
+Facility 1 Name                        := Capital
+Facility 2 Name                        := Mine
+Facility 3 Name                        := Farm
+Facility 4 Name                        := Refinery
+Facility 5 Name                        := Research Lab
+Facility 6 Name                        := Space Dock
+Facility 7 Name                        := Construction Yard
+Facility 8 Name                        := Fabrication Plant
+Facility 9 Name                        := Energetics Laboratory
+Facility 10 Name                       := Radar Station
+Facility 11 Name                       := Planetary Fortification
+Facility 12 Name                       := Hospital
+
+Name                                   := All Tech Starting Game
+Percent Of Space To Use                := 100
+Number Of Facilities                   := 12
+Facility 1 Name                        := Capital
+Facility 2 Name                        := Mine
+Facility 3 Name                        := Farm
+Facility 4 Name                        := Refinery
+Facility 5 Name                        := Space Dock
+Facility 6 Name                        := Construction Yard
+Facility 7 Name                        := Fabrication Plant
+Facility 8 Name                       := Energetics Laboratory
+Facility 9 Name                       := Psionic Outpost
+Facility 10 Name                       := Planetary Fortification
+Facility 11 Name                       := Security Agency
+Facility 12 Name                        := Hospital
+
+=======================================================================================
+*END*
+=======================================================================================

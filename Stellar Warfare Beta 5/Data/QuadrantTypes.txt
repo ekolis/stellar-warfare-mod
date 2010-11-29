@@ -1,0 +1,170 @@
+=======================================================================================
+QUADRANT TYPES DATA FILE
+=======================================================================================
+
+Quadrant Map Size = 68x50
+
+Min Dist Between Systems:
+  The minimum number of system squares that must be between each 
+  system on the map. A value of 1 would mean that no 2 systems can 
+  fall exactly next to each other, there must be at least 1 square 
+  distance.
+
+System Placement:
+  Random, Clusters, Spiral, Diffuse, Grid
+
+Max Warp Points per Sys:
+  Maximum number of warp points given to each system on the first pass. This can
+  be overriden to ensure connectivity.
+
+Min Angle Between WP:
+  The minimum angle allowed between two warp points in the same system. This can
+  be overriden to ensure connectivity.
+
+Number of System Types:
+  The number of system types that will be used in this quadrant. 
+
+Type # Name:
+  The name of the system type that will be used (from the
+  SystemTypes.txt file)
+
+Type # Chance:
+  The percent chance of a system being of this type. Chances are in 10ths of 
+  a percentage (500 = 50%).  All of the Chance's should add up to 
+  1000 for a Quadrant Type.
+
+Number of Locations:
+  The number of specific system placement locations.
+
+Location # System Type:
+  The system type that should be used at this location.
+
+Location # Position X:
+  The quadrant map x location for this system. 
+
+Location # Position Y:
+  The quadrant map Y location for this system. 
+
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Name                      := Mid-Life
+Description               := Standard middle age section of the galaxy.
+Min Dist Between Systems  := 1
+System Placement          := Random
+Max Warp Points per Sys   := 5
+Min Angle Between WP      := 60
+Number of Locations       := 0
+Number of System Types    := 5
+Type 1 Name               := Standard
+Type 1 Chance             := 700
+Type 2 Name               := Binary
+Type 2 Chance             := 150
+Type 3 Name               := Trinary
+Type 3 Chance             := 50
+Type 4 Name              := Nebula
+Type 4 Chance            := 50
+Type 5 Name              := Black Hole
+Type 5 Chance            := 50
+
+Name                      := Cluster
+Description               := A globular cluster section of the galaxy.
+Min Dist Between Systems  := 1
+System Placement          := Clusters
+Max Warp Points per Sys   := 5
+Min Angle Between WP      := 60
+Number of Locations       := 0
+Number of System Types    := 5
+Type 1 Name               := Standard
+Type 1 Chance             := 700
+Type 2 Name               := Binary
+Type 2 Chance             := 150
+Type 3 Name               := Trinary
+Type 3 Chance             := 50
+Type 4 Name              := Nebula
+Type 4 Chance            := 50
+Type 5 Name              := Black Hole
+Type 5 Chance            := 50
+
+Name                      := Galactic Edge
+Description               := The galactic edge where systems are spread evenly.
+Min Dist Between Systems  := 1
+System Placement          := Diffuse
+Max Warp Points per Sys   := 5
+Min Angle Between WP      := 60
+Number of Locations       := 0
+Number of System Types    := 5
+Type 1 Name               := Standard
+Type 1 Chance             := 700
+Type 2 Name               := Binary
+Type 2 Chance             := 150
+Type 3 Name               := Trinary
+Type 3 Chance             := 50
+Type 4 Name              := Nebula
+Type 4 Chance            := 50
+Type 5 Name              := Black Hole
+Type 5 Chance            := 50
+
+Name                      := Spiral Arm
+Description               := Standard galaxy quadrant.
+Min Dist Between Systems  := 1
+System Placement          := Spiral
+Max Warp Points per Sys   := 5
+Min Angle Between WP      := 60
+Number of Locations       := 0
+Number of System Types    := 5
+Type 1 Name               := Standard
+Type 1 Chance             := 700
+Type 2 Name               := Binary
+Type 2 Chance             := 150
+Type 3 Name               := Trinary
+Type 3 Chance             := 50
+Type 4 Name              := Nebula
+Type 4 Chance            := 50
+Type 5 Name              := Black Hole
+Type 5 Chance            := 50
+
+Name                      := Grid
+Description               := A section of the galaxy that is very grid-like in appearance.
+Min Dist Between Systems  := 1
+System Placement          := Grid
+Max Warp Points per Sys   := 5
+Min Angle Between WP      := 60
+Number of Locations       := 0
+Number of System Types    := 5
+Type 1 Name               := Standard
+Type 1 Chance             := 700
+Type 2 Name               := Binary
+Type 2 Chance             := 150
+Type 3 Name               := Trinary
+Type 3 Chance             := 50
+Type 4 Name              := Nebula
+Type 4 Chance            := 50
+Type 5 Name              := Black Hole
+Type 5 Chance            := 50
+
+Name                      := Ancient
+Description               := Old section of the galaxy dotted with nebulae and black holes.
+Min Dist Between Systems  := 1
+System Placement          := Random
+Max Warp Points per Sys   := 5
+Min Angle Between WP      := 60
+Number of Locations       := 0
+Number of System Types    := 5
+Type 1 Name               := Standard
+Type 1 Chance             := 500
+Type 2 Name               := Binary
+Type 2 Chance             := 200
+Type 3 Name               := Trinary
+Type 3 Chance             := 100
+Type 4 Name              := Nebula
+Type 4 Chance            := 100
+Type 5 Name              := Black Hole
+Type 5 Chance            := 100
+
+=======================================================================================
+*END*
+=======================================================================================
+

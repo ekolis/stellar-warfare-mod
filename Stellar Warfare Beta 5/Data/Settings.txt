@@ -1,0 +1,816 @@
+=======================================================================================
+GAME SETTINGS DATA FILE - Stellar Warfare Mod
+=======================================================================================
+
+Maximum Number Of Systems:
+  Number of Systems the galaxy can contain. The maximum value for this
+  setting is 255. 
+
+
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+//---------------------------------------------------------------------------------------
+Allow Music                                                           := TRUE
+Allow Sound                                                           := TRUE 
+Support Multithreading                                                := FALSE
+DirectX10 Fix 1                                                       := TRUE
+Compress Savegames                                                    := TRUE
+//---------------------------------------------------------------------------------------
+Starting Game Date                                                    := 24000
+//---------------------------------------------------------------------------------------
+Maximum Number Of Systems                                             := 100
+System Hex Side Point Width                                           := 40.0
+System Width In Hexes                                                 := 13
+System Height In Hexes                                                := 10
+System Center Point Xpos                                              := 325.0
+System Center Point Ypos                                              := 325.0
+System Point Radius From Center                                       := 420.0
+//---------------------------------------------------------------------------------------
+Minimum Number Of Systems Small Quadrant                              := 10
+Maximum Number Of Systems Small Quadrant                              := 20
+Minimum Number Of Systems Medium Quadrant                             := 30
+Maximum Number Of Systems Medium Quadrant                             := 60
+Minimum Number Of Systems Large Quadrant                              := 60
+Maximum Number Of Systems Large Quadrant                              := 100
+//---------------------------------------------------------------------------------------
+Maximum Number Of Ships 1                                             := 100
+Maximum Number Of Ships 2                                             := 200
+Maximum Number Of Ships 3                                             := 500
+Maximum Number Of Ships 4                                             := 1000
+Maximum Number Of Ships 5                                             := 2000
+Maximum Number Of Ships 6                                             := 5000
+Maximum Number Of Ships 7                                             := 10000
+Maximum Number Of Ships 8                                             := 20000
+Maximum Number Of Units 1                                             := 100
+Maximum Number Of Units 2                                             := 200
+Maximum Number Of Units 3                                             := 500
+Maximum Number Of Units 4                                             := 1000
+Maximum Number Of Units 5                                             := 2000
+Maximum Number Of Units 6                                             := 5000
+Maximum Number Of Units 7                                             := 10000
+Maximum Number Of Units 8                                             := 20000
+//---------------------------------------------------------------------------------------
+Planet Base Repair Rate - Facilities                                  := 0
+Planet Base Repair Rate - Ships                                       := 0
+Planet Base Repair Rate - Units                                       := 0
+//---------------------------------------------------------------------------------------
+Game Time Rate Modifier                                               := 1.0
+//---------------------------------------------------------------------------------------
+Main System Display Icon Move Speed Points Per Second Low             := 40.0
+Main System Display Icon Move Speed Points Per Second Medium          := 100.0
+Main System Display Icon Move Speed Points Per Second High            := 400.0
+Main System Display Icon Move Speed Points Per Second Very High       := 20000.0
+//---------------------------------------------------------------------------------------
+Main System Display Panning Move Speed Low                            := 0.05
+Main System Display Panning Move Speed Medium                         := 0.12
+Main System Display Panning Move Speed High                           := 0.20
+Main Combat Display Panning Move Speed Low                            := 0.12
+Main Combat Display Panning Move Speed Medium                         := 0.25
+Main Combat Display Panning Move Speed High                           := 0.50
+//---------------------------------------------------------------------------------------
+Text Minerals Color                                                   := 95, 152, 228
+Text Organics Color                                                   := 21, 255, 21
+Text Radioactives Color                                               := 233, 203, 0
+Text Research Color                                                   := 198, 104, 242
+Text Intelligence Color                                               := 255, 21, 21
+Text Supplies Color                                                   := 124, 222, 170
+Text Ordnance Color                                                   := 255, 156, 1
+Text Shields Color                                                    := 124, 222, 221
+Text Armor Color                                                      := 222, 124, 191
+Text Internal Damage Color                                            := 206, 34, 30
+Text Normal Surface Color                                             := 255, 255, 255
+Text Selected Surface Color                                           := 0, 255, 0
+Text Planet Conditions OK Color                                       := 255, 255, 255
+Text Planet Conditions Plagued Color                                  := 255, 0, 0
+Text Cheat Code Color                                                 := 255, 0, 0
+//---------------------------------------------------------------------------------------
+Background Grid Hexagon Color Cannot See Never Seen                   := 50, 50, 50
+Background Grid Hexagon Color Cannot See Have Seen                    := 100, 100, 100
+Background Grid Hexagon Color Can See                                 := 0, 150, 0
+Background Grid Hexagon Color Waypoint                                := 200, 200, 200
+Background Grid Hexagon Color Mouse Over                              := 0, 0, 200
+Background Grid Hexagon Color Selected                                := 200, 200, 200
+Background Grid Hexagon Color Blocked Movement                        := 100, 0, 0
+//---------------------------------------------------------------------------------------
+Quadrant Map Warp Point Line Color                                    := 165, 176, 179
+Quadrant Map Selected System Color                                    := 0, 255, 255
+Quadrant Map System Name Text Color                                   := 0, 255, 255
+Quadrant Map Background Grid Color                                    := 0, 0, 100
+//---------------------------------------------------------------------------------------
+Column Header Bar Text Base Color Highlighted                         := 192, 168, 91
+Column Header Bar Text Mid Color Highlighted                          := 253, 224, 151
+Column Header Bar Text Top Color Highlighted                          := 51, 51, 51
+Column Header Bar Text Base Color Non Highlighted                     := 128, 112, 60
+Column Header Bar Text Mid Color Non Highlighted                      := 188, 169, 120
+Column Header Bar Text Top Color Non Highlighted                      := 0, 0, 0
+//---------------------------------------------------------------------------------------
+Mouse Over Highlight Surface Color                                    := 100, 100, 100
+Grid Over Selected Surface Color                                      := 0, 0, 50
+Background Surface Color                                              := 0, 0, 0
+Player Highlight Color                                                := 255, 255, 255
+List Header Section Color                                             := 80, 80, 80
+//---------------------------------------------------------------------------------------
+Low Tech Level Cost Formula                                           := Formula Low Level Cost
+Medium Tech Level Cost Formula                                        := Formula Medium Level Cost
+High Tech Level Cost Formula                                          := Formula High Level Cost
+//---------------------------------------------------------------------------------------
+Low Culture Level Cost Formula                                        := Formula Low Level Cost
+Medium Culture Level Cost Formula                                     := Formula Medium Level Cost
+High Culture Level Cost Formula                                       := Formula High Level Cost
+//---------------------------------------------------------------------------------------
+Starting Player Tech Points Low                                       := 250
+Starting Player Tech Points Medium                                    := 1000
+Starting Player Tech Points High                                      := 4000
+//---------------------------------------------------------------------------------------
+Starting Player Racial Points Low                                     := 1
+Starting Player Racial Points Medium                                  := 2
+Starting Player Racial Points High                                    := 3
+//---------------------------------------------------------------------------------------
+Starting Player Planets Low                                           := 1
+Starting Player Planets Medium                                        := 3
+Starting Player Planets High                                          := 5
+Starting Player Planets Very High                                     := 10
+//---------------------------------------------------------------------------------------
+Starting Player Resources Low                                         := 250
+Starting Player Resources Medium                                      := 500
+Starting Player Resources High                                        := 1000
+//---------------------------------------------------------------------------------------
+Computer Player Bonus Points Multiplier Low                           := 2.0
+Computer Player Bonus Points Multiplier Medium                        := 3.0
+Computer Player Bonus Points Multiplier High                          := 5.0
+//---------------------------------------------------------------------------------------
+Computer Player Bonus Queue Rate Multiplier Low                       := 1.5
+Computer Player Bonus Queue Rate Multiplier Medium                    := 2.0
+Computer Player Bonus Queue Rate Multiplier High                      := 3.0
+//---------------------------------------------------------------------------------------
+Number Of Rare Hit Types                                              := 0
+//---------------------------------------------------------------------------------------
+Weapons Range Short                                                   := 30.0
+Weapons Range Medium                                                  := 60.0
+Weapons Range Long                                                    := 120.0
+//---------------------------------------------------------------------------------------
+All Shipsets Get 360 Degree Center Firing Point                       := TRUE
+//---------------------------------------------------------------------------------------
+Use Old Log Political Message Display                                 := FALSE
+//---------------------------------------------------------------------------------------
+Minimum Empire Minerals Generation                                    := 0
+Minimum Empire Organics Generation                                    := 0
+Minimum Empire Radioactives Generation                                := 0
+Minimum Empire Point Storage                                          := 0
+//---------------------------------------------------------------------------------------
+Trade Percentage Increase Per Turn                                    := 0.1
+Treaty Subjugated Resource Percentage                                 := 0
+Treaty Protectorate Resource Percentage                               := 0
+//---------------------------------------------------------------------------------------
+Treaty Element Maximum Trade Percentage 1                             := 0
+Treaty Element Maximum Trade Percentage 2                             := 0
+Treaty Element Maximum Trade Percentage 3                             := 0
+Treaty Element Maximum Trade Percentage 4                             := 0
+Treaty Element Maximum Trade Percentage 5                             := 0
+Treaty Element Maximum Trade Percentage 6                             := 0
+Treaty Element Tariff Percentage 1                                    := 5
+Treaty Element Tariff Percentage 2                                    := 10
+Treaty Element Tariff Percentage 3                                    := 15
+Treaty Element Tariff Percentage 4                                    := 20
+Treaty Element Tariff Percentage 5                                    := 25
+Treaty Element Tariff Percentage 6                                    := 30
+Treaty Element Tariff Percentage 7                                    := 40
+Treaty Element Tariff Percentage 8                                    := 50
+//---------------------------------------------------------------------------------------
+Alliance Rule Percentage Of Votes To Pass 1                           := 50
+Alliance Rule Percentage Of Votes To Pass 2                           := 60
+Alliance Rule Percentage Of Votes To Pass 3                           := 70
+Alliance Rule Percentage Of Votes To Pass 4                           := 80
+Alliance Rule Percentage Of Votes To Pass 5                           := 90
+Alliance Rule Percentage Of Votes To Pass 6                           := 100
+Alliance Rule Maximum Trade Percentage 1                              := 5
+Alliance Rule Maximum Trade Percentage 2                              := 10
+Alliance Rule Maximum Trade Percentage 3                              := 15
+Alliance Rule Maximum Trade Percentage 4                              := 20
+Alliance Rule Maximum Trade Percentage 5                              := 25
+Alliance Rule Maximum Trade Percentage 6                              := 30
+Alliance Rule Turns To Add Player 1                                   := 10
+Alliance Rule Turns To Add Player 2                                   := 50
+//---------------------------------------------------------------------------------------
+Planet Value Low Percent                                              := 0
+Planet Value High Percent                                             := 200
+Planet Value Low Resources                                            := 0
+Planet Value High Resources                                           := 500000
+Asteroids Value Low Percent                                           := 0
+Asteroids Value High Percent                                          := 400
+Asteroids Value Low Resources                                         := 100000
+Asteroids Value High Resources                                        := 800000
+Plr Planet Value Low Percent                                          := 50
+Plr Planet Value Medium Percent                                       := 100
+Plr Planet Value High Percent                                         := 150
+Plr Planet Value Low Resources                                        := 200000
+Plr Planet Value Medium Resources                                     := 1000000
+Plr Planet Value High Resources                                       := 2000000
+//---------------------------------------------------------------------------------------
+Upgrade Facility Cost Percent                                         := 50
+//---------------------------------------------------------------------------------------
+Unpaid Maintenance Cost To Kill 1 Ship                                := 1000                  
+Empire Starting Ship Percent Maint Cost                               := 50
+Empire Starting Unit Percent Maint Cost                               := 50
+Empire Starting Facility Percent Maint Cost                           := 20
+Race Starting 1M Population Maint Cost Minerals                       := 0
+Race Starting 1M Population Maint Cost Organics                       := 0.1
+Race Starting 1M Population Maint Cost Radioactives                   := 0
+//---------------------------------------------------------------------------------------
+UnMothball Ship Percent Cost			                      := 20
+UnMothball Unit Percent Cost			                      := 20
+UnMothball Facility Percent Cost			              := 20
+Race Starting 1M Population Unmothball Cost Minerals                  := 0.0
+Race Starting 1M Population Unmothball Cost Organics                  := 0.0
+Race Starting 1M Population Unmothball Cost Radioactives              := 0.0
+//---------------------------------------------------------------------------------------
+Scrap Facility Percent Returned                                       := 20
+Scrap Unit Percent Returned                                           := 20
+Scrap Ship Percent Returned                                           := 20
+Race Starting 1M Population Scrap Value Minerals                      := 0.0
+Race Starting 1M Population Scrap Value Organics                      := 0.0
+Race Starting 1M Population Scrap Value Radioactives                  := 0.0
+//---------------------------------------------------------------------------------------
+Defending Units Per Population                                        := 20
+Population Defender Attack Strength                                   := 10
+Population Defender Hit Points                                        := 30
+Automatic Colonization Population                                     := 0
+Planet Value Percent Loss After Owner Death                           := 0
+Retrofit Cost Percent For Comps                                       := 150
+Retrofit Cost Percent For Comp Removal                                := 0
+Retrofit Max Percent Difference in Cost                               := 100000
+Empire Base Planet Mineral Usage Rate                                 := 0
+Empire Base Planet Organic Usage Rate                                 := 0
+Empire Base Planet Radioactive Usage Rate                             := 0
+Maximum Emergency Build Turns                                         := 10
+Construction Queue Emergency Build Rate Percent                       := 150
+Construction Queue Slow Build Rate Percent                            := 25
+Damage Points To Kill One Population                                  := 100
+Population Required to Operate One Facility                           := 0
+Remote Mining Decreases Asteroid Value                                := False
+//---------------------------------------------------------------------------------------
+Race Starting Percent Reproduction                                    := 10 
+Race Starting Percent Migration                                       := 0
+Race Migration Added 1 Percent Per Population Amount                  := 1000
+//---------------------------------------------------------------------------------------
+Race Loyalty Change Per Turn Occupied Race                            := -1
+Race Loyalty Change Per Turn War With Home Empire                     := -1
+Race Loyalty Change Per Turn Planet Conditions Deadly                 := -3
+Race Loyalty Change Per Turn Planet Conditions Harsh                  := -2
+Race Loyalty Change Per Turn Planet Conditions Unpleasant             := -1
+Race Loyalty Change Per Turn Planet Conditions Average                := 0
+Race Loyalty Change Per Turn Planet Conditions Good                   := 0.5
+Race Loyalty Change Per Turn Planet Conditions Excellent              := 1
+Race Loyalty Change Per Turn Mood Riot                                := 0
+Race Loyalty Change Per Turn Mood Angry                               := 0
+Race Loyalty Change Per Turn Mood Unhappy                             := 0
+Race Loyalty Change Per Turn Mood Indifferent                         := 0
+Race Loyalty Change Per Turn Mood Happy                               := 0
+Race Loyalty Change Per Turn Mood Jubilant                            := 0
+//---------------------------------------------------------------------------------------
+Population Anger Level For Mood Riot                                  := 90
+Population Anger Level For Mood Angry                                 := 60
+Population Anger Level For Mood Unhappy                               := 45
+Population Anger Level For Mood Indifferent                           := 30
+Population Anger Level For Mood Happy                                 := 15
+Population Anger Level For Mood Jubilant                              := 0
+//---------------------------------------------------------------------------------------
+Starting Population Anger Percent                                     := 25
+Mood Riot Modifier                                                    := 10
+Mood Angry Modifier                                                   := 50
+Mood Unhappy Modifier                                                 := 75
+Mood Indifferent Modifier                                             := 100
+Mood Happy Modifier                                                   := 110
+Mood Jubilant Modifier                                                := 120
+//---------------------------------------------------------------------------------------
+Number of Quick Start Styles                                          := 14
+Quick Start Style 1                                                   := Abbidon
+Quick Start Style 2                                                   := Amonkrie
+Quick Start Style 3                                                   := CueCappa
+Quick Start Style 4                                                   := Drushocka
+Quick Start Style 5                                                   := Eee
+Quick Start Style 6                                                   := Jraenar
+Quick Start Style 7                                                   := Norak
+Quick Start Style 8                                                   := Phong
+Quick Start Style 9                                                   := Sergetti
+Quick Start Style 10                                                  := Sithrak
+Quick Start Style 11                                                  := Terran
+Quick Start Style 12                                                  := UkraTal
+Quick Start Style 13                                                  := Xiati
+Quick Start Style 14                                                  := XiChung
+//---------------------------------------------------------------------------------------
+Simultaneous Games Show Strategic Combat                              := False
+Ship Supply Amount for Low Supply Warning                             := 0
+Base Supply Amount for Low Supply Warning                             := 0
+Unit Group Supply Amount Per Unit for Low Supply Warning              := 0
+//---------------------------------------------------------------------------------------
+Number of Title Songs                                                 := 1
+Title Song 1 Filename                                                 := Space_Empires_V_Title_01.mp3
+Number of Main Songs                                                  := 15
+Main Song 1 Filename                                                  := Space_Empires_V_Main_01.mp3
+Main Song 2 Filename                                                  := Space_Empires_V_Main_02.mp3
+Main Song 3 Filename                                                  := Space_Empires_V_Main_03.mp3
+Main Song 4 Filename                                                  := Space_Empires_V_Main_04.mp3
+Main Song 5 Filename                                                  := Space_Empires_V_Main_05.mp3
+Main Song 6 Filename                                                  := Space_Empires_V_Main_06.mp3
+Main Song 7 Filename                                                  := Space_Empires_V_Main_07.mp3
+Main Song 8 Filename                                                  := Space_Empires_V_Main_08.mp3
+Main Song 9 Filename                                                  := Space_Empires_V_Main_09.mp3
+Main Song 10 Filename                                                 := Space_Empires_V_Main_10.mp3
+Main Song 11 Filename                                                 := Space_Empires_V_Main_11.mp3
+Main Song 12 Filename                                                 := Space_Empires_V_Main_12.mp3
+Main Song 13 Filename                                                 := Space_Empires_V_Main_13.mp3
+Main Song 14 Filename                                                 := Space_Empires_V_Main_14.mp3
+Main Song 15 Filename                                                 := Space_Empires_V_Main_15.mp3
+Number of Combat Songs                                                := 4
+Combat Song 1 Filename                                                := Space_Empires_V_Combat_01.mp3
+Combat Song 2 Filename                                                := Space_Empires_V_Combat_02.mp3
+Combat Song 3 Filename                                                := Space_Empires_V_Combat_03.mp3
+Combat Song 4 Filename                                                := Space_Empires_V_Combat_04.mp3
+Number of Finale Songs                                                := 1
+Finale Song 1 Filename                                                := Space_Empires_V_Finale_01.mp3
+//---------------------------------------------------------------------------------------
+Combat Base To Hit Value                                              := 0
+//---------------------------------------------------------------------------------------
+Num Finale Lose Pictures                                              := 3
+Finale Lose Picture 1                                                 := Finale_Lose1.jpg
+Finale Lose Picture 2                                                 := Finale_Lose2.jpg
+Finale Lose Picture 3                                                 := Finale_Lose3.jpg
+Num Finale Human Dead Pictures                                        := 1
+Finale Human Dead Picture 1                                           := Finale_Lose4.jpg
+Num Finale Victory Pictures                                           := 2
+Finale Victory Picture 1                                              := Finale_Victory1.jpg
+Finale Victory Picture 2                                              := Finale_Victory2.jpg
+//---------------------------------------------------------------------------------------
+Allow Export of Weapon And Component Data                             := True
+Create Log Text Files for Players                                     := False
+Create Log Text File for Game                                         := False
+Intelligence Defense Modifier Percent                                 := 100
+Ram Ship Source Modifier Percent                                      := 100
+Ram Ship Target Modifier Percent                                      := 100 
+AI Uses Mega Evil Empire                                              := True
+AI Mega Evil Empire Threshold Score Thousands                         := 500
+AI Human Mega Evil Empire Score Percent                               := 170
+AI Computer Mega Evil Empire Score Percent                            := 250
+Home System Percentage Value With No Spaceport                        := 25
+Create Combat Replay                                                  := True
+//---------------------------------------------------------------------------------------
+Random Player Personality Groups                                      := 4
+Random Player Personality Group 1 Percent                             := 30
+Random Player Personality Group 2 Percent                             := 30
+Random Player Personality Group 3 Percent                             := 30
+Random Player Personality Group 4 Percent                             := 10
+//---------------------------------------------------------------------------------------
+Captured Ship Additional Reload Combat Turns                          := 0
+Created Storm Maximum Obscuration Level                               := 10
+Created Storm Maximum Turbulence Damage                               := 1000
+Created Storm Maximum Shield Disruption                               := 10000
+Maximum Population For Abandon Planet Order                           := -1
+System Ship Movement Delay Milliseconds                               := 0
+Drone Supply Usage Per Turn                                           := 0
+//---------------------------------------------------------------------------------------
+Population Structure Per One                                          := 100
+Population Cargo Space Per One                                        := 100
+Supplies Structure Per One                                            := 0.1
+Ordnance Structure Per One                                            := 0.1
+//---------------------------------------------------------------------------------------
+Supplies Component Picture Number                                     := 198
+Ordnance Component Picture Number                                     := 199
+//---------------------------------------------------------------------------------------
+Reproduction Check Frequency                                          := 1
+//---------------------------------------------------------------------------------------
+Minimum Computer Player Low Setting                                   := 1
+Maximum Computer Player Low Setting                                   := 3
+Minimum Computer Player Medium Setting                                := 3
+Maximum Computer Player Medium Setting                                := 7
+Minimum Computer Player High Setting                                  := 6
+Maximum Computer Player High Setting                                  := 10
+Minimum Neutral Player Low Setting                                    := 1
+Maximum Neutral Player Low Setting                                    := 3
+Minimum Neutral Player Medium Setting                                 := 3
+Maximum Neutral Player Medium Setting                                 := 7
+Minimum Neutral Player High Setting                                   := 6
+Maximum Neutral Player High Setting                                   := 10
+//---------------------------------------------------------------------------------------
+Fighter Supply Usage Per Turn                                         := 0
+//---------------------------------------------------------------------------------------
+Maximum Planet Percent Value                                          := 400
+Minimum Planet Percent Value                                          := 0
+Maximum Planet Resource Value                                         := 999000000
+Minimum Planet Resource Value                                         := 0
+//---------------------------------------------------------------------------------------
+Bases Can Join Fleets                                                 := False
+No Retrofit Adding Of Spaceyards                                      := True
+No Retrofit Adding Of Colony Module                                   := True
+//---------------------------------------------------------------------------------------
+Planet Combat Offense Modifier                                        := 0
+Planet Combat Defense Modifier                                        := 0
+//---------------------------------------------------------------------------------------
+Warp Point Tonnage Allowed Size Tiny                                  := 100000
+Warp Point Tonnage Allowed Size Small                                 := 100000
+Warp Point Tonnage Allowed Size Medium                                := 100000
+Warp Point Tonnage Allowed Size Large                                 := 100000
+Warp Point Tonnage Allowed Size Huge                                  := 100000
+//---------------------------------------------------------------------------------------
+Base Sight Level Ship                                                 := 1
+Base Sight Range Ship                                                 := 0
+Base Sight Obscuration Ship                                           := 1
+Base Sight Level Base                                                 := 1
+Base Sight Range Base                                                 := 0
+Base Sight Obscuration Base                                           := 1
+Base Sight Level Colony                                               := 1
+Base Sight Range Colony                                               := 0
+Base Sight Obscuration Colony                                         := 1
+Base Sight Level Unit In Space                                        := 1
+Base Sight Range Unit In Space                                        := 0
+Base Sight Obscuration Unit In Space                                  := 1
+//---------------------------------------------------------------------------------------
+Can See Star At Any Distance                                          := TRUE
+Can See Planet At Any Distance                                        := TRUE
+Can See Ship At Any Distance                                          := FALSE
+Can See Unit Group At Any Distance                                    := FALSE
+Can See Asteroids At Any Distance                                     := TRUE
+Can See Storm At Any Distance                                         := TRUE
+Can See Warp Point At Any Distance                                    := TRUE
+Can See Comet At Any Distance                                         := FALSE
+Can See Monster At Any Distance                                       := FALSE
+Can See Debris At Any Distance                                        := FALSE
+Can See Derelict At Any Distance                                      := FALSE
+Can See Illusion At Any Distance                                      := FALSE
+//---------------------------------------------------------------------------------------
+Can See Star From Memory                                              := TRUE
+Can See Planet From Memory                                            := TRUE
+Can See Ship From Memory                                              := FALSE
+Can See Unit Group From Memory                                        := FALSE
+Can See Asteroids From Memory                                         := TRUE
+Can See Storm From Memory                                             := TRUE
+Can See Warp Point From Memory                                        := TRUE
+Can See Comet From Memory                                             := TRUE
+Can See Monster From Memory                                           := FALSE
+Can See Debris From Memory                                            := FALSE
+Can See Derelict From Memory                                          := FALSE
+Can See Illusion From Memory                                          := FALSE
+//---------------------------------------------------------------------------------------
+Damage Factor Object Still Operational - Weapon                       := 0.50
+Damage Factor Object Still Operational - Component                    := 0.50
+Damage Factor Object Still Operational - Facility                     := 0.50
+//---------------------------------------------------------------------------------------
+Combat Ship Minimum Turn Angle To Cause Deceleration                  := 30
+Combat Ship Max Speed In Turn Factor                                  := 0.1
+Combat Ship Slow Speed Near Destination Maximum Speed Factor          := 0.10
+Combat Unit Minimum Turn Angle To Cause Deceleration                  := 45
+Combat Unit Max Speed In Turn Factor                                  := 0.1
+Combat Unit Slow Speed Near Destination Maximum Speed Factor          := 0.10
+//---------------------------------------------------------------------------------------
+Estimated Targeting Damage Percent for Torpedo Weapon                 := 50
+Estimated Targeting Damage Percent for Directed Torpedo Weapon        := 50
+Estimated Targeting Damage Percent for Beam Weapon                    := 50
+Estimated Targeting Damage Percent for Bolt Weapon                    := 50
+//---------------------------------------------------------------------------------------
+Combat Iterations Per Frame                                           := 20
+//---------------------------------------------------------------------------------------
+Space Combat Maximum Time (Seconds)                                   := 60
+Space Combat Ends Only When Time Up Or No Enemies                     := FALSE
+Space Combat Minimum Time Between Warp Transits (ms)                  := 500
+Space Combat Time Until Ship Can Warp Again (seconds)                 := 30
+Space Combat Chance For Warp Transit Interpenetration Percent         := 10
+Space Combat Maximum Zoom Out Distance                                := 200.0
+Space Combat Map Radius                                               := 200.0
+Space Combat Crew Boarding Strength                                   := 1
+Space Combat Allow Retreat                                            := FALSE
+//---------------------------------------------------------------------------------------
+Ground Combat Maximum Time (Seconds)                                  := 60
+Ground Combat Damage Modifier Percent                                 := 100
+Ground Combat Planet Square Width                                     := 10.0
+Ground Combat Planet Square Height                                    := 10.0
+Ground Combat Planet Map Square Width                                 := 40
+Ground Combat Planet Map Square Height                                := 40
+Ground Combat Planet Map Center City Square Width                     := 20
+Ground Combat Planet Map Center City Square Height                    := 20
+Ground Combat Maximum Zoom Out Distance                               := 40.0
+Ground Combat Center Point Xpos                                       := 0.0
+Ground Combat Center Point Ypos                                       := 0.0
+Ground Combat Unit Minimum Turn Angle To Cause Deceleration           := 45
+Ground Combat Unit Max Speed In Turn Factor                           := 0.1
+Ground Combat Unit Slow Speed Near Destination Maximum Speed Factor   := 0.10
+Ground Combat Sky Plane Position                                      := -14.0
+Ground Combat Militia Troop Vehicle Type                              := Troop
+Number Of Ground Combat Militia Troops                                := 0
+//---------------------------------------------------------------------------------------
+Default Empire Option Sort Components By Name                         := FALSE
+Default Empire Option Sort Vehicle Sizes By Name                      := FALSE
+Default Empire Option Sort Mounts By Name                             := FALSE
+//---------------------------------------------------------------------------------------
+Created Asteroids Use Stellar Ability Type                            := Normal Asteroids
+//---------------------------------------------------------------------------------------
+Number Of Population Modifiers                                        := 101
+Pop Modifier 1 Population Amount                                      := 19
+Pop Modifier 1 Production Modifier Percent                            := 100
+Pop Modifier 1 SY Rate Modifier Percent                               := 100
+Pop Modifier 2 Population Amount                                      := 39
+Pop Modifier 2 Production Modifier Percent                            := 101
+Pop Modifier 2 SY Rate Modifier Percent                               := 101
+Pop Modifier 3 Population Amount                                      := 59
+Pop Modifier 3 Production Modifier Percent                            := 102
+Pop Modifier 3 SY Rate Modifier Percent                               := 102
+Pop Modifier 4 Population Amount                                      := 79
+Pop Modifier 4 Production Modifier Percent                            := 103
+Pop Modifier 4 SY Rate Modifier Percent                               := 103
+Pop Modifier 5 Population Amount                                      := 99
+Pop Modifier 5 Production Modifier Percent                            := 104
+Pop Modifier 5 SY Rate Modifier Percent                               := 104
+Pop Modifier 6 Population Amount                                      := 179
+Pop Modifier 6 Production Modifier Percent                            := 105
+Pop Modifier 6 SY Rate Modifier Percent                               := 105
+Pop Modifier 7 Population Amount                                      := 259
+Pop Modifier 7 Production Modifier Percent                            := 106
+Pop Modifier 7 SY Rate Modifier Percent                               := 106
+Pop Modifier 8 Population Amount                                      := 339
+Pop Modifier 8 Production Modifier Percent                            := 107
+Pop Modifier 8 SY Rate Modifier Percent                               := 107
+Pop Modifier 9 Population Amount                                      := 419
+Pop Modifier 9 Production Modifier Percent                            := 108
+Pop Modifier 9 SY Rate Modifier Percent                               := 108
+Pop Modifier 10 Population Amount                                     := 499
+Pop Modifier 10 Production Modifier Percent                           := 109
+Pop Modifier 10 SY Rate Modifier Percent                              := 109
+Pop Modifier 11 Population Amount                                     := 549
+Pop Modifier 11 Production Modifier Percent                           := 110
+Pop Modifier 11 SY Rate Modifier Percent                              := 110
+Pop Modifier 12 Population Amount                                     := 599
+Pop Modifier 12 Production Modifier Percent                           := 111
+Pop Modifier 12 SY Rate Modifier Percent                              := 111
+Pop Modifier 13 Population Amount                                     := 649
+Pop Modifier 13 Production Modifier Percent                           := 112
+Pop Modifier 13 SY Rate Modifier Percent                              := 112
+Pop Modifier 14 Population Amount                                     := 699
+Pop Modifier 14 Production Modifier Percent                           := 113
+Pop Modifier 14 SY Rate Modifier Percent                              := 113
+Pop Modifier 15 Population Amount                                     := 749
+Pop Modifier 15 Production Modifier Percent                           := 114
+Pop Modifier 15 SY Rate Modifier Percent                              := 114
+Pop Modifier 16 Population Amount                                     := 799
+Pop Modifier 16 Production Modifier Percent                           := 115
+Pop Modifier 16 SY Rate Modifier Percent                              := 115
+Pop Modifier 17 Population Amount                                     := 849
+Pop Modifier 17 Production Modifier Percent                           := 116
+Pop Modifier 17 SY Rate Modifier Percent                              := 116
+Pop Modifier 18 Population Amount                                     := 899
+Pop Modifier 18 Production Modifier Percent                           := 117
+Pop Modifier 18 SY Rate Modifier Percent                              := 117
+Pop Modifier 19 Population Amount                                     := 949
+Pop Modifier 19 Production Modifier Percent                           := 118
+Pop Modifier 19 SY Rate Modifier Percent                              := 118
+Pop Modifier 20 Population Amount                                     := 999
+Pop Modifier 20 Production Modifier Percent                           := 119
+Pop Modifier 20 SY Rate Modifier Percent                              := 119
+Pop Modifier 21 Population Amount                                     := 1099
+Pop Modifier 21 Production Modifier Percent                           := 120
+Pop Modifier 21 SY Rate Modifier Percent                              := 120
+Pop Modifier 22 Population Amount                                     := 1199
+Pop Modifier 22 Production Modifier Percent                           := 121
+Pop Modifier 22 SY Rate Modifier Percent                              := 121
+Pop Modifier 23 Population Amount                                     := 1299
+Pop Modifier 23 Production Modifier Percent                           := 122
+Pop Modifier 23 SY Rate Modifier Percent                              := 122
+Pop Modifier 24 Population Amount                                     := 1399
+Pop Modifier 24 Production Modifier Percent                           := 123
+Pop Modifier 24 SY Rate Modifier Percent                              := 123
+Pop Modifier 25 Population Amount                                     := 1499
+Pop Modifier 25 Production Modifier Percent                           := 124
+Pop Modifier 25 SY Rate Modifier Percent                              := 124
+Pop Modifier 26 Population Amount                                     := 1599
+Pop Modifier 26 Production Modifier Percent                           := 125
+Pop Modifier 26 SY Rate Modifier Percent                              := 125
+Pop Modifier 27 Population Amount                                     := 1699
+Pop Modifier 27 Production Modifier Percent                           := 126
+Pop Modifier 27 SY Rate Modifier Percent                              := 126
+Pop Modifier 28 Population Amount                                     := 1799
+Pop Modifier 28 Production Modifier Percent                           := 127
+Pop Modifier 28 SY Rate Modifier Percent                              := 127
+Pop Modifier 29 Population Amount                                     := 1899
+Pop Modifier 29 Production Modifier Percent                           := 128
+Pop Modifier 29 SY Rate Modifier Percent                              := 128
+Pop Modifier 30 Population Amount                                     := 1999
+Pop Modifier 30 Production Modifier Percent                           := 129
+Pop Modifier 30 SY Rate Modifier Percent                              := 129
+Pop Modifier 31 Population Amount                                     := 2099
+Pop Modifier 31 Production Modifier Percent                           := 130
+Pop Modifier 31 SY Rate Modifier Percent                              := 130
+Pop Modifier 32 Population Amount                                     := 2199
+Pop Modifier 32 Production Modifier Percent                           := 131
+Pop Modifier 32 SY Rate Modifier Percent                              := 131
+Pop Modifier 33 Population Amount                                     := 2299
+Pop Modifier 33 Production Modifier Percent                           := 132
+Pop Modifier 33 SY Rate Modifier Percent                              := 132
+Pop Modifier 34 Population Amount                                     := 2399
+Pop Modifier 34 Production Modifier Percent                           := 133
+Pop Modifier 34 SY Rate Modifier Percent                              := 133
+Pop Modifier 35 Population Amount                                     := 2499
+Pop Modifier 35 Production Modifier Percent                           := 134
+Pop Modifier 35 SY Rate Modifier Percent                              := 134
+Pop Modifier 36 Population Amount                                     := 2599
+Pop Modifier 36 Production Modifier Percent                           := 135
+Pop Modifier 36 SY Rate Modifier Percent                              := 135
+Pop Modifier 37 Population Amount                                     := 2699
+Pop Modifier 37 Production Modifier Percent                           := 136
+Pop Modifier 37 SY Rate Modifier Percent                              := 136
+Pop Modifier 38 Population Amount                                     := 2799
+Pop Modifier 38 Production Modifier Percent                           := 137
+Pop Modifier 38 SY Rate Modifier Percent                              := 137
+Pop Modifier 39 Population Amount                                     := 2899
+Pop Modifier 39 Production Modifier Percent                           := 138
+Pop Modifier 39 SY Rate Modifier Percent                              := 138
+Pop Modifier 40 Population Amount                                     := 2999
+Pop Modifier 40 Production Modifier Percent                           := 139
+Pop Modifier 40 SY Rate Modifier Percent                              := 139
+Pop Modifier 41 Population Amount                                     := 3099
+Pop Modifier 41 Production Modifier Percent                           := 140
+Pop Modifier 41 SY Rate Modifier Percent                              := 140
+Pop Modifier 42 Population Amount                                     := 3199
+Pop Modifier 42 Production Modifier Percent                           := 141
+Pop Modifier 42 SY Rate Modifier Percent                              := 141
+Pop Modifier 43 Population Amount                                     := 3299
+Pop Modifier 43 Production Modifier Percent                           := 142
+Pop Modifier 43 SY Rate Modifier Percent                              := 142
+Pop Modifier 44 Population Amount                                     := 3399
+Pop Modifier 44 Production Modifier Percent                           := 143
+Pop Modifier 44 SY Rate Modifier Percent                              := 143
+Pop Modifier 45 Population Amount                                     := 3499
+Pop Modifier 45 Production Modifier Percent                           := 144
+Pop Modifier 45 SY Rate Modifier Percent                              := 144
+Pop Modifier 46 Population Amount                                     := 3599
+Pop Modifier 46 Production Modifier Percent                           := 145
+Pop Modifier 46 SY Rate Modifier Percent                              := 145
+Pop Modifier 47 Population Amount                                     := 3699
+Pop Modifier 47 Production Modifier Percent                           := 146
+Pop Modifier 47 SY Rate Modifier Percent                              := 146
+Pop Modifier 48 Population Amount                                     := 3799
+Pop Modifier 48 Production Modifier Percent                           := 147
+Pop Modifier 48 SY Rate Modifier Percent                              := 147
+Pop Modifier 49 Population Amount                                     := 3899
+Pop Modifier 49 Production Modifier Percent                           := 148
+Pop Modifier 49 SY Rate Modifier Percent                              := 148
+Pop Modifier 50 Population Amount                                     := 3999
+Pop Modifier 50 Production Modifier Percent                           := 149
+Pop Modifier 50 SY Rate Modifier Percent                              := 149
+Pop Modifier 51 Population Amount                                     := 4099
+Pop Modifier 51 Production Modifier Percent                           := 150
+Pop Modifier 51 SY Rate Modifier Percent                              := 150
+Pop Modifier 52 Population Amount                                     := 4199
+Pop Modifier 52 Production Modifier Percent                           := 151
+Pop Modifier 52 SY Rate Modifier Percent                              := 151
+Pop Modifier 53 Population Amount                                     := 4299
+Pop Modifier 53 Production Modifier Percent                           := 152
+Pop Modifier 53 SY Rate Modifier Percent                              := 152
+Pop Modifier 54 Population Amount                                     := 4399
+Pop Modifier 54 Production Modifier Percent                           := 153
+Pop Modifier 54 SY Rate Modifier Percent                              := 153
+Pop Modifier 55 Population Amount                                     := 4499
+Pop Modifier 55 Production Modifier Percent                           := 154
+Pop Modifier 55 SY Rate Modifier Percent                              := 154
+Pop Modifier 56 Population Amount                                     := 4599
+Pop Modifier 56 Production Modifier Percent                           := 155
+Pop Modifier 56 SY Rate Modifier Percent                              := 155
+Pop Modifier 57 Population Amount                                     := 4699
+Pop Modifier 57 Production Modifier Percent                           := 156
+Pop Modifier 57 SY Rate Modifier Percent                              := 156
+Pop Modifier 58 Population Amount                                     := 4799
+Pop Modifier 58 Production Modifier Percent                           := 157
+Pop Modifier 58 SY Rate Modifier Percent                              := 157
+Pop Modifier 59 Population Amount                                     := 4899
+Pop Modifier 59 Production Modifier Percent                           := 158
+Pop Modifier 59 SY Rate Modifier Percent                              := 158
+Pop Modifier 60 Population Amount                                     := 4999
+Pop Modifier 60 Production Modifier Percent                           := 159
+Pop Modifier 60 SY Rate Modifier Percent                              := 159
+Pop Modifier 61 Population Amount                                     := 5099
+Pop Modifier 61 Production Modifier Percent                           := 160
+Pop Modifier 61 SY Rate Modifier Percent                              := 160
+Pop Modifier 62 Population Amount                                     := 5199
+Pop Modifier 62 Production Modifier Percent                           := 161
+Pop Modifier 62 SY Rate Modifier Percent                              := 161
+Pop Modifier 63 Population Amount                                     := 5299
+Pop Modifier 63 Production Modifier Percent                           := 162
+Pop Modifier 63 SY Rate Modifier Percent                              := 162
+Pop Modifier 64 Population Amount                                     := 5399
+Pop Modifier 64 Production Modifier Percent                           := 163
+Pop Modifier 64 SY Rate Modifier Percent                              := 163
+Pop Modifier 65 Population Amount                                     := 5499
+Pop Modifier 65 Production Modifier Percent                           := 164
+Pop Modifier 65 SY Rate Modifier Percent                              := 164
+Pop Modifier 66 Population Amount                                     := 5599
+Pop Modifier 66 Production Modifier Percent                           := 165
+Pop Modifier 66 SY Rate Modifier Percent                              := 165
+Pop Modifier 67 Population Amount                                     := 5699
+Pop Modifier 67 Production Modifier Percent                           := 166
+Pop Modifier 67 SY Rate Modifier Percent                              := 166
+Pop Modifier 68 Population Amount                                     := 5799
+Pop Modifier 68 Production Modifier Percent                           := 167
+Pop Modifier 68 SY Rate Modifier Percent                              := 167
+Pop Modifier 69 Population Amount                                     := 5899
+Pop Modifier 69 Production Modifier Percent                           := 168
+Pop Modifier 69 SY Rate Modifier Percent                              := 168
+Pop Modifier 70 Population Amount                                     := 5999
+Pop Modifier 70 Production Modifier Percent                           := 169
+Pop Modifier 70 SY Rate Modifier Percent                              := 169
+Pop Modifier 71 Population Amount                                     := 6099
+Pop Modifier 71 Production Modifier Percent                           := 170
+Pop Modifier 71 SY Rate Modifier Percent                              := 170
+Pop Modifier 72 Population Amount                                     := 6199
+Pop Modifier 72 Production Modifier Percent                           := 171
+Pop Modifier 72 SY Rate Modifier Percent                              := 171
+Pop Modifier 73 Population Amount                                     := 6299
+Pop Modifier 73 Production Modifier Percent                           := 172
+Pop Modifier 73 SY Rate Modifier Percent                              := 172
+Pop Modifier 74 Population Amount                                     := 6399
+Pop Modifier 74 Production Modifier Percent                           := 173
+Pop Modifier 74 SY Rate Modifier Percent                              := 173
+Pop Modifier 75 Population Amount                                     := 6499
+Pop Modifier 75 Production Modifier Percent                           := 174
+Pop Modifier 75 SY Rate Modifier Percent                              := 174
+Pop Modifier 76 Population Amount                                     := 6599
+Pop Modifier 76 Production Modifier Percent                           := 175
+Pop Modifier 76 SY Rate Modifier Percent                              := 175
+Pop Modifier 77 Population Amount                                     := 6699
+Pop Modifier 77 Production Modifier Percent                           := 176
+Pop Modifier 77 SY Rate Modifier Percent                              := 176
+Pop Modifier 78 Population Amount                                     := 6799
+Pop Modifier 78 Production Modifier Percent                           := 177
+Pop Modifier 78 SY Rate Modifier Percent                              := 177
+Pop Modifier 79 Population Amount                                     := 6899
+Pop Modifier 79 Production Modifier Percent                           := 178
+Pop Modifier 79 SY Rate Modifier Percent                              := 178
+Pop Modifier 80 Population Amount                                     := 6999
+Pop Modifier 80 Production Modifier Percent                           := 179
+Pop Modifier 80 SY Rate Modifier Percent                              := 179
+Pop Modifier 81 Population Amount                                     := 7099
+Pop Modifier 81 Production Modifier Percent                           := 180
+Pop Modifier 81 SY Rate Modifier Percent                              := 180
+Pop Modifier 82 Population Amount                                     := 7199
+Pop Modifier 82 Production Modifier Percent                           := 181
+Pop Modifier 82 SY Rate Modifier Percent                              := 181
+Pop Modifier 83 Population Amount                                     := 7299
+Pop Modifier 83 Production Modifier Percent                           := 182
+Pop Modifier 83 SY Rate Modifier Percent                              := 182
+Pop Modifier 84 Population Amount                                     := 7399
+Pop Modifier 84 Production Modifier Percent                           := 183
+Pop Modifier 84 SY Rate Modifier Percent                              := 183
+Pop Modifier 85 Population Amount                                     := 7499
+Pop Modifier 85 Production Modifier Percent                           := 184
+Pop Modifier 85 SY Rate Modifier Percent                              := 184
+Pop Modifier 86 Population Amount                                     := 7599
+Pop Modifier 86 Production Modifier Percent                           := 185
+Pop Modifier 86 SY Rate Modifier Percent                              := 185
+Pop Modifier 87 Population Amount                                     := 7699
+Pop Modifier 87 Production Modifier Percent                           := 186
+Pop Modifier 87 SY Rate Modifier Percent                              := 186
+Pop Modifier 88 Population Amount                                     := 7799
+Pop Modifier 88 Production Modifier Percent                           := 187
+Pop Modifier 88 SY Rate Modifier Percent                              := 187
+Pop Modifier 89 Population Amount                                     := 7899
+Pop Modifier 89 Production Modifier Percent                           := 188
+Pop Modifier 89 SY Rate Modifier Percent                              := 188
+Pop Modifier 90 Population Amount                                     := 7999
+Pop Modifier 90 Production Modifier Percent                           := 189
+Pop Modifier 90 SY Rate Modifier Percent                              := 189
+Pop Modifier 91 Population Amount                                     := 8199
+Pop Modifier 91 Production Modifier Percent                           := 190
+Pop Modifier 91 SY Rate Modifier Percent                              := 190
+Pop Modifier 92 Population Amount                                     := 8399
+Pop Modifier 92 Production Modifier Percent                           := 191
+Pop Modifier 92 SY Rate Modifier Percent                              := 191
+Pop Modifier 93 Population Amount                                     := 8599
+Pop Modifier 93 Production Modifier Percent                           := 192
+Pop Modifier 93 SY Rate Modifier Percent                              := 192
+Pop Modifier 94 Population Amount                                     := 8799
+Pop Modifier 94 Production Modifier Percent                           := 193
+Pop Modifier 94 SY Rate Modifier Percent                              := 193
+Pop Modifier 95 Population Amount                                     := 8999
+Pop Modifier 95 Production Modifier Percent                           := 194
+Pop Modifier 95 SY Rate Modifier Percent                              := 194
+Pop Modifier 96 Population Amount                                     := 9199
+Pop Modifier 96 Production Modifier Percent                           := 195
+Pop Modifier 96 SY Rate Modifier Percent                              := 195
+Pop Modifier 97 Population Amount                                     := 9399
+Pop Modifier 97 Production Modifier Percent                           := 196
+Pop Modifier 97 SY Rate Modifier Percent                              := 196
+Pop Modifier 98 Population Amount                                     := 9599
+Pop Modifier 98 Production Modifier Percent                           := 197
+Pop Modifier 98 SY Rate Modifier Percent                              := 197
+Pop Modifier 99 Population Amount                                     := 9799
+Pop Modifier 99 Production Modifier Percent                           := 198
+Pop Modifier 99 SY Rate Modifier Percent                              := 198
+Pop Modifier 100 Population Amount                                    := 9999
+Pop Modifier 100 Production Modifier Percent                          := 199
+Pop Modifier 100 SY Rate Modifier Percent                             := 199
+Pop Modifier 101 Population Amount                                    := 2000000
+Pop Modifier 101 Production Modifier Percent                          := 200
+Pop Modifier 101 SY Rate Modifier Percent                             := 200
+
+=======================================================================================
+*END*
+=======================================================================================
