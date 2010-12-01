@@ -3872,7 +3872,7 @@ Weapon Type                                     := None
 ///////////////
 Name                                            := Orbital Construction Yard
 Description                                     := Construction component which builds primarily with minerals. Can be built only on bases, not on ships.
-Picture Number                                  := 8
+Picture Number                                  := 171
 Maximum Level                                   := 5
 Tonnage Space Taken Formula                     := 800
 Tonnage Structure Formula                       := 800
@@ -3939,7 +3939,7 @@ Weapon Type                                     := None
 
 Name                                            := Mobile Construction Yard
 Description                                     := Construction component which builds primarily with minerals.
-Picture Number                                  := 44
+Picture Number                                  := 8
 Maximum Level                                   := 5
 Tonnage Space Taken Formula                     := 400
 Tonnage Structure Formula                       := 400
@@ -4351,7 +4351,7 @@ Weapon Type                                     := None
 
 Name                                            := Repair Bay
 Description                                     := Bay which can repair constructed objects in space.
-Picture Number                                  := 273
+Picture Number                                  := 44
 Maximum Level                                   := 5
 Tonnage Space Taken Formula                     := 400
 Tonnage Structure Formula                       := 400
