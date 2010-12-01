@@ -2582,14 +2582,14 @@ begin
 		
 		// go through all systems and check for facilities
 		for sidx := 1 to systems.count() do
-		  set industry := industry + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Mine", 0.1, 1.0, 10)
-		  set industry := industry + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Mineral Reclamation", 1.0, 10.0, 10)
-		  set biology := biology + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Farm", 0.1, 1.0, 10)
-		  set biology := biology + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Soil Enrichment", 1.0, 10.0, 10)
-		  set physics := physics + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Refinery", 0.1, 1.0, 10)
-		  set physics := physics + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Particle Collider", 1.0, 10.0, 10)
-		  set governance := governance + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Planetary Fortification", 0.1, 1.0, 10)
-		  set governance := governance + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Security Agency", 1.0, 10.0, 10)
+		  set industry := industry + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Mine", 0.1, 10.0, 1)
+		  set industry := industry + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Mineral Reclamation", 1.0, 100.0, 1)
+		  set biology := biology + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Farm", 0.1, 10.0, 1)
+		  set biology := biology + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Soil Enrichment", 1.0, 100.0, 1)
+		  set physics := physics + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Refinery", 0.1, 10.0, 1)
+		  set physics := physics + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Particle Collider", 1.0, 100.0, 1)
+		  set governance := governance + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Planetary Fortification", 0.1, 10.0, 1)
+		  set governance := governance + Research_From_Facilities_Details(players.get(pidx), systems.get(sidx), "Security Agency", 1.0, 100.0, 1)
 		endfor
 		
 		// add research points
