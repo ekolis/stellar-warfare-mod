@@ -153,10 +153,10 @@ Target Type 31 Engage Distance              := Do Not Engage
 Target Type 31 Damage Amount                := 10%
 Target Type 32 Name                         := Facility
 Target Type 32 Engage Distance              := Do Not Engage
-Target Type 32 Damage Amount                := 0%
+Target Type 32 Damage Amount                := 10%
 Target Type 33 Name                         := Building
 Target Type 33 Engage Distance              := Do Not Engage
-Target Type 33 Damage Amount                := 0%
+Target Type 33 Damage Amount                := 10%
 
 Name                                        := Attack (60km)
 Break Formation Immediately                 := TRUE
@@ -276,10 +276,10 @@ Target Type 31 Engage Distance              := Do Not Engage
 Target Type 31 Damage Amount                := 10%
 Target Type 32 Name                         := Facility
 Target Type 32 Engage Distance              := Do Not Engage
-Target Type 32 Damage Amount                := 0%
+Target Type 32 Damage Amount                := 10%
 Target Type 33 Name                         := Building
 Target Type 33 Engage Distance              := Do Not Engage
-Target Type 33 Damage Amount                := 0%
+Target Type 33 Damage Amount                := 10%
 
 Name                                        := Attack (30km)
 Break Formation Immediately                 := TRUE
@@ -399,10 +399,10 @@ Target Type 31 Engage Distance              := Short Range
 Target Type 31 Damage Amount                := 10%
 Target Type 32 Name                         := Facility
 Target Type 32 Engage Distance              := Do Not Engage
-Target Type 32 Damage Amount                := 0%
+Target Type 32 Damage Amount                := 10%
 Target Type 33 Name                         := Building
 Target Type 33 Engage Distance              := Do Not Engage
-Target Type 33 Damage Amount                := 0%
+Target Type 33 Damage Amount                := 10%
 
 Name                                        := Attack (0km)
 Break Formation Immediately                 := TRUE
@@ -522,10 +522,10 @@ Target Type 31 Engage Distance              := Do Not Engage
 Target Type 31 Damage Amount                := 10%
 Target Type 32 Name                         := Facility
 Target Type 32 Engage Distance              := Do Not Engage
-Target Type 32 Damage Amount                := 0%
+Target Type 32 Damage Amount                := 10%
 Target Type 33 Name                         := Building
 Target Type 33 Engage Distance              := Do Not Engage
-Target Type 33 Damage Amount                := 0%
+Target Type 33 Damage Amount                := 10%
 
 Name                                        := Point (120km)
 Break Formation Immediately                 := TRUE
@@ -645,10 +645,10 @@ Target Type 31 Engage Distance              := Long Range
 Target Type 31 Damage Amount                := 100%
 Target Type 32 Name                         := Facility
 Target Type 32 Engage Distance              := Do Not Engage
-Target Type 32 Damage Amount                := 0%
+Target Type 32 Damage Amount                := 10%
 Target Type 33 Name                         := Building
 Target Type 33 Engage Distance              := Do Not Engage
-Target Type 33 Damage Amount                := 0%
+Target Type 33 Damage Amount                := 10%
 
 Name                                        := Point (60km)
 Break Formation Immediately                 := TRUE
@@ -768,10 +768,10 @@ Target Type 31 Engage Distance              := Medium Range
 Target Type 31 Damage Amount                := 100%
 Target Type 32 Name                         := Facility
 Target Type 32 Engage Distance              := Do Not Engage
-Target Type 32 Damage Amount                := 0%
+Target Type 32 Damage Amount                := 10%
 Target Type 33 Name                         := Building
 Target Type 33 Engage Distance              := Do Not Engage
-Target Type 33 Damage Amount                := 0%
+Target Type 33 Damage Amount                := 10%
 
 Name                                        := Point (30km)
 Break Formation Immediately                 := TRUE
@@ -891,10 +891,10 @@ Target Type 31 Engage Distance              := Short Range
 Target Type 31 Damage Amount                := 100%
 Target Type 32 Name                         := Facility
 Target Type 32 Engage Distance              := Do Not Engage
-Target Type 32 Damage Amount                := 0%
+Target Type 32 Damage Amount                := 10%
 Target Type 33 Name                         := Building
 Target Type 33 Engage Distance              := Do Not Engage
-Target Type 33 Damage Amount                := 0%
+Target Type 33 Damage Amount                := 10%
 
 Name                                        := Point (0km)
 Break Formation Immediately                 := TRUE
@@ -1014,10 +1014,10 @@ Target Type 31 Engage Distance              := Point Blank
 Target Type 31 Damage Amount                := 100%
 Target Type 32 Name                         := Facility
 Target Type 32 Engage Distance              := Do Not Engage
-Target Type 32 Damage Amount                := 0%
+Target Type 32 Damage Amount                := 10%
 Target Type 33 Name                         := Building
 Target Type 33 Engage Distance              := Do Not Engage
-Target Type 33 Damage Amount                := 0%
+Target Type 33 Damage Amount                := 10%
 
 Name                                        := Flee
 Break Formation Immediately                 := TRUE
@@ -1161,10 +1161,10 @@ Target Type 31 Engage Distance              := Do Not Engage
 Target Type 31 Damage Amount                := 10%
 Target Type 32 Name                         := Facility
 Target Type 32 Engage Distance              := Do Not Engage
-Target Type 32 Damage Amount                := 0%
+Target Type 32 Damage Amount                := 10%
 Target Type 33 Name                         := Building
 Target Type 33 Engage Distance              := Do Not Engage
-Target Type 33 Damage Amount                := 0%
+Target Type 33 Damage Amount                := 10%
 
 =======================================================================================
 *END*
