@@ -2935,11 +2935,11 @@ Ability 3 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
 Name                                            := Crystalline Armor
-Description                                     := Armor composed of a rigid crystalline structure capable of absorbing energy from attacks.
+Description                                     := Armor composed of a rigid crystalline structure which can absorb a lot of damage at once, but is brittle and shatters easily if overstresses.
 Picture Number                                  := 43
 Maximum Level                                   := 5
 Tonnage Space Taken Formula                     := 1
-Tonnage Structure Formula                       := 10 + (10 * [%Level%])
+Tonnage Structure Formula                       := 5 + (5 * [%Level%])
 Cost Minerals Formula                           := 3
 Cost Organics Formula                           := 0
 Cost Radioactives Formula                       := 3
@@ -2956,7 +2956,7 @@ Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent tech level plus 3 in Armor and level 4 in Quantum Physics.
 Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 3) and (Get_Empire_Tech_Level("Quantum Physics") >= 4)
-Number Of Abilities                             := 3
+Number Of Abilities                             := 2
 Ability 1 Type                                  := Component - Is Armor Type
 Ability 1 Description                           := Provides armor protection.
 Ability 1 Scope                                 := Space Object
@@ -2967,14 +2967,8 @@ Ability 2 Type                                  := Component - Damage Resistance
 Ability 2 Description                           := Armor nullifies up to [%Amount2%] damage per hit that damages the armor components.
 Ability 2 Scope                                 := Space Object
 Ability 2 Range Formula                         := 0
-Ability 2 Amount 1 Formula                      := [%Level%] / iif(Get_Design_Ability_Total("AI Tag 20", 1) > 0, Get_Design_Ability_Component_Count("Component - Is Armor Type"), 1)
+Ability 2 Amount 1 Formula                      := ([%Level%] ^ 2) * 2 / iif(Get_Design_Ability_Total("AI Tag 20", 1) > 0, Get_Design_Ability_Component_Count("Component - Is Armor Type"), 1)
 Ability 2 Amount 2 Formula                      := [%Level%]
-Ability 3 Type                                  := Shield Generation From Damage
-Ability 3 Description                           := Crystalline armor replenishes up to [%Amount1%] shield points when hit.
-Ability 3 Scope                                 := Space Object
-Ability 3 Range Formula                         := 0
-Ability 3 Amount 1 Formula                      := 5 + (5 * [%Level%])
-Ability 3 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
 ///////////////
