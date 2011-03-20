@@ -1,0 +1,397 @@
+=======================================================================================
+TECH AREA DATA FILE - Stellar Warfare Mod
+=======================================================================================
+
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Name                                            := Rock Planet Colonization
+Group                                           := Colonization
+Category                                        := Colonization
+Description                                     := Creation of colonies which can survive on rock based planets.
+Picture Number                                  := 16
+Maximum Level                                   := 5
+Level Cost                                      := 5
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Gas Giant Colonization
+Group                                           := Colonization
+Category                                        := Colonization
+Description                                     := Creation of colonies which can survive within gas giant planets.
+Picture Number                                  := 18
+Maximum Level                                   := 5
+Level Cost                                      := 5
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Nuclear Physics
+Group                                           := Theory
+Category                                        := Theory
+Description                                     := Physical theories related to atoms and their component particles.
+Picture Number                                  := 38
+Maximum Level                                   := 5
+Level Cost                                      := 1
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Quantum Physics
+Group                                           := Theory
+Category                                        := Theory
+Description                                     := Physical theories related to the tiniest building blocks of matter.
+Picture Number                                  := 81
+Maximum Level                                   := 5
+Level Cost                                      := 3
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires level 3 Nuclear Physics.
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Nuclear Physics") >= 3
+
+Name                                            := Subspace Physics
+Group                                           := Theory
+Category                                        := Theory
+Description                                     := Physical theories related to the foundations of space itself.
+Picture Number                                  := 136
+Maximum Level                                   := 5
+Level Cost                                      := 5
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires level 3 Quantum Physics.
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Quantum Physics") >= 3
+
+Name                                            := Planetary Industry
+Group                                           := Theory
+Category                                        := Theory
+Description                                     := Industry dependent entirely on planetary resources.
+Picture Number                                  := 5
+Maximum Level                                   := 5
+Level Cost                                      := 1
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Orbital Industry
+Group                                           := Theory
+Category                                        := Theory
+Description                                     := Industry dependent partly on spaceborne resources.
+Picture Number                                  := 26
+Maximum Level                                   := 5
+Level Cost                                      := 3
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires level 3 Planetary Industry.
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Planetary Industry") >= 3
+
+Name                                            := Spaceborne Industry
+Group                                           := Theory
+Category                                        := Theory
+Description                                     := Industry independent of the confines of a planet.
+Picture Number                                  := 80
+Maximum Level                                   := 5
+Level Cost                                      := 3
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires level 3 Orbital Industry.
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Orbital Industry") >= 3
+
+Name                                            := Planetary Governance
+Group                                           := Theory
+Category                                        := Theory
+Description                                     := Governance of planetary scale populations.
+Picture Number                                  := 44
+Maximum Level                                   := 5
+Level Cost                                      := 1
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Stellar Governance
+Group                                           := Theory
+Category                                        := Theory
+Description                                     := Governance of entire star systems.
+Picture Number                                  := 43
+Maximum Level                                   := 5
+Level Cost                                      := 3
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires level 3 Planetary Governance.
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Planetary Governance") >= 3
+
+Name                                            := Galactic Governance
+Group                                           := Theory
+Category                                        := Theory
+Description                                     := Governance of empires spanning the galaxy.
+Picture Number                                  := 30
+Maximum Level                                   := 5
+Level Cost                                      := 5
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires level 3 Stellar Governance.
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Stellar Governance") >= 3
+
+Name                                            := Macro Biology
+Group                                           := Theory
+Category                                        := Theory
+Description                                     := Biology focused on individual organisms.
+Picture Number                                  := 11
+Maximum Level                                   := 5
+Level Cost                                      := 1
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Genetic Manipulation
+Group                                           := Theory
+Category                                        := Theory
+Description                                     := Biology focused on genomes and their applications.
+Picture Number                                  := 2
+Maximum Level                                   := 5
+Level Cost                                      := 3
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires level 3 Macro Biology.
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Macro Biology") >= 3
+
+Name                                            := Evolutionary Transcendence
+Group                                           := Theory
+Category                                        := Theory
+Description                                     := Biology focused on betterment of a species.
+Picture Number                                  := 119
+Maximum Level                                   := 5
+Level Cost                                      := 5
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires level 3 Genetic Manipulation.
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Genetic Manipulation") >= 3
+
+Name                                            := Cannons
+Group                                           := Weaponry
+Category                                        := Weaponry
+Description                                     := Powerful large-bore projectile weapons good for punching through heavy armor.
+Picture Number                                  := 28
+Maximum Level                                   := 9
+Level Cost                                      := 1
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Miniguns
+Group                                           := Weaponry
+Category                                        := Weaponry
+Description                                     := Rapid-fire small-bore projectile weapons good for mowing down unarmored targets en masse.
+Picture Number                                  := 111
+Maximum Level                                   := 9
+Level Cost                                      := 1
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Bombs
+Group                                           := Weaponry
+Category                                        := Weaponry
+Description                                     := Simple explosive weapons dropped on planets by orbiting ships, or on ground troops by fighters.
+Picture Number                                  := 112
+Maximum Level                                   := 9
+Level Cost                                      := 1
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Torpedoes
+Group                                           := Weaponry
+Category                                        := Weaponry
+Description                                     := Various types of warheads strapped to thrusters, focused on anti-capital-ship tactics.
+Picture Number                                  := 23
+Maximum Level                                   := 11
+Level Cost                                      := 2
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number Of Requirements                          := 0
+
+Name                                            := Missiles
+Group                                           := Weaponry
+Category                                        := Weaponry
+Description                                     := Self-propelled explosives, similar to torpedoes. More maneuverable and longer ranged, but cannot use advanced warheads.
+Picture Number                                  := 94
+Maximum Level                                   := 5
+Level Cost                                      := 3
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires level 5 Planetary Industry or level 1 Orbital Industry.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Planetary Industry") >= 5) or (Get_Empire_Tech_Level("Orbital Industry") >= 1)
+
+Name                                            := Lasers
+Group                                           := Weaponry
+Category                                        := Weaponry
+Description                                     := Highly accurate energy beam weapons.
+Picture Number                                  := 120
+Maximum Level                                   := 9
+Level Cost                                      := 3
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires level 4 Nuclear Physics.
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Nuclear Physics") >= 4
+
+Name                                            := Telekinetics
+Group                                           := Weaponry
+Category                                        := Weaponry
+Description                                     := Weapons powered by mental energy.
+Picture Number                                  := 118
+Maximum Level                                   := 5
+Level Cost                                      := 4
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires level 1 Evolutionary Transcendence.
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Evolutionary Transcendence") >= 1
+
+Name                                            := Sensors
+Group                                           := Weaponry
+Category                                        := Weaponry
+Description                                     := Means of detecting and tracking alien vessels.
+Picture Number                                  := 65
+Maximum Level                                   := 9
+Level Cost                                      := 3
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Starship Engines
+Group                                           := Propulsion
+Category                                        := Propulsion
+Description                                     := Engines which propel starships through space.
+Picture Number                                  := 61
+Maximum Level                                   := 11
+Level Cost                                      := 3
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Fighter Engines
+Group                                           := Propulsion
+Category                                        := Propulsion
+Description                                     := Engines which propel fighter craft through space and planetary atmospheres.
+Picture Number                                  := 60
+Maximum Level                                   := 11
+Level Cost                                      := 2
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Armor
+Group                                           := Defenses
+Category                                        := Defenses
+Description                                     := Dense materials placed on the exterior of a vehicle to protect it from enemy weapons fire.
+Picture Number                                  := 62
+Maximum Level                                   := 9
+Level Cost                                      := 1
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Shields
+Group                                           := Defenses
+Category                                        := Defenses
+Description                                     := Force field generators which protect a vehicle from enemy weapons fire.
+Picture Number                                  := 63
+Maximum Level                                   := 9
+Level Cost                                      := 2
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires level 5 Nuclear Physics or level 1 Quantum Physics.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Nuclear Physics") >= 5) or (Get_Empire_Tech_Level("Quantum Physics") >= 1)
+
+Name                                            := Stealth
+Group                                           := Defenses
+Category                                        := Defenses
+Description                                     := Various means of hiding vehicles from prying eyes.
+Picture Number                                  := 64
+Maximum Level                                   := 9
+Level Cost                                      := 3
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+=======================================================================================
+*END*
+=======================================================================================
+

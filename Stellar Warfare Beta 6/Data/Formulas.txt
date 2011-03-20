@@ -1,0 +1,30 @@
+=======================================================================================
+FORMULAS DATA FILE
+=======================================================================================
+
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Name                := Formula Low Level Cost
+Formula             := iif([%Level%] = 1, 5, [%Level%]) ^ sqrt([%Base_Cost%]) * 100
+
+Name                := Formula Medium Level Cost
+Formula             := iif([%Level%] = 1, 5, [%Level%]) ^ sqrt([%Base_Cost%] + 1) * 100
+
+Name                := Formula High Level Cost
+Formula             := iif([%Level%] = 1, 5, [%Level%]) ^ sqrt([%Base_Cost%] + 2) * 100
+
+Name                := Formula Planet Gravity
+Formula             := Random(([%PlanetSize%] - 1) * 0.50, (([%PlanetSize%] - 1) * 0.50) + 0.50) 
+
+Name                := Formula Planet Temperature
+Formula             := IIF([%HexDistanceToCenter%] <= 3, 500 - ([%HexDistanceToCenter%] * 100) - Random(0, 100), IIF([%HexDistanceToCenter%] >= 7, 0 - ([%HexDistanceToCenter%] * 20) - Random(0, 50), Random(-50, 50))) + (([%NumberOfStars%] - 1) * 100)
+
+Name                := Formula Planet Radiation
+Formula             := Random(0, 300) + IIF([%PlanetAtmosphereName%] = "None", Random(0, 200), 0) + (([%NumberOfStars%] - 1) * Random(50, 100))
+
+=======================================================================================
+*END*
+=======================================================================================
