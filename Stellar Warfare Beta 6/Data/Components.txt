@@ -482,8 +482,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent level in Starship Engines.
-Requirement 1 Formula                           := Get_Empire_Tech_Level("Starship Engines") >= [%Level%]
+Requirement 1 Description                       := Requires equivalent level in Propulsion.
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Propulsion") >= [%Level%]
 Number Of Abilities                             := 3
 Ability 1 Type                                  := Movement Standard
 Ability 1 Description                           := Produces [%Amount1%] thrust.
@@ -550,8 +550,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires 2 additional levels in Starship Engines, and an an equivalent level in Nuclear Physics.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Starship Engines") >= [%Level%] + 2) and (Get_Empire_Tech_Level("Nuclear Physics") >= [%Level%])
+Requirement 1 Description                       := Requires 2 additional levels in Propulsion, and an an equivalent level in Nuclear Physics.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Propulsion") >= [%Level%] + 2) and (Get_Empire_Tech_Level("Nuclear Physics") >= [%Level%])
 Number Of Abilities                             := 3
 Ability 1 Type                                  := Movement Standard
 Ability 1 Description                           := Produces [%Amount1%] thrust.
@@ -618,8 +618,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires 4 additional levels in Starship Engines, and an an equivalent level in Quantum Physics.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Starship Engines") >= [%Level%] + 4) and (Get_Empire_Tech_Level("Quantum Physics") >= [%Level%])
+Requirement 1 Description                       := Requires 4 additional levels in Propulsion, and an an equivalent level in Quantum Physics.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Propulsion") >= [%Level%] + 4) and (Get_Empire_Tech_Level("Quantum Physics") >= [%Level%])
 Number Of Abilities                             := 3
 Ability 1 Type                                  := Movement Standard
 Ability 1 Description                           := Produces [%Amount1%] thrust.
@@ -686,8 +686,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires 6 additional levels in Starship Engines, and an an equivalent level in Subspace Physics.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Starship Engines") >= [%Level%] + 6) and (Get_Empire_Tech_Level("Subspace Physics") >= [%Level%])
+Requirement 1 Description                       := Requires 6 additional levels in Propulsion, and an an equivalent level in Subspace Physics.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Propulsion") >= [%Level%] + 6) and (Get_Empire_Tech_Level("Subspace Physics") >= [%Level%])
 Number Of Abilities                             := 3
 Ability 1 Type                                  := Movement Standard
 Ability 1 Description                           := Produces [%Amount1%] thrust.
@@ -754,8 +754,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires 3 additional levels in Starship Engines, and an an equivalent level in Macro Biology.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Starship Engines") >= [%Level%] + 3) and (Get_Empire_Tech_Level("Macro Biology") >= [%Level%])
+Requirement 1 Description                       := Requires 3 additional levels in Propulsion, and an an equivalent level in Macro Biology.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Propulsion") >= [%Level%] + 3) and (Get_Empire_Tech_Level("Macro Biology") >= [%Level%])
 Number Of Abilities                             := 4
 Ability 1 Type                                  := Movement Standard
 Ability 1 Description                           := Produces [%Amount1%] thrust.
@@ -803,8 +803,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent level in Fighter Engines.
-Requirement 1 Formula                           := Get_Empire_Tech_Level("Fighter Engines") >= [%Level%]
+Requirement 1 Description                       := Requires equivalent level in Propulsion.
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Propulsion") >= [%Level%]
 Number Of Abilities                             := 4
 Ability 1 Type                                  := Movement Standard
 Ability 1 Description                           := Produces [%Amount1%] thrust in space.
@@ -877,8 +877,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires 2 additional levels in Fighter Engines, and an an equivalent level in Nuclear Physics.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Fighter Engines") >= [%Level%] + 2) and (Get_Empire_Tech_Level("Nuclear Physics") >= [%Level%])
+Requirement 1 Description                       := Requires 2 additional levels in Propulsion, and an an equivalent level in Nuclear Physics.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Propulsion") >= [%Level%] + 2) and (Get_Empire_Tech_Level("Nuclear Physics") >= [%Level%])
 Number Of Abilities                             := 4
 Ability 1 Type                                  := Movement Standard
 Ability 1 Description                           := Produces [%Amount1%] thrust in space.
@@ -951,8 +951,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires 4 additional levels in Fighter Engines, and an an equivalent level in Quantum Physics.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Fighter Engines") >= [%Level%] + 4) and (Get_Empire_Tech_Level("Quantum Physics") >= [%Level%])
+Requirement 1 Description                       := Requires 4 additional levels in Propulsion, and an an equivalent level in Quantum Physics.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Propulsion") >= [%Level%] + 4) and (Get_Empire_Tech_Level("Quantum Physics") >= [%Level%])
 Number Of Abilities                             := 4
 Ability 1 Type                                  := Movement Standard
 Ability 1 Description                           := Produces [%Amount1%] thrust in space.
@@ -1025,8 +1025,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires 6 additional levels in Fighter Engines, and an an equivalent level in Subspace Physics.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Fighter Engines") >= [%Level%] + 6) and (Get_Empire_Tech_Level("Subspace Physics") >= [%Level%])
+Requirement 1 Description                       := Requires 6 additional levels in Propulsion, and an an equivalent level in Subspace Physics.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Propulsion") >= [%Level%] + 6) and (Get_Empire_Tech_Level("Subspace Physics") >= [%Level%])
 Number Of Abilities                             := 4
 Ability 1 Type                                  := Movement Standard
 Ability 1 Description                           := Produces [%Amount1%] thrust in space.

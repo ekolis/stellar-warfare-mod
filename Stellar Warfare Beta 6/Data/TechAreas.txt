@@ -8,8 +8,8 @@ TECH AREA DATA FILE - Stellar Warfare Mod
 =======================================================================================
 
 Name                                            := Rock Planet Colonization
-Group                                           := Colonization
-Category                                        := Colonization
+Group                                           := Ship Systems
+Category                                        := Ship Systems
 Description                                     := Creation of colonies which can survive on rock based planets.
 Picture Number                                  := 16
 Maximum Level                                   := 5
@@ -20,8 +20,8 @@ Unique or Racial Tech                           := True
 Number of Requirements                          := 0
 
 Name                                            := Gas Giant Colonization
-Group                                           := Colonization
-Category                                        := Colonization
+Group                                           := Ship Systems
+Category                                        := Ship Systems
 Description                                     := Creation of colonies which can survive within gas giant planets.
 Picture Number                                  := 18
 Maximum Level                                   := 5
@@ -326,25 +326,13 @@ Can Be Removed                                  := False
 Unique or Racial Tech                           := True
 Number of Requirements                          := 0
 
-Name                                            := Starship Engines
-Group                                           := Propulsion
-Category                                        := Propulsion
+Name                                            := Propulsion
+Group                                           := Ship Systems
+Category                                        := Ship Systems
 Description                                     := Engines which propel starships through space.
 Picture Number                                  := 61
 Maximum Level                                   := 11
 Level Cost                                      := 3
-Start Level                                     := 1
-Can Be Removed                                  := False
-Unique or Racial Tech                           := True
-Number of Requirements                          := 0
-
-Name                                            := Fighter Engines
-Group                                           := Propulsion
-Category                                        := Propulsion
-Description                                     := Engines which propel fighter craft through space and planetary atmospheres.
-Picture Number                                  := 60
-Maximum Level                                   := 11
-Level Cost                                      := 2
 Start Level                                     := 1
 Can Be Removed                                  := False
 Unique or Racial Tech                           := True
