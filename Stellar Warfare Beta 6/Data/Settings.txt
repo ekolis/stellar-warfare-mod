@@ -502,7 +502,7 @@ Number Of Ground Combat Militia Troops                                := 0
 //---------------------------------------------------------------------------------------
 Default Empire Option Sort Components By Name                         := FALSE
 Default Empire Option Sort Vehicle Sizes By Name                      := FALSE
-Default Empire Option Sort Mounts By Name                             := FALSE
+Default Empire Option Sort Mounts By Name                             := TRUE
 //---------------------------------------------------------------------------------------
 Created Asteroids Use Stellar Ability Type                            := Normal Asteroids
 //---------------------------------------------------------------------------------------

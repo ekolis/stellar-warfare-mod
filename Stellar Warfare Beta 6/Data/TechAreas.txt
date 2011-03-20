@@ -379,6 +379,54 @@ Can Be Removed                                  := False
 Unique or Racial Tech                           := True
 Number of Requirements                          := 0
 
+Name                                            := Range Enhancement
+Group                                           := Weaponry
+Category                                        := Weaponry
+Description                                     := Weapon mounts which allow firing at longer range than normal.
+Picture Number                                  := 23
+Maximum Level                                   := 5
+Level Cost                                      := 3
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Weapon Overloading
+Group                                           := Weaponry
+Category                                        := Weaponry
+Description                                     := Weapon mounts which fire at short range and do larger amounts of damage than normal.
+Picture Number                                  := 28
+Maximum Level                                   := 5
+Level Cost                                      := 3
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Weapon Batteries
+Group                                           := Weaponry
+Category                                        := Weaponry
+Description                                     := Weapon mounts which are smaller than normal, allowing more guns to fit on a vehicle.
+Picture Number                                  := 111
+Maximum Level                                   := 5
+Level Cost                                      := 3
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
+Name                                            := Heavy Weaponry
+Group                                           := Weaponry
+Category                                        := Weaponry
+Description                                     := Weapon mounts which are massive in scale, used for targeting heavy craft.
+Picture Number                                  := 111
+Maximum Level                                   := 5
+Level Cost                                      := 3
+Start Level                                     := 1
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
 =======================================================================================
 *END*
 =======================================================================================
