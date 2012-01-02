@@ -1043,7 +1043,7 @@ Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires 4 additional levels in Cannons, and equivalent level in either Subspace Physics or Evolutionary Transcendence.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Cannons") >= [%Level%] + 2) and ((Get_Empire_Tech_Level("Subspace Physics") >= [%Level%]) or (Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%]))
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Cannons") >= [%Level%] + 4) and ((Get_Empire_Tech_Level("Subspace Physics") >= [%Level%]) or (Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%]))
 Number Of Abilities                             := 2
 Ability 1 Type                                  := Ordnance Storage
 Ability 1 Description                           := Provides storage for [%Amount1%] units of ordnance.
