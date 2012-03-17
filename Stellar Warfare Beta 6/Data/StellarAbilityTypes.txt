@@ -95,14 +95,7 @@ Ability 8 Amount 1 Formula                      := 3
 Ability 8 Amount 2 Formula                      := 100
 
 Name                                            := Normal Asteroids
-Number of Abilities                             := 1
-Ability 1 Chance                                := 1000
-Ability 1 Type                                  := Sight Obscuration
-Ability 1 Description                           := Sector [%ScopeSector%] is opaque to most scanners.
-Ability 1 Scope                                 := Sector - All
-Ability 1 Range Formula                         := 0
-Ability 1 Amount 1 Formula                      := 10
-Ability 1 Amount 2 Formula                      := 0
+Number of Abilities                             := 0
 
 Name                                            := Normal Destroyed Star
 Number of Abilities                             := 0
