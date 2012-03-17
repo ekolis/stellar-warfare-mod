@@ -1,0 +1,100 @@
+//========================================================================
+//  SE5 External Events - Custom Events for Stellar Warfare Mod
+//========================================================================
+
+// Computes the "ceiling" of a real as a long. Because se5 doesn't have this built-in...
+// If input is negative, it computes the floor instead, because the way this function is used we want to maximize the delta...
+// Note that due to missing string-to-real function we are limited in precision...
+function CeilingExceptIfNegativeThenFloor returns long
+params
+	inputReal: real
+vars
+	trunced: long
+	inflated: real
+	truncedInflated: long
+	moduloTruncedInflated: long
+	result: long
+begin
+	set trunced := Sys_Trunc(inputReal)
+	set inflated := inputReal * 1000000
+	set truncedInflated := Sys_Trunc(inflated)
+	set moduloTruncedInflated := Sys_Mod_Long(truncedInflated, 1000000)
+	if (moduloTruncedInflated <> 0) then
+		if (inputReal < 0) then
+			set result := trunced - 1
+		else
+			set result := trunced + 1
+		endif
+	else
+		set result := trunced
+	endif
+	return result
+end
+
+// Adjusts resource values on planets & asteroids. Does nothing in finite-resource games.
+function Adjust_Resources returns boolean
+params
+vars
+	isFinite: boolean
+	settingsFile: long
+	minPlanetValue: long
+	maxPlanetValue: long
+	planetCount: long
+	planets: longlist
+	i: long
+	curValue: resources
+	curObj: long
+	curMinerals: real
+	curOrganics: real
+	curRadioactives: real
+	deltaMinerals: real
+	deltaOrganics: real
+	deltaRadioactives: real
+	deltaMineralsCeiling: long
+	deltaOrganicsCeiling: long
+	deltaRadioactivesCeiling: long
+	tempstr: string
+	tempbool: boolean
+begin
+	set isFinite := Sys_Is_Finite_Resource_Game()
+	if (NOT isFinite) then
+		// find out what the min/max resource values are
+		set settingsFile := Sys_Load_Datafile(0, "Settings.txt")
+		set minPlanetValue := Sys_Get_Datafile_Field_Value_As_Long(settingsFile, "Planet Value Low Percent")
+		set maxPlanetValue := Sys_Get_Datafile_Field_Value_As_Long(settingsFile, "Planet Value High Percent")
+		call Sys_Unload_Datafile(settingsFile)
+		
+		// get all planets/asteroids
+		set planetCount := Sys_Get_List_Of_Space_Objects_Of_Type(SPACE_OBJECT_TYPE_PLANET, planets, FALSE, TRUE, 0)
+		
+		// loop through the planets/asteroids
+		if (planetCount > 0) then
+			for i := 1 to planetCount do
+				set curObj := planets.get(i)
+				set curValue := Sys_Get_Space_Object_Planet_Value(curObj)
+				set curMinerals := curValue.get(RESOURCE_TYPE_MINERALS)
+				set curOrganics := curValue.get(RESOURCE_TYPE_ORGANICS)
+				set curRadioactives := curValue.get(RESOURCE_TYPE_RADIOACTIVES)
+				if (Sys_Get_Planet_Physical_Type(curObj) = 3) then
+					// asteroids increase in minerals but decrease in organics
+					set deltaMinerals := (maxPlanetValue - curMinerals) / 10
+					set deltaOrganics := 0 - (curOrganics - minPlanetValue) / 10
+				else
+					// regular planets decrease in minerals but increase in organics
+					set deltaMinerals := 0 - (curMinerals - minPlanetValue) / 10
+					set deltaOrganics := (maxPlanetValue - curOrganics) / 10
+				endif
+				// planets and asteroids both decrease in radioactives!
+				set deltaRadioactives := 0 - (curRadioactives - minPlanetValue) / 10
+				set deltaMineralsCeiling := CeilingExceptIfNegativeThenFloor(deltaMinerals)
+				set deltaOrganicsCeiling := CeilingExceptIfNegativeThenFloor(deltaOrganics)
+				set deltaRadioactivesCeiling := CeilingExceptIfNegativeThenFloor(deltaRadioactives)
+				
+				call Sys_Change_Planet_Value(curObj, deltaMineralsCeiling, RESOURCE_TYPE_MINERALS)
+				call Sys_Change_Planet_Value(curObj, deltaOrganicsCeiling, RESOURCE_TYPE_ORGANICS)
+				call Sys_Change_Planet_Value(curObj, deltaRadioactivesCeiling, RESOURCE_TYPE_RADIOACTIVES)
+			endfor
+		endif
+	endif
+	return TRUE
+end
