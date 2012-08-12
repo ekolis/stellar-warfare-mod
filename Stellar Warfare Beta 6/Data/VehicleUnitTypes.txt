@@ -45,7 +45,7 @@ Unit Texture Start Y                         := 0.50
 Unit Texture End X                           := 0.50
 Unit Texture End Y                           := 1.00
 Maximum In Space Per Player Per Sector       := 1000
-Number Of Unit Capabilities                  := 12
+Number Of Unit Capabilities                  := 11
 Unit Capability 1 Type                       := Can Communicate
 Unit Capability 2 Type                       := Can Be Sector Obscured
 Unit Capability 3 Type                       := Can Be Scrapped
@@ -57,7 +57,6 @@ Unit Capability 8 Type                       := Can Be Recovered From Space
 Unit Capability 9 Type                       := Can Self-Destruct
 Unit Capability 10 Type                      := Can Be Fired On And Destroyed By Owner
 Unit Capability 11 Type                      := Can Be Transferred While In Cargo
-Unit Capability 12 Type                      := Seeks Towards Target And Rams
 
 Vehicle Unit Type Name                       := Fighter
 Unit Texture Start X                         := 0.50
