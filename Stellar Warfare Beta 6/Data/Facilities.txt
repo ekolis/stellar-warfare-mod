@@ -157,7 +157,7 @@ Ability 2 Amount 2 Formula                      := 0
 
 Name                                            := Particle Collider
 Description                                     := High-speed particle collider which improves radioactives output in a system, and increases the radioactives value of a planet.
-Facility Group                                  := Refining
+Facility Group                                  := Infrastructure
 XFile Class Name                                := Radioactives Collider
 Picture Number                                  := 23
 Maximum Level                                   := 5
