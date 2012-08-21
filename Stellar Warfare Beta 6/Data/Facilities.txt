@@ -244,7 +244,7 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires 3 times the facility level of tech levels in Planetary Industry, Macro Biology, and Nuclear Physics.
+Requirement 1 Description                       := Requires 3 times the facility level of total tech levels in Planetary Industry, Macro Biology, and Nuclear Physics.
 Requirement 1 Formula                           := (Get_Empire_Tech_Level("Planetary Industry") + Get_Empire_Tech_Level("Macro Biology") + Get_Empire_Tech_Level("Nuclear Physics")) >= ([%Level%] * 3)
 Number of Abilities                             := 9
 Ability 1 Type                                  := Space Yard
@@ -317,7 +317,7 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires 3 times the facility level of tech levels in Planetary Industry, Macro Biology, and Nuclear Physics.
+Requirement 1 Description                       := Requires 3 times the facility level of total tech levels in Planetary Industry, Macro Biology, and Nuclear Physics.
 Requirement 1 Formula                           := (Get_Empire_Tech_Level("Planetary Industry") + Get_Empire_Tech_Level("Macro Biology") + Get_Empire_Tech_Level("Nuclear Physics")) >= ([%Level%] * 3)
 Number of Abilities                             := 9
 Ability 1 Type                                  := Space Yard
