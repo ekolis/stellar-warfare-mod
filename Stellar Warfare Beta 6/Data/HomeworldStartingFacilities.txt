@@ -41,9 +41,9 @@ Facility 9 Name                        := Hospital
 Facility 10 Name                       := Metropolis
 Facility 11 Name                       := Metropolis
 Facility 12 Name                       := Metropolis
-Facility 13 Name                       := Metropolis
-Facility 14 Name                       := Metropolis
-Facility 15 Name                       := Metropolis
+Facility 13 Name                       := Mineral Reclamation
+Facility 14 Name                       := Soil Enrichment
+Facility 15 Name                       := Particle Collider
 
 =======================================================================================
 *END*
