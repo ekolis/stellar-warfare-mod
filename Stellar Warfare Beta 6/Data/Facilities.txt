@@ -29,7 +29,7 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires 2 times the facility level of total tech levels in Planetary Industry and Macro Biology
+Requirement 1 Description                       := Requires 2 times the facility level of total tech levels in Planetary Industry and Macro Biology.
 Requirement 1 Formula                           := (Get_Empire_Tech_Level("Planetary Industry") + Get_Empire_Tech_Level("Macro Biology")) >= ([%Level%] * 2)
 Number of Abilities                             := 7
 Ability 1 Type                                  := Mined Resource Generation - Minerals
