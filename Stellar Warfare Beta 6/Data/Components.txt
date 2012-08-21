@@ -3771,8 +3771,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires 2 times the facility level of total tech levels in Orbital Industry and Genetic Manipulation.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Orbital Industry") + Get_Empire_Tech_Level("Genetic Manipulation")) >= ([%Level%] * 2)
+Requirement 1 Description                       := Requires 2 times the facility level of total tech levels in Orbital Industry and Genetic Manipulation, or 4 times the facility level of total tech levels in Planetary Industry and Macro Biology.
+Requirement 1 Formula                           := ((Get_Empire_Tech_Level("Orbital Industry") + Get_Empire_Tech_Level("Genetic Manipulation")) >= ([%Level%] * 2)) or ((Get_Empire_Tech_Level("Planetary Industry") + Get_Empire_Tech_Level("Macro Biology")) >= ([%Level%] * 4))
 Number Of Abilities                             := 4
 Ability 1 Type                                  := Remote Resource Generation - Minerals
 Ability 1 Description                           := Produces [%Amount1%] minerals from any asteroids or empty planets in this sector, modified by mineral value.
