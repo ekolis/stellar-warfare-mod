@@ -77,15 +77,15 @@ begin
 				set curRadioactives := curValue.get(RESOURCE_TYPE_RADIOACTIVES)
 				if (Sys_Get_Planet_Physical_Type(curObj) = 3) then
 					// asteroids increase in minerals but decrease in organics
-					set deltaMinerals := (maxPlanetValue - curMinerals) / 10
-					set deltaOrganics := 0 - (curOrganics - minPlanetValue) / 10
+					set deltaMinerals := (maxPlanetValue - curMinerals) / 100
+					set deltaOrganics := 0 - (curOrganics - minPlanetValue) / 100
 				else
 					// regular planets decrease in minerals but increase in organics
-					set deltaMinerals := 0 - (curMinerals - minPlanetValue) / 10
-					set deltaOrganics := (maxPlanetValue - curOrganics) / 10
+					set deltaMinerals := 0 - (curMinerals - minPlanetValue) / 100
+					set deltaOrganics := (maxPlanetValue - curOrganics) / 100
 				endif
 				// planets and asteroids both decrease in radioactives!
-				set deltaRadioactives := 0 - (curRadioactives - minPlanetValue) / 10
+				set deltaRadioactives := 0 - (curRadioactives - minPlanetValue) / 100
 				set deltaMineralsCeiling := CeilingExceptIfNegativeThenFloor(deltaMinerals)
 				set deltaOrganicsCeiling := CeilingExceptIfNegativeThenFloor(deltaOrganics)
 				set deltaRadioactivesCeiling := CeilingExceptIfNegativeThenFloor(deltaRadioactives)
