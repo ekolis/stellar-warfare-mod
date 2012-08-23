@@ -7,7 +7,7 @@ MOD DEFINITION DATA FILE
 *BEGIN*
 =======================================================================================
 
-Mod Name                                 := Stellar Warfare Beta 5c
+Mod Name                                 := Stellar Warfare Beta 5d
 Description                              := A mod focusing on the strategy and tactics of warfare, with less emphasis on diplomacy. No AI support!
 Picture Filename                         := StellarWarfare.bmp
 Allow Main Empires                       := TRUE

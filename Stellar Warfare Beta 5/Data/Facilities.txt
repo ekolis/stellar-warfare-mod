@@ -179,7 +179,7 @@ Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Evolutionary Transcendence, or 3 additional levels in Genetic Manipulation.
 Requirement 1 Formula                           := (Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%]) or (Get_Empire_Tech_Level("Genetic Manipulation") >= [%Level%] + 3)
 Number of Abilities                             := 3
-Ability 1 Type                                  := Resource Gen Modifier - Minerals
+Ability 1 Type                                  := Resource Gen Modifier - Organics
 Ability 1 Description                           := +[%Amount1%]% farming rate in this system from Soil Enrichment. (Only one per system effective.)
 Ability 1 Scope                                 := System - This Player
 Ability 1 Range Formula                         := 0
@@ -265,14 +265,14 @@ Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Subspace Physics, or 3 additional levels in Quantum Physics.
 Requirement 1 Formula                           := (Get_Empire_Tech_Level("Subspace Physics") >= [%Level%]) or (Get_Empire_Tech_Level("Quantum Physics") >= [%Level%] + 3)
 Number of Abilities                             := 3
-Ability 1 Type                                  := Resource Gen Modifier - Minerals
-Ability 1 Description                           := +[%Amount1%]% farming rate in this system from Soil Enrichment. (Only one per system effective.)
+Ability 1 Type                                  := Resource Gen Modifier - Radioactives
+Ability 1 Description                           := +[%Amount1%]% refining rate in this system from Soil Enrichment. (Only one per system effective.)
 Ability 1 Scope                                 := System - This Player
 Ability 1 Range Formula                         := 0
 Ability 1 Amount 1 Formula                      := 10 * [%Level%]
 Ability 1 Amount 2 Formula                      := 0
-Ability 2 Type                                  := Planet Value - Organics
-Ability 2 Description                           := Improves the organic value of the planet by [%Amount1%]% each year.
+Ability 2 Type                                  := Planet Value - Radioactives
+Ability 2 Description                           := Improves the radioactive value of the planet by [%Amount1%]% each year.
 Ability 2 Scope                                 := Space Object
 Ability 2 Range Formula                         := 0
 Ability 2 Amount 1 Formula                      := 10 * [%Level%]
