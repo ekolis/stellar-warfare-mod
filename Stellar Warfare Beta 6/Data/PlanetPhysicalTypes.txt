@@ -12,7 +12,7 @@ Description                          :=
 Picture Index                        := 2
 Tech Area For Colonization           := Rock Planet Colonization
 
-Name                                 := Gas Giant
+Name                                 := Gas
 Description                          := 
 Picture Index                        := 3
 Tech Area For Colonization           := Gas Giant Colonization
