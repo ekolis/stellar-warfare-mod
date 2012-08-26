@@ -2908,6 +2908,55 @@ Ability 4 Amount 1 Formula                      := 20
 Ability 4 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
+Name                                            := Docking Bay
+Description                                     := Launch bay for gunboats.
+Picture Number                                  := 24
+Maximum Level                                   := 5
+Tonnage Space Taken Formula                     := 300
+Tonnage Structure Formula                       := 300
+Cost Minerals Formula                           := 500
+Cost Organics Formula                           := 300
+Cost Radioactives Formula                       := 200
+Supply Amount Used Formula                      := 0
+Ordnance Amount Used Formula                    := 0
+Can Be Placed On Vehicle Types                  := Ship, Base
+Can Be Placed In Ship Sections                  := Outer Hull
+Component Type List                             := Technological
+General Group                                   := Cargo
+Custom Group                                    := 0
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires equivalent level in Orbital Industry, or level 1 in Spaceborne Industry.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Orbital Industry") >= [%Level%]) or (Get_Empire_Tech_Level("Spaceborne Industry") >= 1)
+Number Of Abilities                             := 4
+Ability 1 Type                                  := Units - Launch
+Ability 1 Description                           := Can launch a gunboat into space every [%Amount2%] milliseconds.
+Ability 1 Scope                                 := Space Object
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := "Gunboat"
+Ability 1 Amount 2 Formula                      := 4500 - ([%Level%] * 500)
+Ability 2 Type                                  := Units - Recover
+Ability 2 Description                           := Can recover gunboats from space. 
+Ability 2 Scope                                 := Space Object
+Ability 2 Range Formula                         := 0
+Ability 2 Amount 1 Formula                      := "Gunboat"
+Ability 2 Amount 2 Formula                      := 0
+Ability 3 Type                                  := Storage Cargo Space Amount
+Ability 3 Description                           := Provides [%Amount1%]kT of cargo space.
+Ability 3 Scope                                 := Space Object
+Ability 3 Range Formula                         := 0
+Ability 3 Amount 1 Formula                      := 300
+Ability 3 Amount 2 Formula                      := 0
+Ability 4 Type                                  := AI Tag 01
+Ability 4 Description                           := Requires [%Amount1%] crew.
+Ability 4 Scope                                 := Space Object
+Ability 4 Range Formula                         := 0
+Ability 4 Amount 1 Formula                      := 200
+Ability 4 Amount 2 Formula                      := 0
+Weapon Type                                     := None
+
 ///////////////
 // Armor
 ///////////////
