@@ -104,24 +104,44 @@ Ability 5 Scope                                 := Space Object
 Ability 5 Range Formula                         := 0
 Ability 5 Amount 1 Formula                      := -20 * ([%Level%] - 1)
 Ability 5 Amount 2 Formula                      := 0
-Number Of Requirements                          := 7
+Number Of Requirements                          := 17
 Requirements Evaluation Availability            := 1
-Requirements Evaluation Allows Placement        := 2, 3, 4, 5, 6, 7
+Requirements Evaluation Allows Placement        := AND
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Planetary Industry.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Planetary Industry") >= [%Level%]
 Requirement 2 Description                       := Requires at least 1 control center.
 Requirement 2 Formula                           := (Get_Design_Ability_Component_Count("Control Center") >= 1)
 Requirement 3 Description                       := Vehicle requires additional crew (5 or fewer) to operate its internal systems.
-Requirement 3 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 0) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 5)
-Requirement 4 Description                       := Vehicle requires additional crew (6 to 20) to operate its internal systems.
-Requirement 4 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 5) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 20)
-Requirement 5 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
-Requirement 5 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 20) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 100)
-Requirement 6 Description                       := Vehicle requires additional crew (101 to 400) to operate its internal systems.
-Requirement 6 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 100) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 400)
-Requirement 7 Description                       := Vehicle requires additional crew (more than 400) to operate its internal systems.
-Requirement 7 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 400)
+Requirement 3 Formula                           := Crew Required 5 Or Less
+Requirement 4 Description                       := Vehicle requires additional crew (6 to 10) to operate its internal systems.
+Requirement 4 Formula                           := Crew Required 6 To 10
+Requirement 5 Description                       := Vehicle requires additional crew (11 to 15) to operate its internal systems.
+Requirement 5 Formula                           := Crew Required 11 To 15
+Requirement 6 Description                       := Vehicle requires additional crew (16 to 20) to operate its internal systems.
+Requirement 6 Formula                           := Crew Required 16 To 20
+Requirement 7 Description                       := Vehicle requires additional crew (21 to 25) to operate its internal systems.
+Requirement 7 Formula                           := Crew Required 21 To 25
+Requirement 8 Description                       := Vehicle requires additional crew (26 to 50) to operate its internal systems.
+Requirement 8 Formula                           := Crew Required 26 To 50
+Requirement 9 Description                       := Vehicle requires additional crew (21 to 75) to operate its internal systems.
+Requirement 9 Formula                           := Crew Required 51 To 75
+Requirement 10 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
+Requirement 10 Formula                           := Crew Required 76 To 100
+Requirement 11 Description                       := Vehicle requires additional crew (101 to 200) to operate its internal systems.
+Requirement 11 Formula                           := Crew Required 101 To 200
+Requirement 12 Description                       := Vehicle requires additional crew (201 to 300) to operate its internal systems.
+Requirement 12 Formula                           := Crew Required 201 To 300
+Requirement 13 Description                       := Vehicle requires additional crew (301 to 400) to operate its internal systems.
+Requirement 13 Formula                           := Crew Required 301 To 400
+Requirement 14 Description                       := Vehicle requires additional crew (401 to 800) to operate its internal systems.
+Requirement 14 Formula                           := Crew Required 401 To 800
+Requirement 15 Description                       := Vehicle requires additional crew (801 to 1200) to operate its internal systems.
+Requirement 15 Formula                           := Crew Required 801 To 1200
+Requirement 16 Description                       := Vehicle requires additional crew (1201 to 1600) to operate its internal systems.
+Requirement 16 Formula                           := Crew Required 1201 To 1600
+Requirement 17 Description                       := Vehicle requires additional crew (2001 or more) to operate its internal systems.
+Requirement 17 Formula                           := Crew Required 2001 Or More
 
 Name                                            := Cruiser
 Short Name                                      := Cruiser
@@ -184,7 +204,7 @@ Ability 1 Description                           :=
 Ability 1 Scope                                 := Space Object
 Ability 1 Range Formula                         := 0
 Ability 1 Amount 1 Formula                      := 0
-Ability 1 Amount 2 Formula                      := 7
+Ability 1 Amount 2 Formula                      := 17
 Ability 2 Type                                  := Combat To Hit Defense
 Ability 2 Description                           := No defense bonus or penalty from hull.
 Ability 2 Scope                                 := Space Object
@@ -211,22 +231,42 @@ Ability 5 Amount 1 Formula                      := -20 * ([%Level%] - 1)
 Ability 5 Amount 2 Formula                      := 0
 Number Of Requirements                          := 7
 Requirements Evaluation Availability            := 1
-Requirements Evaluation Allows Placement        := 2, 3, 4, 5, 6, 7
+Requirements Evaluation Allows Placement        := AND
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Planetary Industry.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Planetary Industry") >= [%Level%]
 Requirement 2 Description                       := Requires at least 2 control centers.
 Requirement 2 Formula                           := (Get_Design_Ability_Component_Count("Control Center") >= 2)
 Requirement 3 Description                       := Vehicle requires additional crew (5 or fewer) to operate its internal systems.
-Requirement 3 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 0) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 5)
-Requirement 4 Description                       := Vehicle requires additional crew (6 to 20) to operate its internal systems.
-Requirement 4 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 5) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 20)
-Requirement 5 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
-Requirement 5 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 20) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 100)
-Requirement 6 Description                       := Vehicle requires additional crew (101 to 400) to operate its internal systems.
-Requirement 6 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 100) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 400)
-Requirement 7 Description                       := Vehicle requires additional crew (more than 400) to operate its internal systems.
-Requirement 7 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 400)
+Requirement 3 Formula                           := Crew Required 5 Or Less
+Requirement 4 Description                       := Vehicle requires additional crew (6 to 10) to operate its internal systems.
+Requirement 4 Formula                           := Crew Required 6 To 10
+Requirement 5 Description                       := Vehicle requires additional crew (11 to 15) to operate its internal systems.
+Requirement 5 Formula                           := Crew Required 11 To 15
+Requirement 6 Description                       := Vehicle requires additional crew (16 to 20) to operate its internal systems.
+Requirement 6 Formula                           := Crew Required 16 To 20
+Requirement 7 Description                       := Vehicle requires additional crew (21 to 25) to operate its internal systems.
+Requirement 7 Formula                           := Crew Required 21 To 25
+Requirement 8 Description                       := Vehicle requires additional crew (26 to 50) to operate its internal systems.
+Requirement 8 Formula                           := Crew Required 26 To 50
+Requirement 9 Description                       := Vehicle requires additional crew (21 to 75) to operate its internal systems.
+Requirement 9 Formula                           := Crew Required 51 To 75
+Requirement 10 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
+Requirement 10 Formula                           := Crew Required 76 To 100
+Requirement 11 Description                       := Vehicle requires additional crew (101 to 200) to operate its internal systems.
+Requirement 11 Formula                           := Crew Required 101 To 200
+Requirement 12 Description                       := Vehicle requires additional crew (201 to 300) to operate its internal systems.
+Requirement 12 Formula                           := Crew Required 201 To 300
+Requirement 13 Description                       := Vehicle requires additional crew (301 to 400) to operate its internal systems.
+Requirement 13 Formula                           := Crew Required 301 To 400
+Requirement 14 Description                       := Vehicle requires additional crew (401 to 800) to operate its internal systems.
+Requirement 14 Formula                           := Crew Required 401 To 800
+Requirement 15 Description                       := Vehicle requires additional crew (801 to 1200) to operate its internal systems.
+Requirement 15 Formula                           := Crew Required 801 To 1200
+Requirement 16 Description                       := Vehicle requires additional crew (1201 to 1600) to operate its internal systems.
+Requirement 16 Formula                           := Crew Required 1201 To 1600
+Requirement 17 Description                       := Vehicle requires additional crew (2001 or more) to operate its internal systems.
+Requirement 17 Formula                           := Crew Required 2001 Or More
 
 Name                                            := Battleship
 Short Name                                      := Battleship
@@ -314,24 +354,44 @@ Ability 5 Scope                                 := Space Object
 Ability 5 Range Formula                         := 0
 Ability 5 Amount 1 Formula                      := -20 * ([%Level%] - 1)
 Ability 5 Amount 2 Formula                      := 0
-Number Of Requirements                          := 7
+Number Of Requirements                          := 17
 Requirements Evaluation Availability            := 1
-Requirements Evaluation Allows Placement        := 2, 3, 4, 5, 6, 7
+Requirements Evaluation Allows Placement        := AND
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Orbital Industry.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Orbital Industry") >= [%Level%]
 Requirement 2 Description                       := Requires at least 3 control centers.
 Requirement 2 Formula                           := (Get_Design_Ability_Component_Count("Control Center") >= 3)
 Requirement 3 Description                       := Vehicle requires additional crew (5 or fewer) to operate its internal systems.
-Requirement 3 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 0) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 5)
-Requirement 4 Description                       := Vehicle requires additional crew (6 to 20) to operate its internal systems.
-Requirement 4 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 5) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 20)
-Requirement 5 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
-Requirement 5 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 20) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 100)
-Requirement 6 Description                       := Vehicle requires additional crew (101 to 400) to operate its internal systems.
-Requirement 6 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 100) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 400)
-Requirement 7 Description                       := Vehicle requires additional crew (more than 400) to operate its internal systems.
-Requirement 7 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 400)
+Requirement 3 Formula                           := Crew Required 5 Or Less
+Requirement 4 Description                       := Vehicle requires additional crew (6 to 10) to operate its internal systems.
+Requirement 4 Formula                           := Crew Required 6 To 10
+Requirement 5 Description                       := Vehicle requires additional crew (11 to 15) to operate its internal systems.
+Requirement 5 Formula                           := Crew Required 11 To 15
+Requirement 6 Description                       := Vehicle requires additional crew (16 to 20) to operate its internal systems.
+Requirement 6 Formula                           := Crew Required 16 To 20
+Requirement 7 Description                       := Vehicle requires additional crew (21 to 25) to operate its internal systems.
+Requirement 7 Formula                           := Crew Required 21 To 25
+Requirement 8 Description                       := Vehicle requires additional crew (26 to 50) to operate its internal systems.
+Requirement 8 Formula                           := Crew Required 26 To 50
+Requirement 9 Description                       := Vehicle requires additional crew (21 to 75) to operate its internal systems.
+Requirement 9 Formula                           := Crew Required 51 To 75
+Requirement 10 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
+Requirement 10 Formula                           := Crew Required 76 To 100
+Requirement 11 Description                       := Vehicle requires additional crew (101 to 200) to operate its internal systems.
+Requirement 11 Formula                           := Crew Required 101 To 200
+Requirement 12 Description                       := Vehicle requires additional crew (201 to 300) to operate its internal systems.
+Requirement 12 Formula                           := Crew Required 201 To 300
+Requirement 13 Description                       := Vehicle requires additional crew (301 to 400) to operate its internal systems.
+Requirement 13 Formula                           := Crew Required 301 To 400
+Requirement 14 Description                       := Vehicle requires additional crew (401 to 800) to operate its internal systems.
+Requirement 14 Formula                           := Crew Required 401 To 800
+Requirement 15 Description                       := Vehicle requires additional crew (801 to 1200) to operate its internal systems.
+Requirement 15 Formula                           := Crew Required 801 To 1200
+Requirement 16 Description                       := Vehicle requires additional crew (1201 to 1600) to operate its internal systems.
+Requirement 16 Formula                           := Crew Required 1201 To 1600
+Requirement 17 Description                       := Vehicle requires additional crew (2001 or more) to operate its internal systems.
+Requirement 17 Formula                           := Crew Required 2001 Or More
 
 Name                                            := Carrier
 Short Name                                      := Carrier
@@ -419,9 +479,9 @@ Ability 5 Scope                                 := Space Object
 Ability 5 Range Formula                         := 0
 Ability 5 Amount 1 Formula                      := -20 * ([%Level%] - 1)
 Ability 5 Amount 2 Formula                      := 0
-Number Of Requirements                          := 8
+Number Of Requirements                          := 18
 Requirements Evaluation Availability            := 1
-Requirements Evaluation Allows Placement        := 2, 3, 4, 5, 6, 7, 8
+Requirements Evaluation Allows Placement        := AND
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Orbital Industry.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Orbital Industry") >= [%Level%]
@@ -430,15 +490,35 @@ Requirement 2 Formula                           := (Get_Design_Ability_Component
 Requirement 3 Description                       := Requires at least 8 hangars.
 Requirement 3 Formula                           := (Get_Design_Specific_Component_Count("Hangar") >= 8)
 Requirement 4 Description                       := Vehicle requires additional crew (5 or fewer) to operate its internal systems.
-Requirement 4 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 0) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 5)
-Requirement 5 Description                       := Vehicle requires additional crew (6 to 20) to operate its internal systems.
-Requirement 5 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 5) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 20)
-Requirement 6 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
-Requirement 6 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 20) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 100)
-Requirement 7 Description                       := Vehicle requires additional crew (101 to 400) to operate its internal systems.
-Requirement 7 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 100) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 400)
-Requirement 8 Description                       := Vehicle requires additional crew (more than 400) to operate its internal systems.
-Requirement 8 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 400)
+Requirement 4 Formula                           := Crew Required 5 Or Less
+Requirement 5 Description                       := Vehicle requires additional crew (6 to 10) to operate its internal systems.
+Requirement 5 Formula                           := Crew Required 6 To 10
+Requirement 6 Description                       := Vehicle requires additional crew (11 to 15) to operate its internal systems.
+Requirement 6 Formula                           := Crew Required 11 To 15
+Requirement 7 Description                       := Vehicle requires additional crew (16 to 20) to operate its internal systems.
+Requirement 7 Formula                           := Crew Required 16 To 20
+Requirement 8 Description                       := Vehicle requires additional crew (21 to 25) to operate its internal systems.
+Requirement 8 Formula                           := Crew Required 21 To 25
+Requirement 9 Description                       := Vehicle requires additional crew (26 to 50) to operate its internal systems.
+Requirement 9 Formula                           := Crew Required 26 To 50
+Requirement 10 Description                       := Vehicle requires additional crew (21 to 75) to operate its internal systems.
+Requirement 10 Formula                           := Crew Required 51 To 75
+Requirement 11 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
+Requirement 11 Formula                           := Crew Required 76 To 100
+Requirement 12 Description                       := Vehicle requires additional crew (101 to 200) to operate its internal systems.
+Requirement 12 Formula                           := Crew Required 101 To 200
+Requirement 13 Description                       := Vehicle requires additional crew (201 to 300) to operate its internal systems.
+Requirement 13 Formula                           := Crew Required 201 To 300
+Requirement 14 Description                       := Vehicle requires additional crew (301 to 400) to operate its internal systems.
+Requirement 14 Formula                           := Crew Required 301 To 400
+Requirement 15 Description                       := Vehicle requires additional crew (401 to 800) to operate its internal systems.
+Requirement 15 Formula                           := Crew Required 401 To 800
+Requirement 16 Description                       := Vehicle requires additional crew (801 to 1200) to operate its internal systems.
+Requirement 16 Formula                           := Crew Required 801 To 1200
+Requirement 17 Description                       := Vehicle requires additional crew (1201 to 1600) to operate its internal systems.
+Requirement 17 Formula                           := Crew Required 1201 To 1600
+Requirement 18 Description                       := Vehicle requires additional crew (2001 or more) to operate its internal systems.
+Requirement 18 Formula                           := Crew Required 2001 Or More
 
 Name                                            := Freighter
 Short Name                                      := Freighter
@@ -526,9 +606,9 @@ Ability 5 Scope                                 := Space Object
 Ability 5 Range Formula                         := 0
 Ability 5 Amount 1 Formula                      := -20 * ([%Level%] - 1)
 Ability 5 Amount 2 Formula                      := 0
-Number Of Requirements                          := 8
+Number Of Requirements                          := 18
 Requirements Evaluation Availability            := 1
-Requirements Evaluation Allows Placement        := 2, 3, 4, 5, 6, 7, 8
+Requirements Evaluation Allows Placement        := AND
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Planetary Industry.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Planetary Industry") >= [%Level%]
@@ -537,15 +617,35 @@ Requirement 2 Formula                           := (Get_Design_Ability_Component
 Requirement 3 Description                       := Requires at least 400kT worth of cargo bays, spacedocks, construction/repair components, and/or colony modules.
 Requirement 3 Formula                           := (Get_Design_Specific_Component_Count("Cargo Bay") * 100) + (Get_Design_Specific_Component_Count("Mobile Spacedock") * 1000) + (Get_Design_Ability_Component_Count("Space Yard") * 400) + (Get_Design_Specific_Component_Count("Repair Bay") * 400) + ((Get_Design_Ability_Component_Count("Planet Colonize Type 1") + Get_Design_Ability_Component_Count("Planet Colonize Type 2")) * 300) >= 400
 Requirement 4 Description                       := Vehicle requires additional crew (5 or fewer) to operate its internal systems.
-Requirement 4 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 0) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 5)
-Requirement 5 Description                       := Vehicle requires additional crew (6 to 20) to operate its internal systems.
-Requirement 5 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 5) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 20)
-Requirement 6 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
-Requirement 6 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 20) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 100)
-Requirement 7 Description                       := Vehicle requires additional crew (101 to 400) to operate its internal systems.
-Requirement 7 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 100) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 400)
-Requirement 8 Description                       := Vehicle requires additional crew (more than 400) to operate its internal systems.
-Requirement 8 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 400)
+Requirement 4 Formula                           := Crew Required 5 Or Less
+Requirement 5 Description                       := Vehicle requires additional crew (6 to 10) to operate its internal systems.
+Requirement 5 Formula                           := Crew Required 6 To 10
+Requirement 6 Description                       := Vehicle requires additional crew (11 to 15) to operate its internal systems.
+Requirement 6 Formula                           := Crew Required 11 To 15
+Requirement 7 Description                       := Vehicle requires additional crew (16 to 20) to operate its internal systems.
+Requirement 7 Formula                           := Crew Required 16 To 20
+Requirement 8 Description                       := Vehicle requires additional crew (21 to 25) to operate its internal systems.
+Requirement 8 Formula                           := Crew Required 21 To 25
+Requirement 9 Description                       := Vehicle requires additional crew (26 to 50) to operate its internal systems.
+Requirement 9 Formula                           := Crew Required 26 To 50
+Requirement 10 Description                       := Vehicle requires additional crew (21 to 75) to operate its internal systems.
+Requirement 10 Formula                           := Crew Required 51 To 75
+Requirement 11 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
+Requirement 11 Formula                           := Crew Required 76 To 100
+Requirement 12 Description                       := Vehicle requires additional crew (101 to 200) to operate its internal systems.
+Requirement 12 Formula                           := Crew Required 101 To 200
+Requirement 13 Description                       := Vehicle requires additional crew (201 to 300) to operate its internal systems.
+Requirement 13 Formula                           := Crew Required 201 To 300
+Requirement 14 Description                       := Vehicle requires additional crew (301 to 400) to operate its internal systems.
+Requirement 14 Formula                           := Crew Required 301 To 400
+Requirement 15 Description                       := Vehicle requires additional crew (401 to 800) to operate its internal systems.
+Requirement 15 Formula                           := Crew Required 401 To 800
+Requirement 16 Description                       := Vehicle requires additional crew (801 to 1200) to operate its internal systems.
+Requirement 16 Formula                           := Crew Required 801 To 1200
+Requirement 17 Description                       := Vehicle requires additional crew (1201 to 1600) to operate its internal systems.
+Requirement 17 Formula                           := Crew Required 1201 To 1600
+Requirement 18 Description                       := Vehicle requires additional crew (2001 or more) to operate its internal systems.
+Requirement 18 Formula                           := Crew Required 2001 Or More
 
 Name                                            := Barge
 Short Name                                      := Barge
@@ -633,9 +733,9 @@ Ability 5 Scope                                 := Space Object
 Ability 5 Range Formula                         := 0
 Ability 5 Amount 1 Formula                      := -20 * ([%Level%] - 1)
 Ability 5 Amount 2 Formula                      := 0
-Number Of Requirements                          := 8
+Number Of Requirements                          := 18
 Requirements Evaluation Availability            := 1
-Requirements Evaluation Allows Placement        := 2, 3, 4, 5, 6, 7, 8
+Requirements Evaluation Allows Placement        := AND
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Spaceborne Industry.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Spaceborne Industry") >= [%Level%]
@@ -644,15 +744,35 @@ Requirement 2 Formula                           := (Get_Design_Ability_Component
 Requirement 3 Description                       := Requires at least 1000kT worth of cargo bays, spacedocks, construction/repair components, and/or colony modules.
 Requirement 3 Formula                           := (Get_Design_Specific_Component_Count("Cargo Bay") * 100) + (Get_Design_Specific_Component_Count("Mobile Spacedock") * 1000) + (Get_Design_Ability_Component_Count("Space Yard") * 400) + (Get_Design_Specific_Component_Count("Repair Bay") * 400) + ((Get_Design_Ability_Component_Count("Planet Colonize Type 1") + Get_Design_Ability_Component_Count("Planet Colonize Type 2")) * 300) >= 1000
 Requirement 4 Description                       := Vehicle requires additional crew (5 or fewer) to operate its internal systems.
-Requirement 4 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 0) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 5)
-Requirement 5 Description                       := Vehicle requires additional crew (6 to 20) to operate its internal systems.
-Requirement 5 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 5) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 20)
-Requirement 6 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
-Requirement 6 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 20) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 100)
-Requirement 7 Description                       := Vehicle requires additional crew (101 to 400) to operate its internal systems.
-Requirement 7 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 100) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 400)
-Requirement 8 Description                       := Vehicle requires additional crew (more than 400) to operate its internal systems.
-Requirement 8 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 400)
+Requirement 4 Formula                           := Crew Required 5 Or Less
+Requirement 5 Description                       := Vehicle requires additional crew (6 to 10) to operate its internal systems.
+Requirement 5 Formula                           := Crew Required 6 To 10
+Requirement 6 Description                       := Vehicle requires additional crew (11 to 15) to operate its internal systems.
+Requirement 6 Formula                           := Crew Required 11 To 15
+Requirement 7 Description                       := Vehicle requires additional crew (16 to 20) to operate its internal systems.
+Requirement 7 Formula                           := Crew Required 16 To 20
+Requirement 8 Description                       := Vehicle requires additional crew (21 to 25) to operate its internal systems.
+Requirement 8 Formula                           := Crew Required 21 To 25
+Requirement 9 Description                       := Vehicle requires additional crew (26 to 50) to operate its internal systems.
+Requirement 9 Formula                           := Crew Required 26 To 50
+Requirement 10 Description                       := Vehicle requires additional crew (21 to 75) to operate its internal systems.
+Requirement 10 Formula                           := Crew Required 51 To 75
+Requirement 11 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
+Requirement 11 Formula                           := Crew Required 76 To 100
+Requirement 12 Description                       := Vehicle requires additional crew (101 to 200) to operate its internal systems.
+Requirement 12 Formula                           := Crew Required 101 To 200
+Requirement 13 Description                       := Vehicle requires additional crew (201 to 300) to operate its internal systems.
+Requirement 13 Formula                           := Crew Required 201 To 300
+Requirement 14 Description                       := Vehicle requires additional crew (301 to 400) to operate its internal systems.
+Requirement 14 Formula                           := Crew Required 301 To 400
+Requirement 15 Description                       := Vehicle requires additional crew (401 to 800) to operate its internal systems.
+Requirement 15 Formula                           := Crew Required 401 To 800
+Requirement 16 Description                       := Vehicle requires additional crew (801 to 1200) to operate its internal systems.
+Requirement 16 Formula                           := Crew Required 801 To 1200
+Requirement 17 Description                       := Vehicle requires additional crew (1201 to 1600) to operate its internal systems.
+Requirement 17 Formula                           := Crew Required 1201 To 1600
+Requirement 18 Description                       := Vehicle requires additional crew (2001 or more) to operate its internal systems.
+Requirement 18 Formula                           := Crew Required 2001 Or More
 
 Name                                            := Interceptor
 Short Name                                      := Interceptor
@@ -942,24 +1062,44 @@ Ability 5 Scope                                 := Space Object
 Ability 5 Range Formula                         := 0
 Ability 5 Amount 1 Formula                      := -40  - ([%Level%] * 10)
 Ability 5 Amount 2 Formula                      := 0
-Number Of Requirements                          := 7
+Number Of Requirements                          := 17
 Requirements Evaluation Availability            := 1
-Requirements Evaluation Allows Placement        := 2, 3, 4, 5, 6, 7
+Requirements Evaluation Allows Placement        := AND
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Planetary Industry.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Planetary Industry") >= [%Level%]
 Requirement 2 Description                       := Requires at least 1 control center.
 Requirement 2 Formula                           := (Get_Design_Ability_Component_Count("Control Center") >= 1)
 Requirement 3 Description                       := Vehicle requires additional crew (5 or fewer) to operate its internal systems.
-Requirement 3 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 0) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 5)
-Requirement 4 Description                       := Vehicle requires additional crew (6 to 20) to operate its internal systems.
-Requirement 4 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 5) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 20)
-Requirement 5 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
-Requirement 5 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 20) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 100)
-Requirement 6 Description                       := Vehicle requires additional crew (101 to 400) to operate its internal systems.
-Requirement 6 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 100) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 400)
-Requirement 7 Description                       := Vehicle requires additional crew (more than 400) to operate its internal systems.
-Requirement 7 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 400)
+Requirement 3 Formula                           := Crew Required 5 Or Less
+Requirement 4 Description                       := Vehicle requires additional crew (6 to 10) to operate its internal systems.
+Requirement 4 Formula                           := Crew Required 6 To 10
+Requirement 5 Description                       := Vehicle requires additional crew (11 to 15) to operate its internal systems.
+Requirement 5 Formula                           := Crew Required 11 To 15
+Requirement 6 Description                       := Vehicle requires additional crew (16 to 20) to operate its internal systems.
+Requirement 6 Formula                           := Crew Required 16 To 20
+Requirement 7 Description                       := Vehicle requires additional crew (21 to 25) to operate its internal systems.
+Requirement 7 Formula                           := Crew Required 21 To 25
+Requirement 8 Description                       := Vehicle requires additional crew (26 to 50) to operate its internal systems.
+Requirement 8 Formula                           := Crew Required 26 To 50
+Requirement 9 Description                       := Vehicle requires additional crew (21 to 75) to operate its internal systems.
+Requirement 9 Formula                           := Crew Required 51 To 75
+Requirement 10 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
+Requirement 10 Formula                           := Crew Required 76 To 100
+Requirement 11 Description                       := Vehicle requires additional crew (101 to 200) to operate its internal systems.
+Requirement 11 Formula                           := Crew Required 101 To 200
+Requirement 12 Description                       := Vehicle requires additional crew (201 to 300) to operate its internal systems.
+Requirement 12 Formula                           := Crew Required 201 To 300
+Requirement 13 Description                       := Vehicle requires additional crew (301 to 400) to operate its internal systems.
+Requirement 13 Formula                           := Crew Required 301 To 400
+Requirement 14 Description                       := Vehicle requires additional crew (401 to 800) to operate its internal systems.
+Requirement 14 Formula                           := Crew Required 401 To 800
+Requirement 15 Description                       := Vehicle requires additional crew (801 to 1200) to operate its internal systems.
+Requirement 15 Formula                           := Crew Required 801 To 1200
+Requirement 16 Description                       := Vehicle requires additional crew (1201 to 1600) to operate its internal systems.
+Requirement 16 Formula                           := Crew Required 1201 To 1600
+Requirement 17 Description                       := Vehicle requires additional crew (2001 or more) to operate its internal systems.
+Requirement 17 Formula                           := Crew Required 2001 Or More
 
 Name                                            := Space Station
 Short Name                                      := Space Station
@@ -1047,24 +1187,44 @@ Ability 5 Scope                                 := Space Object
 Ability 5 Range Formula                         := 0
 Ability 5 Amount 1 Formula                      := -40  - ([%Level%] * 10)
 Ability 5 Amount 2 Formula                      := 0
-Number Of Requirements                          := 7
+Number Of Requirements                          := 17
 Requirements Evaluation Availability            := 1
-Requirements Evaluation Allows Placement        := 2, 3, 4, 5, 6, 7
+Requirements Evaluation Allows Placement        := AND
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Orbital Industry.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Orbital Industry") >= [%Level%]
 Requirement 2 Description                       := Requires at least 3 control centers.
 Requirement 2 Formula                           := (Get_Design_Ability_Component_Count("Control Center") >= 3)
 Requirement 3 Description                       := Vehicle requires additional crew (5 or fewer) to operate its internal systems.
-Requirement 3 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 0) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 5)
-Requirement 4 Description                       := Vehicle requires additional crew (6 to 20) to operate its internal systems.
-Requirement 4 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 5) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 20)
-Requirement 5 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
-Requirement 5 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 20) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 100)
-Requirement 6 Description                       := Vehicle requires additional crew (101 to 400) to operate its internal systems.
-Requirement 6 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 100) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 400)
-Requirement 7 Description                       := Vehicle requires additional crew (more than 400) to operate its internal systems.
-Requirement 7 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 400)
+Requirement 3 Formula                           := Crew Required 5 Or Less
+Requirement 4 Description                       := Vehicle requires additional crew (6 to 10) to operate its internal systems.
+Requirement 4 Formula                           := Crew Required 6 To 10
+Requirement 5 Description                       := Vehicle requires additional crew (11 to 15) to operate its internal systems.
+Requirement 5 Formula                           := Crew Required 11 To 15
+Requirement 6 Description                       := Vehicle requires additional crew (16 to 20) to operate its internal systems.
+Requirement 6 Formula                           := Crew Required 16 To 20
+Requirement 7 Description                       := Vehicle requires additional crew (21 to 25) to operate its internal systems.
+Requirement 7 Formula                           := Crew Required 21 To 25
+Requirement 8 Description                       := Vehicle requires additional crew (26 to 50) to operate its internal systems.
+Requirement 8 Formula                           := Crew Required 26 To 50
+Requirement 9 Description                       := Vehicle requires additional crew (21 to 75) to operate its internal systems.
+Requirement 9 Formula                           := Crew Required 51 To 75
+Requirement 10 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
+Requirement 10 Formula                           := Crew Required 76 To 100
+Requirement 11 Description                       := Vehicle requires additional crew (101 to 200) to operate its internal systems.
+Requirement 11 Formula                           := Crew Required 101 To 200
+Requirement 12 Description                       := Vehicle requires additional crew (201 to 300) to operate its internal systems.
+Requirement 12 Formula                           := Crew Required 201 To 300
+Requirement 13 Description                       := Vehicle requires additional crew (301 to 400) to operate its internal systems.
+Requirement 13 Formula                           := Crew Required 301 To 400
+Requirement 14 Description                       := Vehicle requires additional crew (401 to 800) to operate its internal systems.
+Requirement 14 Formula                           := Crew Required 401 To 800
+Requirement 15 Description                       := Vehicle requires additional crew (801 to 1200) to operate its internal systems.
+Requirement 15 Formula                           := Crew Required 801 To 1200
+Requirement 16 Description                       := Vehicle requires additional crew (1201 to 1600) to operate its internal systems.
+Requirement 16 Formula                           := Crew Required 1201 To 1600
+Requirement 17 Description                       := Vehicle requires additional crew (2001 or more) to operate its internal systems.
+Requirement 17 Formula                           := Crew Required 2001 Or More
 
 Name                                            := Star Base
 Short Name                                      := Space Station
@@ -1152,24 +1312,44 @@ Ability 5 Scope                                 := Space Object
 Ability 5 Range Formula                         := 0
 Ability 5 Amount 1 Formula                      := -40  - ([%Level%] * 10)
 Ability 5 Amount 2 Formula                      := 0
-Number Of Requirements                          := 7
+Number Of Requirements                          := 17
 Requirements Evaluation Availability            := 1
-Requirements Evaluation Allows Placement        := 2, 3, 4, 5, 6, 7
+Requirements Evaluation Allows Placement        := AND
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Spaceborne Industry.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Spaceborne Industry") >= [%Level%]
 Requirement 2 Description                       := Requires at least 5 control centers.
 Requirement 2 Formula                           := (Get_Design_Ability_Component_Count("Control Center") >= 5)
 Requirement 3 Description                       := Vehicle requires additional crew (5 or fewer) to operate its internal systems.
-Requirement 3 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 0) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 5)
-Requirement 4 Description                       := Vehicle requires additional crew (6 to 20) to operate its internal systems.
-Requirement 4 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 5) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 20)
-Requirement 5 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
-Requirement 5 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 20) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 100)
-Requirement 6 Description                       := Vehicle requires additional crew (101 to 400) to operate its internal systems.
-Requirement 6 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 100) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 400)
-Requirement 7 Description                       := Vehicle requires additional crew (more than 400) to operate its internal systems.
-Requirement 7 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 400)
+Requirement 3 Formula                           := Crew Required 5 Or Less
+Requirement 4 Description                       := Vehicle requires additional crew (6 to 10) to operate its internal systems.
+Requirement 4 Formula                           := Crew Required 6 To 10
+Requirement 5 Description                       := Vehicle requires additional crew (11 to 15) to operate its internal systems.
+Requirement 5 Formula                           := Crew Required 11 To 15
+Requirement 6 Description                       := Vehicle requires additional crew (16 to 20) to operate its internal systems.
+Requirement 6 Formula                           := Crew Required 16 To 20
+Requirement 7 Description                       := Vehicle requires additional crew (21 to 25) to operate its internal systems.
+Requirement 7 Formula                           := Crew Required 21 To 25
+Requirement 8 Description                       := Vehicle requires additional crew (26 to 50) to operate its internal systems.
+Requirement 8 Formula                           := Crew Required 26 To 50
+Requirement 9 Description                       := Vehicle requires additional crew (21 to 75) to operate its internal systems.
+Requirement 9 Formula                           := Crew Required 51 To 75
+Requirement 10 Description                       := Vehicle requires additional crew (21 to 100) to operate its internal systems.
+Requirement 10 Formula                           := Crew Required 76 To 100
+Requirement 11 Description                       := Vehicle requires additional crew (101 to 200) to operate its internal systems.
+Requirement 11 Formula                           := Crew Required 101 To 200
+Requirement 12 Description                       := Vehicle requires additional crew (201 to 300) to operate its internal systems.
+Requirement 12 Formula                           := Crew Required 201 To 300
+Requirement 13 Description                       := Vehicle requires additional crew (301 to 400) to operate its internal systems.
+Requirement 13 Formula                           := Crew Required 301 To 400
+Requirement 14 Description                       := Vehicle requires additional crew (401 to 800) to operate its internal systems.
+Requirement 14 Formula                           := Crew Required 401 To 800
+Requirement 15 Description                       := Vehicle requires additional crew (801 to 1200) to operate its internal systems.
+Requirement 15 Formula                           := Crew Required 801 To 1200
+Requirement 16 Description                       := Vehicle requires additional crew (1201 to 1600) to operate its internal systems.
+Requirement 16 Formula                           := Crew Required 1201 To 1600
+Requirement 17 Description                       := Vehicle requires additional crew (2001 or more) to operate its internal systems.
+Requirement 17 Formula                           := Crew Required 2001 Or More
 
 Name                                            := Army
 Short Name                                      := Army

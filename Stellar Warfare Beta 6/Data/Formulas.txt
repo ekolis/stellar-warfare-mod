@@ -25,6 +25,54 @@ Formula             := IIF([%HexDistanceToCenter%] <= 3, 500 - ([%HexDistanceToC
 Name                := Formula Planet Radiation
 Formula             := Random(0, 300) + IIF([%PlanetAtmosphereName%] = "None", Random(0, 200), 0) + (([%NumberOfStars%] - 1) * Random(50, 100))
 
+Name                := Crew Required 5 Or Less
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 0) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 5)
+
+Name                := Crew Required 6 To 10
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 5) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 10)
+
+Name                := Crew Required 11 To 15
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 10) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 15)
+
+Name                := Crew Required 16 To 20
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 15) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 20)
+
+Name                := Crew Required 21 To 25
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 20) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 25)
+
+Name                := Crew Required 26 To 50
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 25) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 50)
+
+Name                := Crew Required 51 To 75
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 50) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 75)
+
+Name                := Crew Required 76 To 100
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 75) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 100)
+
+Name                := Crew Required 101 To 200
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 100) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 200)
+
+Name                := Crew Required 201 To 300
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 200) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 300)
+
+Name                := Crew Required 301 To 400
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 300) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 400)
+
+Name                := Crew Required 401 To 800
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 400) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 800)
+
+Name                := Crew Required 801 To 1200
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 800) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 1200)
+
+Name                := Crew Required 1201 To 1600
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 1200) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 1600)
+
+Name                := Crew Required 1601 To 2000
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 1600) or (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) > 2000)
+
+Name                := Crew Required 2001 Or More
+Formula             := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 2000)
+
 =======================================================================================
 *END*
 =======================================================================================
