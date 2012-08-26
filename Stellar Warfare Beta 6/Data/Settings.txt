@@ -370,7 +370,7 @@ Created Storm Maximum Turbulence Damage                               := 1000
 Created Storm Maximum Shield Disruption                               := 10000
 Maximum Population For Abandon Planet Order                           := -1
 System Ship Movement Delay Milliseconds                               := 0
-Drone Supply Usage Per Turn                                           := 0
+Gunboat Supply Usage Per Turn                                         := 0
 //---------------------------------------------------------------------------------------
 Population Structure Per One                                          := 100
 Population Cargo Space Per One                                        := 100
