@@ -3148,7 +3148,7 @@ Ability 2 Description                           := Armor nullifies up to [%Amoun
 Ability 2 Scope                                 := Space Object
 Ability 2 Range Formula                         := 0
 Ability 2 Amount 1 Formula                      := ([%Level%] ^ 2) * 2 / iif(Get_Design_Ability_Total("AI Tag 20", 1) > 0, Get_Design_Ability_Component_Count("Component - Is Armor Type"), 1)
-Ability 2 Amount 2 Formula                      := [%Level%] ^ 2) * 2
+Ability 2 Amount 2 Formula                      := ([%Level%] ^ 2) * 2
 Weapon Type                                     := None
 
 ///////////////
