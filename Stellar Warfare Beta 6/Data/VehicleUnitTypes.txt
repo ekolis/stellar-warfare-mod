@@ -93,6 +93,26 @@ Unit Capability 2 Type                       := Takes Part in Ground Combat
 Unit Capability 3 Type                       := Can Be Transferred While In Cargo
 Unit Capability 4 Type                       := Can Be Dropped For Ground Combat
 
+Vehicle Unit Type Name                       := Gunboat
+Unit Texture Start X                         := 0.00
+Unit Texture Start Y                         := 0.00
+Unit Texture End X                           := 0.50
+Unit Texture End Y                           := 0.50
+Maximum In Space Per Player Per Sector       := 100
+Number Of Unit Capabilities                  := 12
+Unit Capability 1 Type                       := Can Communicate
+Unit Capability 2 Type                       := Can Be Sector Obscured
+Unit Capability 3 Type                       := Can Be Scrapped
+Unit Capability 4 Type                       := Can Be Deconstructed And Analyzed
+Unit Capability 5 Type                       := Can Be Retrofitted
+Unit Capability 6 Type                       := Has Facing
+Unit Capability 7 Type                       := Can Be In Fleet
+Unit Capability 8 Type                       := Can Be Launched Into Space
+Unit Capability 9 Type                       := Can Be Recovered From Space
+Unit Capability 10 Type                      := Can Self-Destruct
+Unit Capability 11 Type                      := Can Be Fired On And Destroyed By Owner
+Unit Capability 12 Type                      := Can Be Transferred While In Cargo
+
 =======================================================================================
 *END*
 =======================================================================================
