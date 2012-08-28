@@ -261,6 +261,21 @@ Ability 2 Amount 1 Formula                      := 20
 Ability 2 Amount 2 Formula                      := 0
 Number Of Requirements                          := 0
 
+//-------------------------------------------------------------------------------------------------------------------------------
+// Special Abilities
+//-------------------------------------------------------------------------------------------------------------------------------
+Name                                            := Suicide Bombers
+Picture Number                                  := 0
+Racial Cost                                     := 1
+Number Of Abilities                             := 1
+Ability 1 Type                                  := Description Only
+Ability 1 Description                           := Empire can use kamikaze warheads on manned vessels.
+Ability 1 Scope                                 := Galaxy - This Player
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 0
+Ability 1 Amount 2 Formula                      := 0
+Number Of Requirements                          := 0
+
 =======================================================================================
 *END*
 =======================================================================================

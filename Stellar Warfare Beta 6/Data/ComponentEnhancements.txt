@@ -118,8 +118,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := TRUE
 Requirements Evaluation Allows Placement        := AND
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Component must be a seeking weapon.
-Requirement 1 Formula                           := Get_Component_Weapon_Type() = "Seeking"
+Requirement 1 Description                       := Component must be a seeking or warhead weapon.
+Requirement 1 Formula                           := (Get_Component_Weapon_Type() = "Seeking") or (Get_Component_Weapon_Type() = "Warhead")
 
 Long Name                                       := Artillery Mount
 Short Name                                      := Artillery Mount
