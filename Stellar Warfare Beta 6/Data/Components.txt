@@ -138,7 +138,7 @@ Ability 2 Amount 1 Formula                      := 0
 Ability 2 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
-Name                                            := Computer Core
+Name                                            := Gunboat Computer Core
 Description                                     := Master computer system which can autonomously control a gunboat, eliminating the need for crew.
 Picture Number                                  := 10
 Maximum Level                                   := 5
@@ -241,6 +241,51 @@ Ability 2 Scope                                 := Space Object
 Ability 2 Range Formula                         := 0
 Ability 2 Amount 1 Formula                      := 5 * [%Level%]
 Ability 2 Amount 2 Formula                      := 56
+Weapon Type                                     := None
+
+Name                                            := Fighter Computer Core
+Description                                     := Master computer system which can autonomously control a fighter, eliminating the need for a pilot.
+Picture Number                                  := 10
+Maximum Level                                   := 5
+Tonnage Space Taken Formula                     := 1
+Tonnage Structure Formula                       := [%Level%]
+Cost Minerals Formula                           := 10
+Cost Organics Formula                           := 1
+Cost Radioactives Formula                       := 3
+Supply Amount Used Formula                      := 0
+Ordnance Amount Used Formula                    := 0
+Can Be Placed On Vehicle Types                  := Fighter
+Can Be Placed In Ship Sections                  := Outer Hull
+Component Type List                             := Technological
+General Group                                   := Vehicle Control
+Custom Group                                    := 0
+Number Of Requirements                          := 2
+Requirements Evaluation Availability            := 1
+Requirements Evaluation Allows Placement        := 2
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires equivalent levels in Stellar Governance and Planetary Industry.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Stellar Governance") >= [%Level%]) and (Get_Empire_Tech_Level("Planetary Industry") >= [%Level%])
+Requirement 2 Description                       := Fighters with a computer core cannot also have a gunner's nest.
+Requirement 2 Formula                           := Get_Design_Specific_Component_Count("Gunner's Nest") = 0
+Number Of Abilities                             := 3
+Ability 1 Type                                  := Control Center
+Ability 1 Description                           := Contains a control center for a fighter.
+Ability 1 Scope                                 := Space Object
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 0
+Ability 1 Amount 2 Formula                      := 0
+Ability 2 Type                                  := Combat To Hit Offense
+Ability 2 Description                           := +[%Amount1%] bonus to hit from computer core.
+Ability 2 Scope                                 := Space Object
+Ability 2 Range Formula                         := 0
+Ability 2 Amount 1 Formula                      := 5 * [%Level%]
+Ability 2 Amount 2 Formula                      := 56
+Ability 3 Type                                  := Combat To Hit Defense
+Ability 3 Description                           := +[%Amount1%] bonus to evade from computer core.
+Ability 3 Scope                                 := Space Object
+Ability 3 Range Formula                         := 0
+Ability 3 Amount 1 Formula                      := 5 * [%Level%]
+Ability 3 Amount 2 Formula                      := 56
 Weapon Type                                     := None
 
 Name                                            := Aggressive Field General
@@ -2555,7 +2600,7 @@ Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Nuclear Physics.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Nuclear Physics") >= [%Level%]
 Requirement 2 Description                       := Warheads can only be used on fully automated vessels unless the empire has the Suicide Bombers racial trait.
-Requirement 2 Formula                           := (Get_Design_Specific_Component_Count("Computer Core") > 0) or (Empire_Has_Racial_Trait("Suicide Bombers"))
+Requirement 2 Formula                           := (Get_Design_Specific_Component_Count("Gunboat Computer Core") > 0) or (Get_Design_Specific_Component_Count("Fighter Computer Core") > 0) or (Empire_Has_Racial_Trait("Suicide Bombers"))
 Number Of Abilities                             := 1
 Ability 1 Type                                  := AI Tag 01
 Ability 1 Description                           := Requires [%Amount1%] crew.
@@ -2613,7 +2658,7 @@ Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Quantum Physics.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Quantum Physics") >= [%Level%]
 Requirement 2 Description                       := Warheads can only be used on fully automated vessels unless the empire has the Suicide Bombers racial trait.
-Requirement 2 Formula                           := (Get_Design_Specific_Component_Count("Computer Core") > 0) or (Empire_Has_Racial_Trait("Suicide Bombers"))
+Requirement 2 Formula                           := (Get_Design_Specific_Component_Count("Gunboat Computer Core") > 0) or (Get_Design_Specific_Component_Count("Fighter Computer Core") > 0) or (Empire_Has_Racial_Trait("Suicide Bombers"))
 Number Of Abilities                             := 1
 Ability 1 Type                                  := AI Tag 01
 Ability 1 Description                           := Requires [%Amount1%] crew.
@@ -2671,7 +2716,7 @@ Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Subspace Physics.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Subspace Physics") >= [%Level%]
 Requirement 2 Description                       := Warheads can only be used on fully automated vessels unless the empire has the Suicide Bombers racial trait.
-Requirement 2 Formula                           := (Get_Design_Specific_Component_Count("Computer Core") > 0) or (Empire_Has_Racial_Trait("Suicide Bombers"))
+Requirement 2 Formula                           := (Get_Design_Specific_Component_Count("Gunboat Computer Core") > 0) or (Get_Design_Specific_Component_Count("Fighter Computer Core") > 0) or (Empire_Has_Racial_Trait("Suicide Bombers"))
 Number Of Abilities                             := 1
 Ability 1 Type                                  := AI Tag 01
 Ability 1 Description                           := Requires [%Amount1%] crew.
