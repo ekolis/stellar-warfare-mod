@@ -1507,7 +1507,7 @@ Ground Combat Deceleration Rate Base             := 0.00030
 Ground Combat Deceleration Rate Decrease Per kT  := 0
 Ground Combat Deceleration Rate Minimum          := 0
 Ground Combat Banks When Changing Height         := TRUE
-Number Of Abilities                             := 7
+Number Of Abilities                             := 8
 Ability 1 Type                                  := Combat To Hit Offense
 Ability 1 Description                           := 
 Ability 1 Scope                                 := Space Object
@@ -1550,6 +1550,12 @@ Ability 7 Scope                                 := Space Object
 Ability 7 Range Formula                         := 0
 Ability 7 Amount 1 Formula                      := 10
 Ability 7 Amount 2 Formula                      := 0
+Ability 8 Type                                  := AI Tag 02
+Ability 8 Description                           := Mines are unmanned, and thus can use warhead components.
+Ability 8 Scope                                 := Space Object
+Ability 8 Range Formula                         := 0
+Ability 8 Amount 1 Formula                      := 0
+Ability 8 Amount 2 Formula                      := 0
 Number Of Requirements                          := 1
 Requirements Evaluation Availability            := 1
 Requirements Evaluation Allows Placement        := TRUE
@@ -1810,4 +1816,3 @@ Requirement 17 Formula                           := Crew Required 2001 Or More
 =======================================================================================
 *END*
 =======================================================================================
-
