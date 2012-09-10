@@ -442,7 +442,7 @@ Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Planetary Governance.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Planetary Governance") >= [%Level%]
-Number of Abilities                             := 4
+Number of Abilities                             := 3
 Ability 1 Type                                  := Ground Combat Damage Modifier
 Ability 1 Description                           := 
 Ability 1 Scope                                 := Sector - This Player
@@ -461,12 +461,6 @@ Ability 3 Scope                                 := Space Object
 Ability 3 Range Formula                         := 0
 Ability 3 Amount 1 Formula                      := 2500 + ([%Level%] * 500)
 Ability 3 Amount 2 Formula                      := 0
-Ability 4 Type                                  := Description Only
-Ability 4 Description                           := Generates 0.1 bonus research toward each theoretical governance tech, with a 1% chance to generate 100x as much.
-Ability 4 Scope                                 := Space Object
-Ability 4 Range Formula                         := 0
-Ability 4 Amount 1 Formula                      := 0
-Ability 4 Amount 2 Formula                      := 0
 
 Name                                            := Security Agency
 Description                                     := Top-secret military base which increases ground combat strength system-wide.
