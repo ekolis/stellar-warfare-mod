@@ -95,7 +95,7 @@ Ability 10 Amount 2 Formula                     := 0
 
 Name                                            := Solar Plant
 Description                                     := Solar generators which can refine radioactives and produce supplies using solar energy.
-Facility Group                                  := Crystalline
+Facility Group                                  := Infrastructure
 XFile Class Name                                := Solar Generator
 Picture Number                                  := 42
 Maximum Level                                   := 5
