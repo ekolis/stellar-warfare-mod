@@ -166,7 +166,7 @@ Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a direct-fire weapon.
 Requirement 1 Formula                           := Get_Component_Weapon_Type() = "Direct Fire"
 Requirement 2 Description                       := Requires research into Range Enhancement (amount varies by weapon).
-Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0))
+Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag - Mount Research Requirement 1"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag - Mount Research Requirement 2"), 2, 0))
 Requirement 3 Description                       := 
 Requirement 3 Formula                           := Get_Empire_Tech_Level("Range Enhancement") >= [%Level%]
 
@@ -215,7 +215,7 @@ Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a direct-fire weapon.
 Requirement 1 Formula                           := Get_Component_Weapon_Type() = "Direct Fire"
 Requirement 2 Description                       := Requires research into Weapon Overloading (amount varies by weapon).
-Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0))
+Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag - Mount Research Requirement 1"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag - Mount Research Requirement 2"), 2, 0))
 Requirement 3 Description                       := 
 Requirement 3 Formula                           := Get_Empire_Tech_Level("Weapon Overloading") >= [%Level%]
 
@@ -258,7 +258,7 @@ Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a direct-fire weapon.
 Requirement 1 Formula                           := Get_Component_Weapon_Type() = "Direct Fire"
 Requirement 2 Description                       := Requires research into Weapon Batteries (amount varies by weapon).
-Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0))
+Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag - Mount Research Requirement 1"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag - Mount Research Requirement 2"), 2, 0))
 Requirement 3 Description                       := 
 Requirement 3 Formula                           := Get_Empire_Tech_Level("Weapon Batteries") >= [%Level%]
 
@@ -313,7 +313,7 @@ Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a direct-fire weapon.
 Requirement 1 Formula                           := Get_Component_Weapon_Type() = "Direct Fire"
 Requirement 2 Description                       := Requires research into Heavy Weaponry (amount varies by weapon).
-Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0))
+Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag - Mount Research Requirement 1"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag - Mount Research Requirement 2"), 2, 0))
 Requirement 3 Description                       := 
 Requirement 3 Formula                           := Get_Empire_Tech_Level("Heavy Weaponry") >= [%Level%]
 
