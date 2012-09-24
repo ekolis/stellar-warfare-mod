@@ -19,8 +19,8 @@ Tech Area For Colonization           := Gas Giant Colonization
 
 Name                                 := Asteroids
 Description                          := 
-Picture Index                        := 0
-Tech Area For Colonization           := 
+Picture Index                        := 1
+Tech Area For Colonization           := Asteroid Colonization
 
 =======================================================================================
 *END*

@@ -31,6 +31,18 @@ Can Be Removed                                  := False
 Unique or Racial Tech                           := True
 Number of Requirements                          := 0
 
+Name                                            := Asteroid Colonization
+Group                                           := Ship Systems
+Category                                        := Ship Systems
+Description                                     := Creation of colonies which can survive in asteroid fields.
+Picture Number                                  := 17
+Maximum Level                                   := 5
+Level Cost                                      := 5
+Start Level                                     := 0
+Can Be Removed                                  := False
+Unique or Racial Tech                           := True
+Number of Requirements                          := 0
+
 Name                                            := Nuclear Physics
 Group                                           := Theory
 Category                                        := Theory
