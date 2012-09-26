@@ -126,9 +126,9 @@ Short Name                                      := Artillery Mount
 Description                                     := Weapon mount which emphasizes long range fire.
 Picture Number                                  := 7
 Code                                            := A
-Maximum Level                                   := 6
+Maximum Level                                   := 5
 Can Be Placed On Vehicle Types                  := Ship, Base, Troop, Gunboat
-Number Of Abilities                             := 6
+Number Of Abilities                             := 5
 Ability 1 Type                                  := Component - Weapon Range
 Ability 1 Description                           := Range (and blind spot) increased by 60km.
 Ability 1 Scope                                 := Space Object
@@ -159,20 +159,16 @@ Ability 5 Scope                                 := Space Object
 Ability 5 Range Formula                         := 0
 Ability 5 Amount 1 Formula                      := 5 * [%Level%] + 30
 Ability 5 Amount 2 Formula                      := 0
-Ability 6 Type                                  := Component - Cost Percent 
-Ability 6 Description                           := Cost is increased by 50% of standard weapon cost for each level that the mount lags behind the weapon's complexity level.
-Ability 6 Scope                                 := Space Object
-Ability 6 Range Formula                         := 0
-Ability 6 Amount 1 Formula                      := 50 * max((1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0)) - [%Level%], 0)
-Ability 6 Amount 2 Formula                      := 0
-Number of Requirements							:= 2
-Requirements Evaluation Availability            := 2
-Requirements Evaluation Allows Placement        := 1
+Number of Requirements							:= 3
+Requirements Evaluation Availability            := 3
+Requirements Evaluation Allows Placement        := 1, 2
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a direct-fire weapon.
 Requirement 1 Formula                           := Get_Component_Weapon_Type() = "Direct Fire"
-Requirement 2 Description                       := Requires research into Range Enhancement.
-Requirement 2 Formula                           := Get_Empire_Tech_Level("Range Enhancement") >= [%Level%]
+Requirement 2 Description                       := Requires research into Range Enhancement (amount varies by weapon).
+Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0))
+Requirement 3 Description                       := 
+Requirement 3 Formula                           := Get_Empire_Tech_Level("Range Enhancement") >= [%Level%]
 
 Long Name                                       := Carronade Mount
 Short Name                                      := Carronade Mount
@@ -181,7 +177,7 @@ Picture Number                                  := 11
 Code                                            := C
 Maximum Level                                   := 5
 Can Be Placed On Vehicle Types                  := Ship, Base, Troop, Gunboat
-Number Of Abilities                             := 6
+Number Of Abilities                             := 5
 Ability 1 Type                                  := Component - Weapon Range
 Ability 1 Description                           := Range (and blind spot) decreased by 30km.
 Ability 1 Scope                                 := Space Object
@@ -212,20 +208,16 @@ Ability 5 Scope                                 := Space Object
 Ability 5 Range Formula                         := 0
 Ability 5 Amount 1 Formula                      := 5 * [%Level%] - 30
 Ability 5 Amount 2 Formula                      := 0
-Ability 6 Type                                  := Component - Cost Percent 
-Ability 6 Description                           := Cost is increased by 50% of standard weapon cost for each level that the mount lags behind the weapon's complexity level.
-Ability 6 Scope                                 := Space Object
-Ability 6 Range Formula                         := 0
-Ability 6 Amount 1 Formula                      := 50 * max((1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0)) - [%Level%], 0)
-Ability 6 Amount 2 Formula                      := 0
-Number of Requirements							:= 2
-Requirements Evaluation Availability            := 2
-Requirements Evaluation Allows Placement        := 1
+Number of Requirements							:= 3
+Requirements Evaluation Availability            := 3
+Requirements Evaluation Allows Placement        := 1, 2
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a direct-fire weapon.
 Requirement 1 Formula                           := Get_Component_Weapon_Type() = "Direct Fire"
-Requirement 2 Description                       := Requires research into Weapon Overloading.
-Requirement 2 Formula                           := Get_Empire_Tech_Level("Weapon Overloading") >= [%Level%]
+Requirement 2 Description                       := Requires research into Weapon Overloading (amount varies by weapon).
+Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0))
+Requirement 3 Description                       := 
+Requirement 3 Formula                           := Get_Empire_Tech_Level("Weapon Overloading") >= [%Level%]
 
 Long Name                                       := Battery Mount
 Short Name                                      := Battery Mount
@@ -234,7 +226,7 @@ Picture Number                                  := 2
 Code                                            := B
 Maximum Level                                   := 5
 Can Be Placed On Vehicle Types                  := Ship, Base, Troop, Gunboat
-Number Of Abilities                             := 5
+Number Of Abilities                             := 4
 Ability 1 Type                                  := Component - Tonnage Space Taken Percent 
 Ability 1 Description                           := Size is halved.
 Ability 1 Scope                                 := Space Object
@@ -259,20 +251,16 @@ Ability 4 Scope                                 := Space Object
 Ability 4 Range Formula                         := 0
 Ability 4 Amount 1 Formula                      := -5 * [%Level%] + 30
 Ability 4 Amount 2 Formula                      := 0
-Ability 5 Type                                  := Component - Cost Percent 
-Ability 5 Description                           := Cost is increased by 50% of standard weapon cost for each level that the mount lags behind the weapon's complexity level.
-Ability 5 Scope                                 := Space Object
-Ability 5 Range Formula                         := 0
-Ability 5 Amount 1 Formula                      := 50 * max((1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0)) - [%Level%], 0)
-Ability 5 Amount 2 Formula                      := 0
-Number of Requirements							:= 2
-Requirements Evaluation Availability            := 2
-Requirements Evaluation Allows Placement        := 1
+Number of Requirements							:= 3
+Requirements Evaluation Availability            := 3
+Requirements Evaluation Allows Placement        := 1, 2
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a direct-fire weapon.
 Requirement 1 Formula                           := Get_Component_Weapon_Type() = "Direct Fire"
-Requirement 2 Description                       := Requires research into Weapon Batteries.
-Requirement 2 Formula                           := Get_Empire_Tech_Level("Weapon Batteries") >= [%Level%]
+Requirement 2 Description                       := Requires research into Weapon Batteries (amount varies by weapon).
+Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0))
+Requirement 3 Description                       := 
+Requirement 3 Formula                           := Get_Empire_Tech_Level("Weapon Batteries") >= [%Level%]
 
 Long Name                                       := Heavy Mount
 Short Name                                      := Heavy Mount
@@ -281,7 +269,7 @@ Picture Number                                  := 4
 Code                                            := H
 Maximum Level                                   := 5
 Can Be Placed On Vehicle Types                  := Ship, Base
-Number Of Abilities                             := 7
+Number Of Abilities                             := 6
 Ability 1 Type                                  := Component - Tonnage Space Taken Percent 
 Ability 1 Description                           := Size is 10 times normal.
 Ability 1 Scope                                 := Space Object
@@ -318,20 +306,16 @@ Ability 6 Scope                                 := Space Object
 Ability 6 Range Formula                         := 0
 Ability 6 Amount 1 Formula                      := 1900
 Ability 6 Amount 2 Formula                      := 0
-Ability 7 Type                                  := Component - Cost Percent 
-Ability 7 Description                           := Cost is increased by 25 times the standard weapon cost for each level that the mount lags behind the weapon's complexity level.
-Ability 7 Scope                                 := Space Object
-Ability 7 Range Formula                         := 0
-Ability 7 Amount 1 Formula                      := 2500 * max((1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0)) - [%Level%], 0)
-Ability 7 Amount 2 Formula                      := 0
-Number of Requirements							:= 2
-Requirements Evaluation Availability            := 2
-Requirements Evaluation Allows Placement        := 1
+Number of Requirements							:= 3
+Requirements Evaluation Availability            := 3
+Requirements Evaluation Allows Placement        := 1, 2
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a direct-fire weapon.
 Requirement 1 Formula                           := Get_Component_Weapon_Type() = "Direct Fire"
-Requirement 2 Description                       := Requires research into Heavy Weaponry.
-Requirement 2 Formula                           := Get_Empire_Tech_Level("Heavy Weaponry") >= [%Level%]
+Requirement 2 Description                       := Requires research into Heavy Weaponry (amount varies by weapon).
+Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0))
+Requirement 3 Description                       := 
+Requirement 3 Formula                           := Get_Empire_Tech_Level("Heavy Weaponry") >= [%Level%]
 
 Long Name                                       := Overthruster Mount
 Short Name                                      := Overthruster Mount
