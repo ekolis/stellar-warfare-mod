@@ -1024,10 +1024,10 @@ Requirement 1 Formula                           := Get_Empire_Tech_Level("Orbita
 Requirement 2 Description                       := Requires at least 2 control centers.
 Requirement 2 Formula                           := (Get_Design_Ability_Component_Count("Control Center") >= 2)
 
-Name                                            := Satellite
-Short Name                                      := Satellite
+Name                                            := Space Outpost
+Short Name                                      := Space Outpost
 Description                                     := Small low-orbit base of operations.
-Code                                            := SA
+Code                                            := SO
 Vehicle Type                                    := Base
 Maximum Level                                   := 5
 Tonnage Space Formula                           := 800
@@ -1047,9 +1047,9 @@ Vehicle Large Portrait Default                  := [%EmpireName%]_LargePortrait_
 Vehicle Inv Portrait Primary                    := [%EmpireName%]_InvPortrait_Satellite.jpg
 Vehicle Inv Portrait Alternate                  := [%EmpireName%]_InvPortrait_MediumSatellite.jpg
 Vehicle Inv Portrait Default                    := [%EmpireName%]_InvPortrait_Satellite.jpg
-Vehicle Inv Configuration Layout Primary        := [%EmpireName%] Satellite Layout
-Vehicle Inv Configuration Layout Alternate      := [%EmpireName%] Medium Satellite Layout
-Vehicle Inv Configuration Layout Default        := [%EmpireName%] Satellite Layout
+Vehicle Inv Configuration Layout Primary        := [%EmpireName%] Spacestation Layout
+Vehicle Inv Configuration Layout Alternate      := [%EmpireName%] Spacestation Layout
+Vehicle Inv Configuration Layout Default        := [%EmpireName%] Spacestation Layout
 Vehicle XFile Class Name Primary                := [%EmpireName%] Satellite
 Vehicle XFile Class Name Alternate              := [%EmpireName%] Medium Satellite
 Vehicle XFile Class Name Default                := [%EmpireName%] Satellite
