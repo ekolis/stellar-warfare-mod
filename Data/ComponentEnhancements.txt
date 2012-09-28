@@ -416,6 +416,45 @@ Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be an engine but not a solar sail.
 Requirement 1 Formula                           := (Does_Component_Have_Ability("Movement Standard")) and (not Does_Component_Have_Ability("Solar Supply Generation"))
 
+Long Name                                       := Stealth Coating
+Short Name                                      := Stealth Coating
+Description                                     := Stealth coating for armor which allows a ship to slip into the blackness of space.
+Picture Number                                  := 0
+Code                                            := S
+Maximum Level                                   := 5
+Can Be Placed On Vehicle Types                  := Ship, Base, Fighter, Mine, Gunboat
+Number Of Abilities                             := 3
+Ability 1 Type                                  := Component - Cost Percent 
+Ability 1 Description                           := Stealth-coated armor is 10 times as expensive as standard armor.
+Ability 1 Scope                                 := Space Object
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 900
+Ability 1 Amount 2 Formula                      := 0
+Ability 2 Type                                  := Combat To Hit Defense
+Ability 2 Description                           := +[%Amount1%] to dodge from Stealth Coating.
+Ability 2 Scope                                 := Space Object
+Ability 2 Range Formula                         := 0
+Ability 2 Amount 1 Formula                      := [%Level%] * 2
+Ability 2 Amount 2 Formula                      := 48
+Ability 3 Type                                  := Cloak Level
+Ability 3 Description                           := Prevents sensor sweeps below level [%Amount1%] when cloaked.
+Ability 3 Scope                                 := Space Object
+Ability 3 Range Formula                         := 0
+Ability 3 Amount 1 Formula                      := 2 + trunc([%Level%] / 2)
+Ability 3 Amount 2 Formula                      := 0
+Number Of Requirements                          := 4
+Requirements Evaluation Availability            := 1
+Requirements Evaluation Allows Placement        := 2, 3, 4
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires equivalent levels in Stealth and Nuclear Physics.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Stealth") >= [%Level%]) and (Get_Empire_Tech_Level("Nuclear Physics") >= [%Level%])
+Requirement 2 Description                       := Component must be armor.
+Requirement 2 Formula                           := Does_Component_Have_Ability("Component - Is Armor Type")
+Requirement 3 Description                       := Hulls of at least 400kT cannot use stealth coating on light armor. Use medium or heavy armor instead.
+Requirement 3 Formula                           := (Get_Design_Ability_Total("AI Tag 03", 1) < 400) or Does_Component_Have_Ability("AI Tag 06") or Does_Component_Have_Ability("AI Tag 07")
+Requirement 4 Description                       := Hulls of at least 1600kT cannot use stealth coating on medium or light armor. Use heavy armor instead.
+Requirement 4 Formula                           := (Get_Design_Ability_Total("AI Tag 03", 1) < 1600) or Does_Component_Have_Ability("AI Tag 07")
+
 =======================================================================================
 *END*
 =======================================================================================
