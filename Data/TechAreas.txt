@@ -415,10 +415,10 @@ Can Be Removed                                  := False
 Unique or Racial Tech                           := True
 Number of Requirements                          := 0
 
-Name                                            := Weapon Batteries
+Name                                            := Weapon Miniaturization
 Group                                           := Weaponry
 Category                                        := Weaponry
-Description                                     := Weapon mounts which are smaller than normal, allowing more guns to fit on a vehicle.
+Description                                     := Weapon mounts which are smaller than normal, allowing them to fit on smaller hulls, or more to fit on the same sized hull.
 Picture Number                                  := 111
 Maximum Level                                   := 5
 Level Cost                                      := 3
