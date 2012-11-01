@@ -1287,7 +1287,7 @@ Requirement 17 Description                       := Vehicle requires additional 
 Requirement 17 Formula                           := Crew Required 2001 Or More
 
 Name                                            := Star Base
-Short Name                                      := Space Station
+Short Name                                      := Star Base
 Description                                     := Colossal orbital base of operations.
 Code                                            := SB
 Vehicle Type                                    := Base
