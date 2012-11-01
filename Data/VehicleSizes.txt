@@ -1067,7 +1067,7 @@ Requirement 7 Description                       := Vehicle requires additional c
 Requirement 7 Formula                           := (Get_Design_Ability_Total("AI Tag 01", 1) - Get_Design_Ability_Total("Crew Quarters", 1) <= 400)
 
 Name                                            := Star Base
-Short Name                                      := Space Station
+Short Name                                      := Star Base
 Description                                     := Colossal orbital base of operations.
 Code                                            := SB
 Vehicle Type                                    := Base
