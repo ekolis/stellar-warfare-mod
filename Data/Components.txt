@@ -2167,7 +2167,7 @@ Weapon Seeker Defense Modifier Formula          := 0
 ///////////////
 // Weapons - Short
 ///////////////
-Name                                            := Minigun
+Name                                            := Autocannon
 Description                                     := Short range rapid fire projectile weapon.
 Picture Number                                  := 91
 Maximum Level                                   := 5
@@ -2216,15 +2216,15 @@ Weapon Space At Range Distance Increment        := 5
 Weapon Space Min Damage At Range                :=    0.0
 Weapon Space Max Damage At Range                :=    0.0
 Weapon Space To Hit Modifier At Range           :=    0.0
-Weapon Space Min Damage Modifier Formula        := iif(([%Range%] < 20) or ([%Range%] > 40), 0, (10 + (2 * [%Level%]))) * 0.25
-Weapon Space Max Damage Modifier Formula        := iif(([%Range%] < 20) or ([%Range%] > 40), 0, (10 + (2 * [%Level%])))
+Weapon Space Min Damage Modifier Formula        := iif(([%Range%] < 20) or ([%Range%] > 40), 0, (6 + (2 * [%Level%]))) * 0.5
+Weapon Space Max Damage Modifier Formula        := iif(([%Range%] < 20) or ([%Range%] > 40), 0, (6 + (2 * [%Level%])))
 Weapon Space To Hit Modifier Formula            := 130 - ([%Range%] / 1)
 Weapon Ground At Range Distance Increment        := 5
 Weapon Ground Min Damage At Range                :=    0.0
 Weapon Ground Max Damage At Range                :=    0.0
 Weapon Ground To Hit Modifier At Range           :=    0.0
-Weapon Ground Min Damage Modifier Formula        := iif(([%Range%] < 20) or ([%Range%] > 40), 0, (10 + (2 * [%Level%]))) * 0.25
-Weapon Ground Max Damage Modifier Formula        := iif(([%Range%] < 20) or ([%Range%] > 40), 0, (10 + (2 * [%Level%])))
+Weapon Ground Min Damage Modifier Formula        := iif(([%Range%] < 20) or ([%Range%] > 40), 0, (6 + (2 * [%Level%]))) * 0.5
+Weapon Ground Max Damage Modifier Formula        := iif(([%Range%] < 20) or ([%Range%] > 40), 0, (6 + (2 * [%Level%])))
 Weapon Ground To Hit Modifier Formula            := 130 - ([%Range%] / 1)
 Weapon Reload Rate MS Formula                   := 500
 Weapon Display Type                             := Bolt
