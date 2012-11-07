@@ -1,0 +1,292 @@
+Acamar
+Achernar
+Achird
+Acrux
+Acubens
+Adara
+Adhafera
+Adhil
+Agena
+Ain
+Ain al Rami
+Al Anz
+Al Kalb al Rai
+Al Minliar al Asad
+Al Minliar al Shuja
+Aladfar
+Alathfar
+Albaldah
+Albali
+Albireo
+Alchiba
+Alcor
+Alcyone
+Aldebaran
+Alderamin
+Aldhibah
+Alfecca Meridiana
+Alfirk
+Algenib
+Algieba
+Algol
+Algorab
+Alhena
+Alioth
+Alkaid
+Alkalurops
+Alkes
+Alkurhah
+Almaak
+Alnair
+Alnath
+Alnilam
+Alnitak
+Alniyat
+Alphard
+Alphekka
+Alpheratz
+Alrai
+Alrisha
+Alsafi
+Alsciaukat
+Alshain
+Alshat
+Alsuhail
+Altair
+Altarf
+Alterf
+Aludra
+Alula Australis
+Alula Borealis
+Alya
+Alzirr
+Ancha
+Angetenar
+Ankaa
+Anser
+Antares
+Arcturus
+Arkab Posterior
+Arkab Prior
+Arneb
+Arrakis
+Ascella
+Asellus Australis
+Asellus Borealis
+Asellus Primus
+Asellus Secondus
+Asellus Tertius
+Asterope
+Atik
+Atlas
+Auva
+Avior
+Azelfafage
+Azha
+Azmidiske
+Baham
+Baten Kaitos
+Becrux
+Beid
+Bellatrix
+Betelgeuse
+Botein
+Brachium
+Canopus
+Capella
+Caph
+Castor
+Cebalrai
+Celaeno
+Chara
+Chort
+Cor Caroli
+Cursa
+Dabih
+Deneb
+Deneb Algedi
+Deneb Dulfim
+Deneb Kaitos Shemali
+Deneb el Okab
+Denebola
+Dheneb
+Diadem
+Diphda
+Dschubba
+Dsiban
+Dubhe
+Ed Asich
+Electra
+Elnath
+Enif
+Etamin
+Fomalhaut
+Fornacis
+Fum al Samakah
+Furud
+Gacrux
+Gianfar
+Gienah Cygni
+Gienah Ghurab
+Gomeisa
+Gorgonea Quarta
+Gorgonea Secunda
+Gorgonea Tertia
+Graffias
+Grafias
+Grumium
+Hadar
+Haedi
+Hamal
+Hassaleh
+Heze
+Hoedus
+Homam
+Hyadum
+Hydrus
+Izar
+Jabbah
+Kaffaljidhma
+Kajam
+Kaus Australis
+Kaus Borealis
+Kaus Meridionalis
+Keid
+Kitalpha
+Kocab
+Kornephoros
+Kraz
+Kuma
+Lesath
+Luyten
+Maasym
+Maia
+Marfak
+Marfic
+Marfik
+Markab
+Matar
+Mebsuta
+Megrez
+Meissa
+Mekbuda
+Menkalinan
+Menkar
+Menkent
+Menkib
+Merak
+Merga
+Merope
+Mesarthim
+Metallah
+Miaplacidus
+Minkar
+Mintaka
+Mira
+Mirach
+Miram
+Mirphak
+Mizar
+Mufrid
+Muliphen
+Murzim
+Muscida
+Nair al Saif
+Naos
+Nash
+Nashira
+Nekkar
+Nihal
+Nodus Secundus
+Nunki
+Nusakan
+Peacock
+Phad
+Phaet
+Pherkad
+Pherkad Minor
+Pleione
+Polaris
+Polaris Australis
+Pollux
+Porrima
+Praecipua
+Prima Giedi
+Procyon
+Propus
+Rana
+Ras Elased Australis
+Ras Elased Borealis
+Rasalgethi
+Rasalhague
+Rastaban
+Regulus
+Rigel
+Rigel Kentaurus
+Rijl Al Awwa
+Rotanev
+Ruchba
+Ruchbah
+Rukbat
+Sabik
+Sadalachbia
+Sadalmelik
+Sadalsuud
+Sadr
+Saiph
+Salm
+Sargas
+Sarin
+Sceptrum
+Scheat
+Secunda Giedi
+Segin
+Seginus
+Sham
+Sharatan
+Shaula
+Shedir
+Sheliak
+Sirius
+Situla
+Skat
+Spica
+Sterope Ii
+Sualocin
+Subra
+Suhail al Muhlif
+Sulafat
+Syrma
+Tabit
+Talitha
+Tania Australis
+Tania Borealis
+Tarazed
+Taygeta
+Tegmen
+Tejat Posterior
+Terebellum
+Thabit
+Theemim
+Thuban
+Torcularis Septentrionalis
+Turais
+Tyl
+Unukalhai
+Vega
+Vindemiatrix
+Wasat
+Wezen
+Wezn
+Yed Posterior
+Yed Prior
+Yildun
+Zaniah
+Zaurak
+Zavijah
+Zibal
+Zosma
+Zuben Elakrab
+Zuben Elakribi
+Zuben Elgenubi
+Zuben Elschemali
