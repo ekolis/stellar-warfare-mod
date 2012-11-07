@@ -1,0 +1,33 @@
+
+                                 FQM 5 Credits
+________________________________________________________________________________
+
+
+FQM was created by Fyron (aka Nolan Kelly) for use with Space Empires 5. Various
+people have contributed artwork and textures to the mod. You may direct any
+inquiries to nolan.kelly@gmail.com .
+
+Contributors:
+    Captain Kwok
+        PlanetGlow texture.
+        StarGlow texture.
+
+    David Gervais
+        Venus fly trap photo adapted for InfestationFlowers.bmp.
+
+    Lacota
+        Planet and ring textures.
+
+    MasterChiToes
+        Planet textures.
+
+    Suicide Junkie
+        ElectroStorm textures and animation effects.
+        Swirling Warp Point textures (WPC###) and animation effects.
+        Blackbody black hole textures and animation effects.
+
+    Syann
+        Planet Surface graphics.
+
+    Astronomical Community
+        Real star system names.

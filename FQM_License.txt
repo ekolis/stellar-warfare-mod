@@ -1,0 +1,27 @@
+
+                        FQM 5 Creative Commons License
+                     Attribution-NonCommercial 3.0 Unported
+________________________________________________________________________________
+
+
+You are free:
+
+    * to Share — to copy, distribute and transmit the work.
+
+    * to Remix — to adapt the work for use in other Space Empires (tm) mods.
+
+Under the following conditions:
+
+    * Attribution. You must attribute the work by including the FQM_Credits.txt 
+    file in your mod.
+
+    * Noncommercial. You may not use this work for commercial purposes.
+
+    * For any reuse or distribution, you must make clear to others the license 
+    terms of this work.
+
+    * Any of the above conditions can be waived if you get permission from the 
+    copyright holder.
+
+    * Apart from the remix rights granted under this license, nothing in this 
+    license impairs or restricts the author's moral rights.

@@ -17,10 +17,35 @@ Name                := Formula High Level Cost
 Formula             := iif([%Level%] = 1, 5, [%Level%]) ^ sqrt([%Base_Cost%] + 2) * 100
 
 Name                := Formula Planet Gravity
-Formula             := Random(([%PlanetSize%] - 1) * 0.50, (([%PlanetSize%] - 1) * 0.50) + 0.50) 
+Formula             := ([%PlanetSize%]) * ([%PlanetSize%]) / 10 * random(0.8, 1.25)
+
+Name                := Formula Planet Gas Gravity
+Formula             := ([%PlanetSize%]) * ([%PlanetSize%]) / 2.5 * random(0.8, 1.25)
 
 Name                := Formula Planet Temperature
-Formula             := IIF([%HexDistanceToCenter%] <= 3, 500 - ([%HexDistanceToCenter%] * 100) - Random(0, 100), IIF([%HexDistanceToCenter%] >= 7, 0 - ([%HexDistanceToCenter%] * 20) - Random(0, 50), Random(-50, 50))) + (([%NumberOfStars%] - 1) * 100)
+Formula             := MAX(-240, 100 - ([%HexDistanceToCenter%] * [%HexDistanceToCenter%] * 3) + Random(-50, 25)) + (([%NumberOfStars%] - 1) * 50)
+
+// Terr planets actually use generic Planet Temperature formula, due to SE5 oddities.
+Name                := Formula Planet Terr Temperature
+Formula             := MAX(-240, 100 - ([%HexDistanceToCenter%] * [%HexDistanceToCenter%] * 3) + Random(-50, 25)) + (([%NumberOfStars%] - 1) * 50)
+
+Name                := Formula Planet Ven Temperature
+Formula             := MAX(-240, 360 - ([%HexDistanceToCenter%] * [%HexDistanceToCenter%] * 3) + Random(-50, 25)) + (([%NumberOfStars%] - 1) * 50)
+
+Name                := Formula Planet Moon Temperature
+Formula             := MAX(-240, 80 - ([%HexDistanceToCenter%] * [%HexDistanceToCenter%] * 3) + Random(-50, 25)) + (([%NumberOfStars%] - 1) * 50)
+
+Name                := Formula Planet Ice Temperature
+Formula             := MAX(-240, 20 - ([%HexDistanceToCenter%] * [%HexDistanceToCenter%] * 3) + Random(-50, 25)) + (([%NumberOfStars%] - 1) * 20)
+
+Name                := Formula Planet Gas Temperature
+Formula             := MAX(-240, 40 - ([%HexDistanceToCenter%] * [%HexDistanceToCenter%] * 3) + Random(-50, 25)) + (([%NumberOfStars%] - 1) * 25)
+
+Name                := Formula Planet Radiation
+Formula             := Random(0, 200) + (([%NumberOfStars%] - 1) * Random(25, 75) * 2)
+
+Name                := Formula Planet None Radiation
+Formula             := Random(0, 200) + (([%NumberOfStars%] - 1) * Random(25, 75) * 5)
 
 Name                := Formula Planet Radiation
 Formula             := Random(0, 300) + IIF([%PlanetAtmosphereName%] = "None", Random(0, 200), 0) + (([%NumberOfStars%] - 1) * Random(50, 100))
