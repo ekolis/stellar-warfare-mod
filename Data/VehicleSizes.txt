@@ -644,8 +644,8 @@ Requirement 1 Description                       := Requires equivalent level in 
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Planetary Industry") >= [%Level%]
 Requirement 2 Description                       := Requires at least 1 control center.
 Requirement 2 Formula                           := (Get_Design_Ability_Component_Count("Control Center") >= 1)
-Requirement 3 Description                       := Requires at least 400kT worth of cargo bays, spacedocks, construction/repair components, and/or colony modules.
-Requirement 3 Formula                           := (Get_Design_Specific_Component_Count("Cargo Bay") * 100) + (Get_Design_Specific_Component_Count("Mobile Spacedock") * 1000) + (Get_Design_Specific_Component_Count("Mobile Shipyard") * 400) + (Get_Design_Specific_Component_Count("Repair Bay") * 400) + ((Get_Design_Ability_Component_Count("Planet Colonize Type 1") + Get_Design_Ability_Component_Count("Planet Colonize Type 2")) * 300) >= 400
+Requirement 3 Description                       := Requires at least 400kT worth of cargo bays, spacedocks, construction/repair components, colony modules, and/or remote extractors.
+Requirement 3 Formula                           := (Get_Design_Specific_Component_Count("Cargo Bay") * 100) + (Get_Design_Specific_Component_Count("Mobile Spacedock") * 1000) + (Get_Design_Specific_Component_Count("Mobile Shipyard") * 400) + (Get_Design_Specific_Component_Count("Repair Bay") * 400) + ((Get_Design_Ability_Component_Count("Planet Colonize Type 1") + Get_Design_Ability_Component_Count("Planet Colonize Type 2")) * 300) + (Get_Design_Specific_Component_Count("Remote Extractor") * 100) >= 400
 Requirement 4 Description                       := Vehicle requires additional crew (5 or fewer) to operate its internal systems.
 Requirement 4 Formula                           := Crew Required 5 Or Less
 Requirement 5 Description                       := Vehicle requires additional crew (6 to 10) to operate its internal systems.
@@ -777,8 +777,8 @@ Requirement 1 Description                       := Requires equivalent level in 
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Spaceborne Industry") >= [%Level%]
 Requirement 2 Description                       := Requires at least 3 control centers.
 Requirement 2 Formula                           := (Get_Design_Ability_Component_Count("Control Center") >= 3)
-Requirement 3 Description                       := Requires at least 1000kT worth of cargo bays, spacedocks, construction/repair components, and/or colony modules.
-Requirement 3 Formula                           := (Get_Design_Specific_Component_Count("Cargo Bay") * 100) + (Get_Design_Specific_Component_Count("Mobile Spacedock") * 1000) + (Get_Design_Specific_Component_Count("Mobile Shipyard") * 400) + (Get_Design_Specific_Component_Count("Repair Bay") * 400) + ((Get_Design_Ability_Component_Count("Planet Colonize Type 1") + Get_Design_Ability_Component_Count("Planet Colonize Type 2")) * 300) >= 1000
+Requirement 3 Description                       := Requires at least 1000kT worth of cargo bays, spacedocks, construction/repair components, colony modules, and/or remote extractors.
+Requirement 3 Formula                           := (Get_Design_Specific_Component_Count("Cargo Bay") * 100) + (Get_Design_Specific_Component_Count("Mobile Spacedock") * 1000) + (Get_Design_Specific_Component_Count("Mobile Shipyard") * 400) + (Get_Design_Specific_Component_Count("Repair Bay") * 400) + ((Get_Design_Ability_Component_Count("Planet Colonize Type 1") + Get_Design_Ability_Component_Count("Planet Colonize Type 2")) * 300) + (Get_Design_Specific_Component_Count("Remote Extractor") * 100) >= 1000
 Requirement 4 Description                       := Vehicle requires additional crew (5 or fewer) to operate its internal systems.
 Requirement 4 Formula                           := Crew Required 5 Or Less
 Requirement 5 Description                       := Vehicle requires additional crew (6 to 10) to operate its internal systems.
