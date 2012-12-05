@@ -40,11 +40,11 @@ Ability 4 Range Formula                         := 0
 Ability 4 Amount 1 Formula                      := -90
 Ability 4 Amount 2 Formula                      := 0
 Ability 5 Type                                  := Component - Cost Percent 
-Ability 5 Description                           := Cost: x10%
+Ability 5 Description                           := Cost: x[%Amount2%]%
 Ability 5 Scope                                 := Space Object
 Ability 5 Range Formula                         := 0
-Ability 5 Amount 1 Formula                      := -90
-Ability 5 Amount 2 Formula                      := 0
+Ability 5 Amount 1 Formula                      := -95 + (((5 - [%Level%]) ^ 2) * 1.25)
+Ability 5 Amount 2 Formula                      := 5 + (((5 - [%Level%]) ^ 2) * 1.25)
 Ability 6 Type                                  := Component - Supply Usage Percent 
 Ability 6 Description                           := Supply usage: x20%
 Ability 6 Scope                                 := Space Object
@@ -57,23 +57,21 @@ Ability 7 Scope                                 := Space Object
 Ability 7 Range Formula                         := 0
 Ability 7 Amount 1 Formula                      := -50
 Ability 7 Amount 2 Formula                      := 0
-Number of Requirements							:= 3
-Requirements Evaluation Availability            := 3
-Requirements Evaluation Allows Placement        := 1, 2
+Number of Requirements							:= 2
+Requirements Evaluation Availability            := 2
+Requirements Evaluation Allows Placement        := 1
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a direct-fire weapon.
 Requirement 1 Formula                           := Get_Component_Weapon_Type() = "Direct Fire"
-Requirement 2 Description                       := Requires research into Weapon Miniaturization (amount varies by weapon).
-Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0))
-Requirement 3 Description                       := 
-Requirement 3 Formula                           := Get_Empire_Tech_Level("Weapon Miniaturization") >= [%Level%]
+Requirement 2 Description                       := Requires research into Weapon Miniaturization.
+Requirement 2 Formula                           := Get_Empire_Tech_Level("Weapon Miniaturization") >= [%Level%]
 
 Long Name                                       := Bombardment Mount
 Short Name                                      := Bombardment Mount
 Description                                     := Miniaturized version of a standard weapon used by fighters and gunboats.
 Picture Number                                  := 2
 Code                                            := B
-Maximum Level                                   := 1
+Maximum Level                                   := 5
 Can Be Placed On Vehicle Types                  := Fighter, Gunboat
 Number Of Abilities                             := 7
 Ability 1 Type                                  := Component - Weapon Damage Percent
@@ -101,11 +99,11 @@ Ability 4 Range Formula                         := 0
 Ability 4 Amount 1 Formula                      := -80
 Ability 4 Amount 2 Formula                      := 0
 Ability 5 Type                                  := Component - Cost Percent 
-Ability 5 Description                           := Cost: x20%
+Ability 5 Description                           := Cost: x[%Amount2%]%
 Ability 5 Scope                                 := Space Object
 Ability 5 Range Formula                         := 0
-Ability 5 Amount 1 Formula                      := -80
-Ability 5 Amount 2 Formula                      := 0
+Ability 5 Amount 1 Formula                      := -90 + (((5 - [%Level%]) ^ 2) * 2.5)
+Ability 5 Amount 2 Formula                      := 10 + (((5 - [%Level%]) ^ 2) * 2.5)
 Ability 6 Type                                  := Component - Supply Usage Percent 
 Ability 6 Description                           := Supply usage: x40%
 Ability 6 Scope                                 := Space Object
@@ -118,16 +116,14 @@ Ability 7 Scope                                 := Space Object
 Ability 7 Range Formula                         := 0
 Ability 7 Amount 1 Formula                      := 0
 Ability 7 Amount 2 Formula                      := 0
-Number of Requirements							:= 3
-Requirements Evaluation Availability            := 3
-Requirements Evaluation Allows Placement        := 1, 2
+Number of Requirements							:= 2
+Requirements Evaluation Availability            := 2
+Requirements Evaluation Allows Placement        := 1
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a seeking or warhead weapon.
 Requirement 1 Formula                           := (Get_Component_Weapon_Type() = "Seeking") or (Get_Component_Weapon_Type() = "Warhead")
-Requirement 2 Description                       := Requires research into Weapon Miniaturization (amount varies by weapon).
-Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0))
-Requirement 3 Description                       := 
-Requirement 3 Formula                           := Get_Empire_Tech_Level("Weapon Miniaturization") >= [%Level%]
+Requirement 2 Description                       := Requires research into Weapon Miniaturization.
+Requirement 2 Formula                           := Get_Empire_Tech_Level("Weapon Miniaturization") >= [%Level%]
 
 
 Long Name                                       := Artillery Mount
@@ -137,7 +133,7 @@ Picture Number                                  := 7
 Code                                            := A
 Maximum Level                                   := 5
 Can Be Placed On Vehicle Types                  := Ship, Base, Troop, Gunboat
-Number Of Abilities                             := 5
+Number Of Abilities                             := 4
 Ability 1 Type                                  := Component - Weapon Range
 Ability 1 Description                           := Range and blind spot: +60km.
 Ability 1 Scope                                 := Space Object
@@ -150,38 +146,30 @@ Ability 2 Scope                                 := Space Object
 Ability 2 Range Formula                         := 0
 Ability 2 Amount 1 Formula                      := 10 * [%Level%] - 60
 Ability 2 Amount 2 Formula                      := 0
-Ability 3 Type                                  := Component - Tonnage Space Taken Percent 
-Ability 3 Description                           := Size: +[%Amount1%]%.
+Ability 3 Type                                  := Component - Cost Percent 
+Ability 3 Description                           := Cost: +[%Amount1%]%.
 Ability 3 Scope                                 := Space Object
 Ability 3 Range Formula                         := 0
-Ability 3 Amount 1 Formula                      := -5 * [%Level%] + 30
+Ability 3 Amount 1 Formula                      := ((5 - [%Level%]) ^ 2) * 5
 Ability 3 Amount 2 Formula                      := 0
-Ability 4 Type                                  := Component - Cost Percent 
-Ability 4 Description                           := Cost: +[%Amount1%]%.
+Ability 4 Type                                  := Component - Weapon To Hit Percent
+Ability 4 Description                           := Accuracy: +[%Amount1%]%.
 Ability 4 Scope                                 := Space Object
 Ability 4 Range Formula                         := 0
-Ability 4 Amount 1 Formula                      := -5 * [%Level%] + 30
+Ability 4 Amount 1 Formula                      := 5 * [%Level%] + 30
 Ability 4 Amount 2 Formula                      := 0
-Ability 5 Type                                  := Component - Weapon To Hit Percent
-Ability 5 Description                           := Accuracy: +[%Amount1%]%.
-Ability 5 Scope                                 := Space Object
-Ability 5 Range Formula                         := 0
-Ability 5 Amount 1 Formula                      := 5 * [%Level%] + 30
-Ability 5 Amount 2 Formula                      := 0
-Number of Requirements							:= 3
-Requirements Evaluation Availability            := 3
-Requirements Evaluation Allows Placement        := 1, 2
+Number of Requirements							:= 2
+Requirements Evaluation Availability            := 2
+Requirements Evaluation Allows Placement        := 1
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a direct-fire weapon.
 Requirement 1 Formula                           := Get_Component_Weapon_Type() = "Direct Fire"
-Requirement 2 Description                       := Requires research into Range Enhancement (amount varies by weapon).
-Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0))
-Requirement 3 Description                       := 
-Requirement 3 Formula                           := Get_Empire_Tech_Level("Range Enhancement") >= [%Level%]
+Requirement 2 Description                       := Requires research into Range Enhancement.
+Requirement 2 Formula                           := Get_Empire_Tech_Level("Range Enhancement") >= [%Level%]
 
 Long Name                                       := Carronade Mount
 Short Name                                      := Carronade Mount
-Description                                     := Weapon mount which emphasizes short range and high destructive power.
+Description                                     := Weapon mount which emphasizes high destructive power at short range.
 Picture Number                                  := 11
 Code                                            := C
 Maximum Level                                   := 5
@@ -203,13 +191,13 @@ Ability 3 Type                                  := Component - Tonnage Space Tak
 Ability 3 Description                           := Size: +[%Amount1%]%.
 Ability 3 Scope                                 := Space Object
 Ability 3 Range Formula                         := 0
-Ability 3 Amount 1 Formula                      := -5 * [%Level%] + 30
+Ability 3 Amount 1 Formula                      := 10
 Ability 3 Amount 2 Formula                      := 0
 Ability 4 Type                                  := Component - Cost Percent 
 Ability 4 Description                           := Cost: +[%Amount1%]%.
 Ability 4 Scope                                 := Space Object
 Ability 4 Range Formula                         := 0
-Ability 4 Amount 1 Formula                      := -5 * [%Level%] + 30
+Ability 4 Amount 1 Formula                      := ((5 - [%Level%]) ^ 2) * 5
 Ability 4 Amount 2 Formula                      := 0
 Ability 5 Type                                  := Component - Weapon To Hit Percent
 Ability 5 Description                           := Accuracy: [%Amount1%]%.
@@ -217,16 +205,14 @@ Ability 5 Scope                                 := Space Object
 Ability 5 Range Formula                         := 0
 Ability 5 Amount 1 Formula                      := 5 * [%Level%] - 30
 Ability 5 Amount 2 Formula                      := 0
-Number of Requirements							:= 3
-Requirements Evaluation Availability            := 3
-Requirements Evaluation Allows Placement        := 1, 2
+Number of Requirements							:= 2
+Requirements Evaluation Availability            := 2
+Requirements Evaluation Allows Placement        := 1
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a direct-fire weapon.
 Requirement 1 Formula                           := Get_Component_Weapon_Type() = "Direct Fire"
-Requirement 2 Description                       := Requires research into Weapon Overloading (amount varies by weapon).
-Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0))
-Requirement 3 Description                       := 
-Requirement 3 Formula                           := Get_Empire_Tech_Level("Weapon Overloading") >= [%Level%]
+Requirement 2 Description                       := Requires research into Weapon Overloading.
+Requirement 2 Formula                           := Get_Empire_Tech_Level("Weapon Overloading") >= [%Level%]
 
 Long Name                                       := Battery Mount
 Short Name                                      := Battery Mount
@@ -254,16 +240,14 @@ Ability 3 Scope                                 := Space Object
 Ability 3 Range Formula                         := 0
 Ability 3 Amount 1 Formula                      := 15 * [%Level%] - 90
 Ability 3 Amount 2 Formula                      := 0
-Number of Requirements							:= 3
-Requirements Evaluation Availability            := 3
-Requirements Evaluation Allows Placement        := 1, 2
+Number of Requirements							:= 2
+Requirements Evaluation Availability            := 2
+Requirements Evaluation Allows Placement        := 1
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a direct-fire weapon.
 Requirement 1 Formula                           := Get_Component_Weapon_Type() = "Direct Fire"
-Requirement 2 Description                       := Requires research into Weapon Miniaturization (amount varies by weapon).
-Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0))
-Requirement 3 Description                       := 
-Requirement 3 Formula                           := Get_Empire_Tech_Level("Weapon Miniaturization") >= [%Level%]
+Requirement 2 Description                       := Requires research into Weapon Miniaturization.
+Requirement 2 Formula                           := Get_Empire_Tech_Level("Weapon Miniaturization") >= [%Level%]
 
 Long Name                                       := Heavy Mount
 Short Name                                      := Heavy Mount
@@ -295,8 +279,8 @@ Ability 4 Type                                  := Component - Cost Percent
 Ability 4 Description                           := Cost: x[%Amount2%].
 Ability 4 Scope                                 := Space Object
 Ability 4 Range Formula                         := 0
-Ability 4 Amount 1 Formula                      := -500 * [%Level%] + 5400
-Ability 4 Amount 2 Formula                      := -5 * [%Level%] + 55
+Ability 4 Amount 1 Formula                      := (((((5 - [%Level%]) ^ 2) * 4) + 8) * 100) - 100
+Ability 4 Amount 2 Formula                      := ((((5 - [%Level%]) ^ 2) * 4) + 8)
 Ability 5 Type                                  := Component - Weapon To Hit Percent
 Ability 5 Description                           := Accuracy: [%Amount1%].
 Ability 5 Scope                                 := Space Object
@@ -309,16 +293,14 @@ Ability 6 Scope                                 := Space Object
 Ability 6 Range Formula                         := 0
 Ability 6 Amount 1 Formula                      := 1900
 Ability 6 Amount 2 Formula                      := 0
-Number of Requirements							:= 3
-Requirements Evaluation Availability            := 3
-Requirements Evaluation Allows Placement        := 1, 2
+Number of Requirements							:= 2
+Requirements Evaluation Availability            := 2
+Requirements Evaluation Allows Placement        := 1
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a direct-fire weapon.
 Requirement 1 Formula                           := Get_Component_Weapon_Type() = "Direct Fire"
-Requirement 2 Description                       := Requires research into Heavy Weaponry (amount varies by weapon).
-Requirement 2 Formula                           := [%Level%] >= (1 + iif(Does_Component_Have_Ability("AI Tag 11"), 1, 0) + iif(Does_Component_Have_Ability("AI Tag 12"), 2, 0))
-Requirement 3 Description                       := 
-Requirement 3 Formula                           := Get_Empire_Tech_Level("Heavy Weaponry") >= [%Level%]
+Requirement 2 Description                       := Requires research into Heavy Weaponry.
+Requirement 2 Formula                           := Get_Empire_Tech_Level("Heavy Weaponry") >= [%Level%]
 
 Long Name                                       := Overthruster Mount
 Short Name                                      := Overthruster Mount
