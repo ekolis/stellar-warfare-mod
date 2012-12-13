@@ -327,8 +327,8 @@ Requirement 1 Description                       := Requires level 1 Evolutionary
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Evolutionary Transcendence") >= 1
 
 Name                                            := Sensors
-Group                                           := Weaponry
-Category                                        := Weaponry
+Group                                           := Ship Systems
+Category                                        := Ship Systems
 Description                                     := Means of detecting and tracking alien vessels.
 Picture Number                                  := 65
 Maximum Level                                   := 7
