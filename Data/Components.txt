@@ -3291,7 +3291,7 @@ Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level plus 2 in Armor.
-Requirement 1 Formula                           := Get_Empire_Tech_Level("Armor") >= [%Level%] + 1
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Armor") >= [%Level%] + 2
 Number Of Abilities                             := 2
 Ability 1 Type                                  := Component - Is Armor Type
 Ability 1 Description                           := Titanium Armor provides armor protection.
@@ -3327,8 +3327,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent tech level plus 2 in Armor, and either Planetary Industry level 5 or Orbital Industry level 1.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 2) and ((Get_Empire_Tech_Level("Planetary Industry")) >= 5 or (Get_Empire_Tech_Level("Orbital Industry") >= 1))
+Requirement 1 Description                       := Requires equivalent tech level plus 1 in Armor, and either Planetary Industry level 5 or Orbital Industry level 1.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 1) and ((Get_Empire_Tech_Level("Planetary Industry")) >= 5 or (Get_Empire_Tech_Level("Orbital Industry") >= 1))
 Number Of Abilities                             := 2
 Ability 1 Type                                  := Component - Is Armor Type
 Ability 1 Description                           := Provides armor protection.
@@ -3364,7 +3364,7 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent tech level plus 3 in Armor, and either Planetary Industry level 5 or Orbital Industry level 1.
+Requirement 1 Description                       := Requires equivalent tech level plus 2 in Armor, and either Planetary Industry level 5 or Orbital Industry level 1.
 Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 2) and ((Get_Empire_Tech_Level("Planetary Industry")) >= 5 or (Get_Empire_Tech_Level("Orbital Industry") >= 1))
 Number Of Abilities                             := 2
 Ability 1 Type                                  := Component - Is Armor Type
@@ -3401,8 +3401,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent tech level plus 4 in Armor, and either Planetary Industry level 5 or Orbital Industry level 1.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 2) and ((Get_Empire_Tech_Level("Planetary Industry")) >= 5 or (Get_Empire_Tech_Level("Orbital Industry") >= 1))
+Requirement 1 Description                       := Requires equivalent tech level plus 3 in Armor, and either Planetary Industry level 5 or Orbital Industry level 1.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 3) and ((Get_Empire_Tech_Level("Planetary Industry")) >= 5 or (Get_Empire_Tech_Level("Orbital Industry") >= 1))
 Number Of Abilities                             := 2
 Ability 1 Type                                  := Component - Is Armor Type
 Ability 1 Description                           := Provides armor protection.
@@ -3438,7 +3438,7 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent tech level plus 4 in Armor, and either Orbital Industry level 5 or Spaceborne Industry level 1.
+Requirement 1 Description                       := Requires equivalent tech level plus 2 in Armor, and either Orbital Industry level 5 or Spaceborne Industry level 1.
 Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 2) and ((Get_Empire_Tech_Level("Orbital Industry")) >= 5 or (Get_Empire_Tech_Level("Spaceborne Industry") >= 1))
 Number Of Abilities                             := 2
 Ability 1 Type                                  := Component - Is Armor Type
@@ -3475,8 +3475,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent tech level plus 5 in Armor, and either Orbital Industry level 5 or Spaceborne Industry level 1.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 2) and ((Get_Empire_Tech_Level("Orbital Industry")) >= 5 or (Get_Empire_Tech_Level("Spaceborne Industry") >= 1))
+Requirement 1 Description                       := Requires equivalent tech level plus 3 in Armor, and either Orbital Industry level 5 or Spaceborne Industry level 1.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 3) and ((Get_Empire_Tech_Level("Orbital Industry")) >= 5 or (Get_Empire_Tech_Level("Spaceborne Industry") >= 1))
 Number Of Abilities                             := 2
 Ability 1 Type                                  := Component - Is Armor Type
 Ability 1 Description                           := Provides armor protection.
@@ -3512,8 +3512,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent tech level plus 6 in Armor, and either Orbital Industry level 5 or Spaceborne Industry level 1.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 2) and ((Get_Empire_Tech_Level("Orbital Industry")) >= 5 or (Get_Empire_Tech_Level("Spaceborne Industry") >= 1))
+Requirement 1 Description                       := Requires equivalent tech level plus 4 in Armor, and either Orbital Industry level 5 or Spaceborne Industry level 1.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 4) and ((Get_Empire_Tech_Level("Orbital Industry")) >= 5 or (Get_Empire_Tech_Level("Spaceborne Industry") >= 1))
 Number Of Abilities                             := 2
 Ability 1 Type                                  := Component - Is Armor Type
 Ability 1 Description                           := Provides armor protection.
@@ -3549,8 +3549,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent tech level plus 3 in Armor and level 4 in Genetic Manipulation.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 3) and (Get_Empire_Tech_Level("Genetic Manipulation") >= 4)
+Requirement 1 Description                       := Requires equivalent tech level plus 2 in Armor and level 4 in Genetic Manipulation.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 2) and (Get_Empire_Tech_Level("Genetic Manipulation") >= 4)
 Number Of Abilities                             := 3
 Ability 1 Type                                  := Component - Is Armor Type
 Ability 1 Description                           := Provides armor protection.
@@ -3592,7 +3592,7 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent tech level plus 4 in Armor and level 4 in Genetic Manipulation.
+Requirement 1 Description                       := Requires equivalent tech level plus 3 in Armor and level 4 in Genetic Manipulation.
 Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 3) and (Get_Empire_Tech_Level("Genetic Manipulation") >= 4)
 Number Of Abilities                             := 3
 Ability 1 Type                                  := Component - Is Armor Type
@@ -3635,8 +3635,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent tech level plus 5 in Armor and level 4 in Genetic Manipulation.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 3) and (Get_Empire_Tech_Level("Genetic Manipulation") >= 4)
+Requirement 1 Description                       := Requires equivalent tech level plus 4 in Armor and level 4 in Genetic Manipulation.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 4) and (Get_Empire_Tech_Level("Genetic Manipulation") >= 4)
 Number Of Abilities                             := 3
 Ability 1 Type                                  := Component - Is Armor Type
 Ability 1 Description                           := Provides armor protection.
@@ -3678,8 +3678,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent tech level plus 3 in Armor and level 4 in Quantum Physics.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 3) and (Get_Empire_Tech_Level("Quantum Physics") >= 4)
+Requirement 1 Description                       := Requires equivalent tech level plus 2 in Armor and level 4 in Quantum Physics.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 2) and (Get_Empire_Tech_Level("Quantum Physics") >= 4)
 Number Of Abilities                             := 2
 Ability 1 Type                                  := Component - Is Armor Type
 Ability 1 Description                           := Provides armor protection.
@@ -3715,7 +3715,7 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent tech level plus 4 in Armor and level 4 in Quantum Physics.
+Requirement 1 Description                       := Requires equivalent tech level plus 3 in Armor and level 4 in Quantum Physics.
 Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 3) and (Get_Empire_Tech_Level("Quantum Physics") >= 4)
 Number Of Abilities                             := 2
 Ability 1 Type                                  := Component - Is Armor Type
@@ -3752,8 +3752,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent tech level plus 5 in Armor and level 4 in Quantum Physics.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 3) and (Get_Empire_Tech_Level("Quantum Physics") >= 4)
+Requirement 1 Description                       := Requires equivalent tech level plus 4 in Armor and level 4 in Quantum Physics.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 4) and (Get_Empire_Tech_Level("Quantum Physics") >= 4)
 Number Of Abilities                             := 2
 Ability 1 Type                                  := Component - Is Armor Type
 Ability 1 Description                           := Provides armor protection.
@@ -4028,8 +4028,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent level plus 2 in Sensors and equivalent level in Quantum Physics.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 2) and (Get_Empire_Tech_Level("Quantum Physics") >= [%Level%])
+Requirement 1 Description                       := Requires equivalent level plus 1 in Sensors and equivalent level in Quantum Physics.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 1) and (Get_Empire_Tech_Level("Quantum Physics") >= [%Level%])
 Number Of Abilities                             := 4
 Ability 1 Type                                  := Sight Level
 Ability 1 Description                           := Performs sensor sweeps at level [%Amount1%].
@@ -4077,8 +4077,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent level plus 2 in Sensors and equivalent level in Quantum Physics.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 2) and (Get_Empire_Tech_Level("Quantum Physics") >= [%Level%])
+Requirement 1 Description                       := Requires equivalent level plus 1 in Sensors and equivalent level in Quantum Physics.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 1) and (Get_Empire_Tech_Level("Quantum Physics") >= [%Level%])
 Number Of Abilities                             := 6
 Ability 1 Type                                  := Sight Level
 Ability 1 Description                           := Performs sensor sweeps at level [%Amount1%].
@@ -4138,8 +4138,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent level plus 4 in Sensors and equivalent level in Subspace Physics.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 4) and (Get_Empire_Tech_Level("Subspace Physics") >= [%Level%])
+Requirement 1 Description                       := Requires equivalent level plus 2 in Sensors and equivalent level in Subspace Physics.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 2) and (Get_Empire_Tech_Level("Subspace Physics") >= [%Level%])
 Number Of Abilities                             := 5
 Ability 1 Type                                  := Sight Level
 Ability 1 Description                           := Performs sensor sweeps at level [%Amount1%].
@@ -4193,8 +4193,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent level plus 4 in Sensors and equivalent level in Subspace Physics.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 4) and (Get_Empire_Tech_Level("Subspace Physics") >= [%Level%])
+Requirement 1 Description                       := Requires equivalent level plus 2 in Sensors and equivalent level in Subspace Physics.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 2) and (Get_Empire_Tech_Level("Subspace Physics") >= [%Level%])
 Number Of Abilities                             := 6
 Ability 1 Type                                  := Sight Level
 Ability 1 Description                           := Performs sensor sweeps at level [%Amount1%].
@@ -4254,8 +4254,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent level plus 4 in Sensors and equivalent level in Evolutionary Transcendence.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 4) and (Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%])
+Requirement 1 Description                       := Requires equivalent level plus 2 in Sensors and equivalent level in Evolutionary Transcendence.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 2) and (Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%])
 Number Of Abilities                             := 3
 Ability 1 Type                                  := Sight Level
 Ability 1 Description                           := Performs sensor sweeps at level [%Amount1%].
@@ -4297,8 +4297,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent level plus 4 in Sensors and equivalent level in Evolutionary Transcendence.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 4) and (Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%])
+Requirement 1 Description                       := Requires equivalent level plus 2 in Sensors and equivalent level in Evolutionary Transcendence.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 2) and (Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%])
 Number Of Abilities                             := 4
 Ability 1 Type                                  := Sight Level
 Ability 1 Description                           := Performs sensor sweeps at level [%Amount1%].
@@ -4346,8 +4346,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent level plus 4 in Sensors and equivalent level in Evolutionary Transcendence.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 4) and (Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%])
+Requirement 1 Description                       := Requires equivalent level plus 2 in Sensors and equivalent level in Evolutionary Transcendence.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 2) and (Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%])
 Number Of Abilities                             := 3
 Ability 1 Type                                  := Combat To Hit Offense
 Ability 1 Description                           := +[%Amount1%] sector-wide bonus to hit from Psionic Predictor (doubled for equipped ship).
