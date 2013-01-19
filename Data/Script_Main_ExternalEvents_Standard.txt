@@ -429,8 +429,9 @@ begin
     call weight_list.add(20)
     call pick_list.add(EVENT_ID_PLANET_DESTROYED)
     call weight_list.add(20)
-    call pick_list.add(EVENT_ID_WARP_POINT_CLOSED)
-    call weight_list.add(20)
+    // No closing warp points, since this mod has no warp point opening tech and that could lead to unplayable maps!
+    // call pick_list.add(EVENT_ID_WARP_POINT_CLOSED)
+    // call weight_list.add(20)
     call pick_list.add(EVENT_ID_WARP_POINT_OPENED)
     call weight_list.add(10)
     call pick_list.add(EVENT_ID_STAR_CREATED)
