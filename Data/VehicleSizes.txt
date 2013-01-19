@@ -512,7 +512,7 @@ Requirement 1 Formula                           := Get_Empire_Tech_Level("Orbita
 Requirement 2 Description                       := Requires at least 3 control centers.
 Requirement 2 Formula                           := (Get_Design_Ability_Component_Count("Control Center") >= 3)
 Requirement 3 Description                       := Requires at least 800kT worth of hangars, mine layers, and/or docking bays.
-Requirement 3 Formula                           := (Get_Design_Specific_Component_Count("Hangar") * 100) + (Get_Design_Specific_Component_Count("Mine Layer") * 100) + (Get_Design_Specific_Component_Count("Docking Bay") * 100) >= 800
+Requirement 3 Formula                           := (Get_Design_Specific_Component_Count("Hangar") * 100) + (Get_Design_Specific_Component_Count("Mine Layer") * 100) + (Get_Design_Specific_Component_Count("Docking Bay") * 300) >= 800
 Requirement 4 Description                       := Vehicle requires additional crew (5 or fewer) to operate its internal systems.
 Requirement 4 Formula                           := Crew Required 5 Or Less
 Requirement 5 Description                       := Vehicle requires additional crew (6 to 10) to operate its internal systems.
