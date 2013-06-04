@@ -148,9 +148,9 @@ Computer Player Bonus Queue Rate Multiplier High                      := 3.0
 //---------------------------------------------------------------------------------------
 Number Of Rare Hit Types                                              := 0
 //---------------------------------------------------------------------------------------
-Weapons Range Short                                                   := 30.0
-Weapons Range Medium                                                  := 60.0
-Weapons Range Long                                                    := 120.0
+Weapons Range Short                                                   := 20
+Weapons Range Medium                                                  := 40
+Weapons Range Long                                                    := 80
 //---------------------------------------------------------------------------------------
 All Shipsets Get 360 Degree Center Firing Point                       := TRUE
 //---------------------------------------------------------------------------------------
