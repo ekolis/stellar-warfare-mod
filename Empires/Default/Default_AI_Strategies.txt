@@ -35,7 +35,7 @@ Retreat Setting:
 *BEGIN*
 =======================================================================================
 
-Name                                        := Attack Large (120km)
+Name                                        := Attack Large (80km)
 Break Formation Immediately                 := TRUE
 Break Formation If Core Ships Lost          := TRUE
 Reload Supplies During Combat If Needed     := TRUE
@@ -146,7 +146,7 @@ Target Type 29 Name                         := Gunboat Carrier Ship
 Target Type 29 Engage Distance              := Long Range
 Target Type 29 Damage Amount                := 100%
 
-Name                                        := Attack Large (60km)
+Name                                        := Attack Large (40km)
 Break Formation Immediately                 := TRUE
 Break Formation If Core Ships Lost          := TRUE
 Reload Supplies During Combat If Needed     := TRUE
@@ -257,7 +257,7 @@ Target Type 29 Name                         := Gunboat Carrier Ship
 Target Type 29 Engage Distance              := Medium Range
 Target Type 29 Damage Amount                := 100%
 
-Name                                        := Attack Large (30km)
+Name                                        := Attack Large (20km)
 Break Formation Immediately                 := TRUE
 Break Formation If Core Ships Lost          := TRUE
 Reload Supplies During Combat If Needed     := TRUE
@@ -479,7 +479,7 @@ Target Type 29 Name                         := Gunboat Carrier Ship
 Target Type 29 Engage Distance              := Point Blank
 Target Type 29 Damage Amount                := 100%
 
-Name                                        := Defend vs. Small (120km)
+Name                                        := Defend vs. Small (80km)
 Break Formation Immediately                 := TRUE
 Break Formation If Core Ships Lost          := TRUE
 Reload Supplies During Combat If Needed     := TRUE
@@ -590,7 +590,7 @@ Target Type 29 Name                         := Gunboat Carrier Ship
 Target Type 29 Engage Distance              := Long Range
 Target Type 29 Damage Amount                := 100%
 
-Name                                        := Defend vs. Small (60km)
+Name                                        := Defend vs. Small (40km)
 Break Formation Immediately                 := TRUE
 Break Formation If Core Ships Lost          := TRUE
 Reload Supplies During Combat If Needed     := TRUE
@@ -701,7 +701,7 @@ Target Type 29 Name                         := Gunboat Carrier Ship
 Target Type 29 Engage Distance              := Medium Range
 Target Type 29 Damage Amount                := 100%
 
-Name                                        := Defend vs. Small (30km)
+Name                                        := Defend vs. Small (20km)
 Break Formation Immediately                 := TRUE
 Break Formation If Core Ships Lost          := TRUE
 Reload Supplies During Combat If Needed     := TRUE
