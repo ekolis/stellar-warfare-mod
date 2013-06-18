@@ -37,6 +37,22 @@ Name                 := Bomber (20km)
 
 Name                 := Bomber (0km)
 
+Name                 := Colony Guardian (80km)
+
+Name                 := Colony Guardian (40km)
+
+Name                 := Colony Guardian (20km)
+
+Name                 := Colony Guardian (0km)
+
+Name                 := Base Guardian (80km)
+
+Name                 := Base Guardian (40km)
+
+Name                 := Base Guardian (20km)
+
+Name                 := Base Guardian (0km)
+
 Name                 := Fortress
 
 Name                 := Spaceyard
