@@ -5204,6 +5204,43 @@ Ability 7 Amount 1 Formula                      := 1000
 Ability 7 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
+Name                                            := Battle School
+Description                                     := Spaceborne training facility for starship officers and crews.
+Picture Number                                  := 112
+Maximum Level                                   := 5
+Tonnage Space Taken Formula                     := 400
+Tonnage Structure Formula                       := 400
+Cost Minerals Formula                           := 200
+Cost Organics Formula                           := 400
+Cost Radioactives Formula                       := 100
+Supply Amount Used Formula                      := 0
+Ordnance Amount Used Formula                    := 0
+Can Be Placed On Vehicle Types                  := Ship, Base
+Can Be Placed In Ship Sections                  := Inner Hull, Outer Hull
+Component Type List                             := Technological
+General Group                                   := Support
+Custom Group                                    := 0
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires equivalent level in Stellar Governance.
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Stellar Governance") >= [%Level%]
+Number Of Abilities                             := 2
+Ability 1 Type                                  := Ship Training
+Ability 1 Description                           := Ships in this sector gain [%Amount1%] experience points per turn.
+Ability 1 Scope                                 := Space Object
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 25 + ([%Level%] * 25)
+Ability 1 Amount 2 Formula                      := 0
+Ability 2 Type                                  := Fleet Training
+Ability 2 Description                           := Fleets in this sector gain [%Amount1%] experience points per turn.
+Ability 2 Scope                                 := Space Object
+Ability 2 Range Formula                         := 0
+Ability 2 Amount 1 Formula                      := 25 + ([%Level%] * 25)
+Ability 2 Amount 2 Formula                      := 0
+Weapon Type                                     := None
+
 =======================================================================================
 *END*
 =======================================================================================
