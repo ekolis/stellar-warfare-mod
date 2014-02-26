@@ -264,6 +264,90 @@ Number Of Requirements                          := 0
 //-------------------------------------------------------------------------------------------------------------------------------
 // Special Abilities
 //-------------------------------------------------------------------------------------------------------------------------------
+Name                                            := Psions
+Picture Number                                  := 0
+Racial Cost                                     := 2
+Number Of Abilities                             := 1
+Ability 1 Type                                  := Description Only
+Ability 1 Description                           := Empire can use psionic technology from the start of the game.
+Ability 1 Scope                                 := Galaxy - This Player
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 0
+Ability 1 Amount 2 Formula                      := 0
+Number Of Requirements                          := 0
+
+Name                                            := Gravity Lords
+Picture Number                                  := 0
+Racial Cost                                     := 2
+Number Of Abilities                             := 1
+Ability 1 Type                                  := Description Only
+Ability 1 Description                           := Empire can use gravitic weapons from the start of the game.
+Ability 1 Scope                                 := Galaxy - This Player
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 0
+Ability 1 Amount 2 Formula                      := 0
+Number Of Requirements                          := 0
+
+Name                                            := Sappers
+Picture Number                                  := 0
+Racial Cost                                     := 2
+Number Of Abilities                             := 1
+Ability 1 Type                                  := Description Only
+Ability 1 Description                           := Empire can use energy sapping weapons from the start of the game.
+Ability 1 Scope                                 := Galaxy - This Player
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 0
+Ability 1 Amount 2 Formula                      := 0
+Number Of Requirements                          := 0
+
+Name                                            := Zerg Rushers
+Picture Number                                  := 0
+Racial Cost                                     := 2
+Number Of Abilities                             := 1
+Ability 1 Type                                  := Description Only
+Ability 1 Description                           := Empire can use advanced unit launch bays from the start of the game.
+Ability 1 Scope                                 := Galaxy - This Player
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 0
+Ability 1 Amount 2 Formula                      := 0
+Number Of Requirements                          := 0
+
+Name                                            := Micromanagers
+Picture Number                                  := 0
+Racial Cost                                     := 2
+Number Of Abilities                             := 1
+Ability 1 Type                                  := Description Only
+Ability 1 Description                           := Empire can use the miniaturization mount from the start of the game.
+Ability 1 Scope                                 := Galaxy - This Player
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 0
+Ability 1 Amount 2 Formula                      := 0
+Number Of Requirements                          := 0
+
+Name                                            := Lagomorphs
+Picture Number                                  := 0
+Racial Cost                                     := 2
+Number Of Abilities                             := 1
+Ability 1 Type                                  := Description Only
+Ability 1 Description                           := Empire can use gestation vats from the start of the game.
+Ability 1 Scope                                 := Galaxy - This Player
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 0
+Ability 1 Amount 2 Formula                      := 0
+Number Of Requirements                          := 0
+
+Name                                            := Gaians
+Picture Number                                  := 0
+Racial Cost                                     := 2
+Number Of Abilities                             := 1
+Ability 1 Type                                  := Description Only
+Ability 1 Description                           := Empire can use terraforming technology from the start of the game.
+Ability 1 Scope                                 := Galaxy - This Player
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 0
+Ability 1 Amount 2 Formula                      := 0
+Number Of Requirements                          := 0
+
 Name                                            := Suicide Bombers
 Picture Number                                  := 0
 Racial Cost                                     := 1

@@ -335,6 +335,39 @@ Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Component must be a thruster but not a solar sail.
 Requirement 1 Formula                           := (Does_Component_Have_Ability("Movement Standard")) and (not Does_Component_Have_Ability("Solar Supply Generation"))
 
+Long Name                                       := Miniaturized Mount
+Short Name                                      := Mini Mount
+Description                                     := Miniaturization technology which reduces the size of a component, at a price.
+Picture Number                                  := 1
+Code                                            := m
+Maximum Level                                   := 1
+Can Be Placed On Vehicle Types                  := Ship, Base, Troop, Gunboat
+Number Of Abilities                             := 3
+Ability 1 Type                                  := Component - Tonnage Structure Percent 
+Ability 1 Description                           := Structural integrity: -50%.
+Ability 1 Scope                                 := Space Object
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := -50
+Ability 1 Amount 2 Formula                      := 0
+Ability 2 Type                                  := Component - Tonnage Space Taken Percent 
+Ability 2 Description                           := Size: -50%.
+Ability 2 Scope                                 := Space Object
+Ability 2 Range Formula                         := 0
+Ability 2 Amount 1 Formula                      := -50
+Ability 2 Amount 2 Formula                      := 0
+Ability 3 Type                                  := Component - Cost Percent 
+Ability 3 Description                           := Cost: +50%.
+Ability 3 Scope                                 := Space Object
+Ability 3 Range Formula                         := 0
+Ability 3 Amount 1 Formula                      := 50
+Ability 3 Amount 2 Formula                      := 0
+Number Of Requirements                          := 0
+Requirements Evaluation Availability            := 1
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires research into Spaceborne Industry, or Shrink Ray.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Spaceborne Industry") >= [%Level%]) or (Get_Empire_Tech_Level("Shrink Ray") >= 1)
+
 =======================================================================================
 *END*
 =======================================================================================

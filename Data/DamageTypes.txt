@@ -431,6 +431,65 @@ Special Effect 1 Amount                         := 5
 Number Of Requirements                          := 0
 Number Of Abilities                             := 0
 
+Damage Type Name                                := Pushes Target
+Description                                     := Pushes the target away, but inflicts no physical damage.
+Picture Number                                  := 15
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 0
+Number of Armor Types                           := 0
+Internal Damage Percent                         := 0
+Facility Damage Percent                         := 0
+Population Amount Killed Per Damage Point       := 0
+Crew Amount Killed Per Damage Point             := 0
+Is Viral Weapon                                 := FALSE
+Number Of Special Effects                       := 1
+Special Effect 1 Type                           := Push Target
+Special Effect 1 Amount                         := 0
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Pulls Target
+Description                                     := Pulls the target near, but inflicts no physical damage.
+Picture Number                                  := 16
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 0
+Number of Armor Types                           := 0
+Internal Damage Percent                         := 0
+Facility Damage Percent                         := 0
+Population Amount Killed Per Damage Point       := 0
+Crew Amount Killed Per Damage Point             := 0
+Is Viral Weapon                                 := FALSE
+Number Of Special Effects                       := 1
+Special Effect 1 Type                           := Pull Target
+Special Effect 1 Amount                         := 0
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
+Damage Type Name                                := Sap Energy
+Description                                     := Decreases the supplies on the target vehicle and slows it down.
+Picture Number                                  := 34
+Cannot Penetrate Any Kind Of Shields            := FALSE
+Cannot Penetrate Any Kind Of Armor              := FALSE
+Number Of Vehicle Types                         := 0
+Number of Shield Types                          := 0
+Number of Armor Types                           := 0
+Internal Damage Percent                         := 0
+Facility Damage Percent                         := 0
+Population Amount Killed Per Damage Point       := 0
+Crew Amount Killed Per Damage Point             := 0
+Is Viral Weapon                                 := FALSE
+Number Of Special Effects                       := 2
+Special Effect 1 Type                           := Deplete Supplies
+Special Effect 1 Amount                         := 0
+Special Effect 2 Type                           := Movement Slow Down
+Special Effect 2 Amount                         := 0
+Number Of Requirements                          := 0
+Number Of Abilities                             := 0
+
 =======================================================================================
 *END*
 =======================================================================================
