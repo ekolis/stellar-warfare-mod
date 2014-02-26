@@ -716,8 +716,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent level in Evolutionary Transcendence.
-Requirement 1 Formula                           := Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%]
+Requirement 1 Description                       := Requires equivalent level plus 2 in Sensors and equivalent level in Evolutionary Transcendence, or in Macro Biology with Psionic Aptitude.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Sensors") >= [%Level%] + 2) and ((Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%]) or (Get_Empire_Tech_Level("Macro Biology") >= [%Level%]) and (Get_Empire_Tech_Level("Psionic Aptitude") >= [%Level%]))
 Number of Abilities                             := 5
 Ability 1 Type                                  := Sight Range
 Ability 1 Description                           := Detects ships within [%Amount1%] sectors.
@@ -779,6 +779,62 @@ Ability 2 Description                           := Populations in this system wi
 Ability 2 Scope                                 := System - This Player
 Ability 2 Range Formula                         := 0
 Ability 2 Amount 1 Formula                      := [%Level%] * 2
+Ability 2 Amount 2 Formula                      := 0
+
+Name                                            := Gestation Vats
+Description                                     := Artificial gestation chambers which greatly increase the reproduction rate of an entire system.
+Facility Group                                  := Support
+XFile Class Name                                := Gestation Vats
+Picture Number                                  := 27
+Maximum Level                                   := 5
+Tonnage Space Taken Formula                     := 1000
+Tonnage Structure Formula                       := 1000
+Cost Minerals Formula                           := 1000
+Cost Organics Formula                           := 3000
+Cost Radioactives Formula                       := 1500
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires equivalent level in Evolutionary Transcendence, or in Macro Biology with DNA Duplicator.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%]) or ((Get_Empire_Tech_Level("Macro Biology") >= [%Level%]) and (Get_Empire_Tech_Level("DNA Duplicator") >= 1))
+Number of Abilities                             := 1
+Ability 1 Type                                  := Planet Population Reproduction
+Ability 1 Description                           := Populations in this system will reproduce [%Amount1%]% faster (only 1 facility per system effective).
+Ability 1 Scope                                 := System - This Player
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := [%Level%] * 10
+Ability 1 Amount 2 Formula                      := 0
+
+Name                                            := Terraforming Plant
+Description                                     := Massive ecological conversion facility which makes a planet more hospitable to life.
+Facility Group                                  := Support
+XFile Class Name                                := Climate Control
+Picture Number                                  := 19
+Maximum Level                                   := 5
+Tonnage Space Taken Formula                     := 5000
+Tonnage Structure Formula                       := 5000
+Cost Minerals Formula                           := 3000
+Cost Organics Formula                           := 10000
+Cost Radioactives Formula                       := 5000
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
+Requirement 1 Description                       := Requires equivalent levels in Evolutionary Transcendence and Orbital Industry, or in Macro Biology and Planetary Industry with Gaian Philosophy.
+Requirement 1 Formula                           := ((Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%]) and (Get_Empire_Tech_Level("Orbital Industry") >= [%Level%])) or ((Get_Empire_Tech_Level("Macro Biology") >= [%Level%]) and (Get_Empire_Tech_Level("Planetary Industry") >= [%Level%]) and (Get_Empire_Tech_Level("Gaian Philosophy") >= 1))
+Number of Abilities                             := 1
+Ability 1 Type                                  := Planet Conditions Change
+Ability 1 Description                           := Improves the conditions of the planet by [%Amount1%]% each year.
+Ability 1 Scope                                 := Space Object
+Ability 1 Range Formula                         := 0
+Ability 1 Amount 1 Formula                      := 3 + [%Level%]
+Ability 1 Amount 2 Formula                      := 0
+Ability 2 Type                                  := Planet Atmosphere Change
+Ability 2 Description                           := Changes the atmosphere of the planet to one that is breathable by its colony over [%Amount1%] years.
+Ability 2 Scope                                 := Space Object
+Ability 2 Range Formula                         := 0
+Ability 2 Amount 1 Formula                      := 4.5 - ([%Level%] / 2)
 Ability 2 Amount 2 Formula                      := 0
 
 Name                                            := Capital
