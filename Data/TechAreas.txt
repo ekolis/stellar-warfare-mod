@@ -445,6 +445,9 @@ Start Level                                     := 1
 Can Be Removed                                  := False
 Unique or Racial Tech                           := True
 Number of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Empire must be Psions, or have found an appropriate ancient ruins.
 Requirement 1 Formula                           := Empire_Has_Racial_Trait("Psions") or Empire_Has_Found_Unique_Discovery(1)
 
@@ -459,6 +462,9 @@ Start Level                                     := 1
 Can Be Removed                                  := False
 Unique or Racial Tech                           := True
 Number of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Empire must be Gravity Lords, or have found an appropriate ancient ruins.
 Requirement 1 Formula                           := Empire_Has_Racial_Trait("Gravity Lords") or Empire_Has_Found_Unique_Discovery(2)
 
@@ -473,6 +479,9 @@ Start Level                                     := 1
 Can Be Removed                                  := False
 Unique or Racial Tech                           := True
 Number of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Empire must be Sappers, or have found an appropriate ancient ruins.
 Requirement 1 Formula                           := Empire_Has_Racial_Trait("Sappers") or Empire_Has_Found_Unique_Discovery(3)
 
@@ -487,6 +496,9 @@ Start Level                                     := 1
 Can Be Removed                                  := False
 Unique or Racial Tech                           := True
 Number of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Empire must be Zerg Rushers, or have found an appropriate ancient ruins.
 Requirement 1 Formula                           := Empire_Has_Racial_Trait("Zerg Rushers") or Empire_Has_Found_Unique_Discovery(4)
 
@@ -501,6 +513,9 @@ Start Level                                     := 1
 Can Be Removed                                  := False
 Unique or Racial Tech                           := True
 Number of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Empire must be Micromanagers, or have found an appropriate ancient ruins.
 Requirement 1 Formula                           := Empire_Has_Racial_Trait("Micromanagers") or Empire_Has_Found_Unique_Discovery(5)
 
@@ -515,6 +530,9 @@ Start Level                                     := 1
 Can Be Removed                                  := False
 Unique or Racial Tech                           := True
 Number of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Empire must be Lagomorphs, or have found an appropriate ancient ruins.
 Requirement 1 Formula                           := Empire_Has_Racial_Trait("Lagomorphs") or Empire_Has_Found_Unique_Discovery(6)
 
@@ -529,6 +547,9 @@ Start Level                                     := 1
 Can Be Removed                                  := False
 Unique or Racial Tech                           := True
 Number of Requirements                          := 1
+Requirements Evaluation Availability            := AND
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Empire must be Lagomorphs, or have found an appropriate ancient ruins.
 Requirement 1 Formula                           := Empire_Has_Racial_Trait("Gaians") or Empire_Has_Found_Unique_Discovery(7)
 
