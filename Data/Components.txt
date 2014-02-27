@@ -2953,7 +2953,7 @@ Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Miniguns and in Evolutionary Transcendence (or Macro Biology with Specimen SR-388).
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Miniguns") >= [%Level%]) and ((Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%]) or ((Get_Empire_Tech_Level("Macro Biology") >= [%Level%]) and (Get_Empire_Tech_Level("(Get_Empire_Tech_Level("Specimen SR-388") >= [%Level%]) >= 1)))
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Miniguns") >= [%Level%]) and ((Get_Empire_Tech_Level("Evolutionary Transcendence") >= [%Level%]) or ((Get_Empire_Tech_Level("Macro Biology") >= [%Level%]) and (Get_Empire_Tech_Level("Specimen SR-388") >= [%Level%]) >= 1))
 Number Of Abilities                             := 2
 Ability 1 Type                                  := Ordnance Storage
 Ability 1 Description                           := Provides storage for [%Amount1%] units of ordnance.
@@ -3328,7 +3328,7 @@ Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent levels in Lasers and Subspace Physics (or Nuclear Physics, with Quantum Gravitational Theory).
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Lasers") >= [%Level%]) and ((Get_Empire_Tech_Level("Subspace Physics") >= [%Level%]) or ((Get_Empire_Tech_Level("Nuclear Physics") >= [%Level%]) and (Get_Empire_Tech_Level("Quantum Gravitational Theory") >= 1))))
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Lasers") >= [%Level%]) and ((Get_Empire_Tech_Level("Subspace Physics") >= [%Level%]) or ((Get_Empire_Tech_Level("Nuclear Physics") >= [%Level%]) and (Get_Empire_Tech_Level("Quantum Gravitational Theory") >= 1)))
 Number Of Abilities                             := 2
 Ability 1 Type                                  := AI Tag 01
 Ability 1 Description                           := Requires [%Amount1%] crew.
