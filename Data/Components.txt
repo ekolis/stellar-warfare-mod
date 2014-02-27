@@ -663,7 +663,7 @@ Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires 1 additional level in Power.
-Requirement 1 Formula                           := Get_Empire_Tech_Level("Power") + 1 >= [%Level%]
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Power") >= [%Level%] + 1
 Number Of Abilities                             := 4
 Ability 1 Type                                  := Supply Generation
 Ability 1 Description                           := Produces [%Amount1%] supplies per turn.
@@ -908,7 +908,7 @@ Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires 3 additional levels in Power and equivalent level in Subspace Physics.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Power") >= [%Level%] + 2) and (Get_Empire_Tech_Level("Subspace Physics") >= [%Level%])
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Power") >= [%Level%] + 3) and (Get_Empire_Tech_Level("Subspace Physics") >= [%Level%])
 Number Of Abilities                             := 4
 Ability 1 Type                                  := Supply Generation
 Ability 1 Description                           := Produces [%Amount1%] supplies per turn.
@@ -957,7 +957,7 @@ Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires 4 additional levels in Power and equivalent level in Subspace Physics.
-Requirement 1 Formula                           := (Get_Empire_Tech_Level("Power") >= [%Level%] + 3) and (Get_Empire_Tech_Level("Subspace Physics") >= [%Level%])
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Power") >= [%Level%] + 4) and (Get_Empire_Tech_Level("Subspace Physics") >= [%Level%])
 Number Of Abilities                             := 4
 Ability 1 Type                                  := Supply Generation
 Ability 1 Description                           := Produces [%Amount1%] supplies per turn.
