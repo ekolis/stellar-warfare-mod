@@ -442,7 +442,7 @@ Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Planetary Governance.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Planetary Governance") >= [%Level%]
-Number of Abilities                             := 3
+Number of Abilities                             := 4
 Ability 1 Type                                  := Ground Combat Damage Modifier
 Ability 1 Description                           := Ground combat damage for the defender of this planet increased by [%Amount1%]% by Planetary Fortification.
 Ability 1 Scope                                 := Sector - This Player
