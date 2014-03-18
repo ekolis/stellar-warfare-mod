@@ -1267,7 +1267,7 @@ Ability 2 Amount 1 Formula                      := 300 - (50 * ([%Level%] - 1))
 Ability 2 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
-Name                                            := Gas Giant Colony
+Name                                            := Gas Colony
 Description                                     := Materials needed to start a colony in a gas giant.
 Picture Number                                  := 3
 Maximum Level                                   := 5
