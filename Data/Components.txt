@@ -1101,7 +1101,7 @@ Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires twice the component level minus one in total levels of Planetary Industry and Orbital Industry, and equivalent level in Propulsion.
-Requirement 1 Formula                           := ((Get_Empire_Tech_Level("Planetary Industry") + Get_Empire_Tech_Level("Planetary Industry")) >= [%Level%] * 2 - 1) and (Get_Empire_Tech_Level("Propulsion") >= [%Level%])
+Requirement 1 Formula                           := ((Get_Empire_Tech_Level("Planetary Industry") + Get_Empire_Tech_Level("Orbital Industry")) >= [%Level%] * 2 - 1) and (Get_Empire_Tech_Level("Propulsion") >= [%Level%])
 Number Of Abilities                             := 4
 Ability 1 Type                                  := Movement Standard
 Ability 1 Description                           := Produces [%Amount1%] thrust in space.
