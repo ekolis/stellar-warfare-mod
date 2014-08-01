@@ -2312,7 +2312,7 @@ Weapon Seeker Defense Modifier Formula          := 0
 ///////////////
 Name                                            := Autocannon
 Description                                     := Short range rapid fire projectile weapon.
-Picture Number                                  := 91
+Picture Number                                  := 155
 Maximum Level                                   := 5
 Tonnage Space Taken Formula                     := 50
 Tonnage Structure Formula                       := 50
@@ -3185,7 +3185,7 @@ Weapon Bolt Speed                               := 0.100
 
 Name                                            := PD Autocannon
 Description                                     := Short range rapid fire projectile weapon. Modified for point defense - reloads faster, but cannot target larger vehicles.
-Picture Number                                  := 229
+Picture Number                                  := 91
 Maximum Level                                   := 5
 Tonnage Space Taken Formula                     := 50
 Tonnage Structure Formula                       := 50
