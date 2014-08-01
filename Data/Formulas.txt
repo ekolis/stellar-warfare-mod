@@ -8,13 +8,13 @@ FORMULAS DATA FILE
 =======================================================================================
 
 Name                := Formula Low Level Cost
-Formula             := iif([%Level%] = 1, 5, [%Level%]) ^ sqrt([%Base_Cost%]) * 100
+Formula             := iif([%Base_Cost%] = 0, 0.00001, iif([%Level%] = 1, 5, [%Level%]) ^ sqrt([%Base_Cost%]) * 100)
 
 Name                := Formula Medium Level Cost
-Formula             := iif([%Level%] = 1, 5, [%Level%]) ^ sqrt([%Base_Cost%] + 1) * 100
+Formula             := iif([%Base_Cost%] = 0, 0.00001, iif([%Level%] = 1, 5, [%Level%]) ^ sqrt([%Base_Cost%] + 1) * 100)
 
 Name                := Formula High Level Cost
-Formula             := iif([%Level%] = 1, 5, [%Level%]) ^ sqrt([%Base_Cost%] + 2) * 100
+Formula             := iif([%Base_Cost%] = 0, 0.00001, iif([%Level%] = 1, 5, [%Level%]) ^ sqrt([%Base_Cost%] + 2) * 100)
 
 Name                := Formula Planet Gravity
 Formula             := ([%PlanetSize%]) * ([%PlanetSize%]) / 10 * random(0.8, 1.25)
