@@ -550,7 +550,7 @@ Number of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Empire must be Lagomorphs, or have found an appropriate ancient ruins.
+Requirement 1 Description                       := Empire must be Gaians, or have found an appropriate ancient ruins.
 Requirement 1 Formula                           := Empire_Has_Racial_Trait("Gaians") or Empire_Has_Found_Unique_Discovery(7)
 
 =======================================================================================
