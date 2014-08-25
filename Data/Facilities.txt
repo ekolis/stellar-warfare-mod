@@ -485,19 +485,13 @@ Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent level in Stellar Governance.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Stellar Governance") >= [%Level%]
-Number of Abilities                             := 2
+Number of Abilities                             := 1
 Ability 1 Type                                  := Ground Combat Damage Modifier
 Ability 1 Description                           := Ground combat damage in this system increased by [%Amount1%]% by Security Agency.
 Ability 1 Scope                                 := System - This Player
 Ability 1 Range Formula                         := 0
 Ability 1 Amount 1 Formula                      := 20 * [%Level%]
 Ability 1 Amount 2 Formula                      := 0
-Ability 2 Type                                  := Description Only
-Ability 2 Description                           := Generates 1 bonus research toward each theoretical governance tech, with a 1% chance to generate 100x as much.
-Ability 2 Scope                                 := Space Object
-Ability 2 Range Formula                         := 0
-Ability 2 Amount 1 Formula                      := 0
-Ability 2 Amount 2 Formula                      := 0
 
 Name                                            := Space Dock
 Description                                     := Spaceport facility which gathers resources and refuels and repairs ships.
