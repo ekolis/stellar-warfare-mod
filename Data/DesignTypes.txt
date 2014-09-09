@@ -63,6 +63,8 @@ Name                 := Colonizer (Rock)
 
 Name                 := Colonizer (Gas)
 
+Name                 := Colonizer (Asteroids)
+
 Name                 := Colonizer (Any)
 
 Name                 := Dropship
