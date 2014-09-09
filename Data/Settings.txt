@@ -373,7 +373,7 @@ System Ship Movement Delay Milliseconds                               := 0
 Gunboat Supply Usage Per Turn                                         := 0
 //---------------------------------------------------------------------------------------
 Population Structure Per One                                          := 100
-Population Cargo Space Per One                                        := 100
+Population Cargo Space Per One                                        := 10
 Supplies Structure Per One                                            := 0.1
 Ordnance Structure Per One                                            := 0.1
 //---------------------------------------------------------------------------------------
