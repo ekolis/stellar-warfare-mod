@@ -13,11 +13,15 @@ Name:
 
 Name                 := Construction Yard
 
-Name                 := Military Base
+Name                 := Mining Colony
 
-Name                 := Industrial Compound
+Name                 := Farming Colony
+
+Name                 := Refining Colony
 
 Name                 := Research Compound
+
+Name                 := Military Base
 
 =======================================================================================
 *END*
