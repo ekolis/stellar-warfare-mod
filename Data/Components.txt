@@ -5418,7 +5418,7 @@ Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires 2 times the facility level of total tech levels in Orbital Industry and Genetic Manipulation, or 4 times the facility level of total tech levels in Planetary Industry and Macro Biology.
 Requirement 1 Formula                           := ((Get_Empire_Tech_Level("Orbital Industry") + Get_Empire_Tech_Level("Genetic Manipulation")) >= ([%Level%] * 2)) or ((Get_Empire_Tech_Level("Planetary Industry") + Get_Empire_Tech_Level("Macro Biology")) >= ([%Level%] * 4))
-Number Of Abilities                             := 4
+Number Of Abilities                             := 6
 Ability 1 Type                                  := Remote Resource Generation - Minerals
 Ability 1 Description                           := Produces [%Amount1%] minerals from any asteroids or empty planets in this sector, modified by mineral value.
 Ability 1 Scope                                 := Space Object
@@ -5437,12 +5437,24 @@ Ability 3 Scope                                 := Space Object
 Ability 3 Range Formula                         := 0
 Ability 3 Amount 1 Formula                      := 120 + (40 * [%Level%])
 Ability 3 Amount 2 Formula                      := 0
-Ability 4 Type                                  := AI Tag 01
-Ability 4 Description                           := Requires [%Amount1%] crew.
+Ability 4 Type                                  := Ordnance Storage
+Ability 4 Description                           := Provides storage for [%Amount1%] units of ordnance.
 Ability 4 Scope                                 := Space Object
 Ability 4 Range Formula                         := 0
-Ability 4 Amount 1 Formula                      := 100
+Ability 4 Amount 1 Formula                      := 400
 Ability 4 Amount 2 Formula                      := 0
+Ability 5 Type                                  := Ordnance Generation
+Ability 5 Description                           := Produces [%Amount1%] ordnance per turn.
+Ability 5 Scope                                 := Space Object
+Ability 5 Range Formula                         := 0
+Ability 5 Amount 1 Formula                      := 50
+Ability 5 Amount 2 Formula                      := 0
+Ability 6 Type                                  := AI Tag 01
+Ability 6 Description                           := Requires [%Amount1%] crew.
+Ability 6 Scope                                 := Space Object
+Ability 6 Range Formula                         := 0
+Ability 6 Amount 1 Formula                      := 100
+Ability 6 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
 ///////////////
