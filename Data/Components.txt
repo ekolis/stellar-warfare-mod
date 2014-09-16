@@ -4141,7 +4141,7 @@ Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Requires equivalent tech level plus 1 in Armor, and either Planetary Industry level 5 or Orbital Industry level 1.
 Requirement 1 Formula                           := (Get_Empire_Tech_Level("Armor") >= [%Level%] + 1) and ((Get_Empire_Tech_Level("Planetary Industry")) >= 5 or (Get_Empire_Tech_Level("Orbital Industry") >= 1))
-Number Of Abilities                             := 1
+Number Of Abilities                             := 2
 Ability 1 Type                                  := Component - Is Armor Type
 Ability 1 Description                           := Provides armor protection.
 Ability 1 Scope                                 := Space Object
