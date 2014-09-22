@@ -36,7 +36,7 @@ Ability X Val 2:
 =======================================================================================
 
 Name                                            := Normal Planet
-Number Of Abilities                             := 8
+Number Of Abilities                             := 5
 Ability 1 Chance                                := 100
 Ability 1 Type                                  := Sight Level
 Ability 1 Description                           := Planet contains an ancient scout post which reveals all cloaked ships in sensor range in this system.
@@ -72,27 +72,6 @@ Ability 5 Scope                                 := Space Object
 Ability 5 Range Formula                         := 0
 Ability 5 Amount 1 Formula                      := 1000
 Ability 5 Amount 2 Formula                      := 0
-Ability 6 Chance                                := 1000
-Ability 6 Type                                  := Space Yard
-Ability 6 Description                           := All planets have automatic space yard capability.
-Ability 6 Scope                                 := Space Object
-Ability 6 Range Formula                         := 0
-Ability 6 Amount 1 Formula                      := 1
-Ability 6 Amount 2 Formula                      := 100
-Ability 7 Chance                                := 1000
-Ability 7 Type                                  := Space Yard
-Ability 7 Description                           := 
-Ability 7 Scope                                 := Space Object
-Ability 7 Range Formula                         := 0
-Ability 7 Amount 1 Formula                      := 2
-Ability 7 Amount 2 Formula                      := 100
-Ability 8 Chance                                := 1000
-Ability 8 Type                                  := Space Yard
-Ability 8 Description                           := 
-Ability 8 Scope                                 := Space Object
-Ability 8 Range Formula                         := 0
-Ability 8 Amount 1 Formula                      := 3
-Ability 8 Amount 2 Formula                      := 100
 
 Name                                            := Normal Asteroids
 Number of Abilities                             := 0
