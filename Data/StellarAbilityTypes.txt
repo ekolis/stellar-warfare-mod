@@ -36,7 +36,7 @@ Ability X Val 2:
 =======================================================================================
 
 Name                                            := Normal Planet
-Number Of Abilities                             := 5
+Number Of Abilities                             := 2
 Ability 1 Chance                                := 100
 Ability 1 Type                                  := Sight Level
 Ability 1 Description                           := Planet contains an ancient scout post which reveals all cloaked ships in sensor range in this system.
@@ -51,27 +51,6 @@ Ability 2 Scope                                 := Space Object
 Ability 2 Range Formula                         := 0
 Ability 2 Amount 1 Formula                      := 5
 Ability 2 Amount 2 Formula                      := 0
-Ability 3 Chance                                := 1000
-Ability 3 Type                                  := Resource Storage - Minerals
-Ability 3 Description                           := All planets can store 1000 of each resource.
-Ability 3 Scope                                 := Space Object
-Ability 3 Range Formula                         := 0
-Ability 3 Amount 1 Formula                      := 1000
-Ability 3 Amount 2 Formula                      := 0
-Ability 4 Chance                                := 1000
-Ability 4 Type                                  := Resource Storage - Organics
-Ability 4 Description                           := 
-Ability 4 Scope                                 := Space Object
-Ability 4 Range Formula                         := 0
-Ability 4 Amount 1 Formula                      := 1000
-Ability 4 Amount 2 Formula                      := 0
-Ability 5 Chance                                := 1000
-Ability 5 Type                                  := Resource Storage - Radioactives
-Ability 5 Description                           := 
-Ability 5 Scope                                 := Space Object
-Ability 5 Range Formula                         := 0
-Ability 5 Amount 1 Formula                      := 1000
-Ability 5 Amount 2 Formula                      := 0
 
 Name                                            := Normal Asteroids
 Number of Abilities                             := 0
