@@ -247,8 +247,8 @@ Number Of Requirements                          := 18
 Requirements Evaluation Availability            := 1
 Requirements Evaluation Allows Placement        := AND
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent level in Planetary Industry.
-Requirement 1 Formula                           := Get_Empire_Tech_Level("Planetary Industry") >= [%Level%]
+Requirement 1 Description                       := Requires twice the hull level in combined levels of Planetary Industry and Orbital Industry.
+Requirement 1 Formula                           := Get_Empire_Tech_Level("Planetary Industry") + Get_Empire_Tech_Level("Orbital Industry") >= [%Level%] * 2
 Requirement 2 Description                       := Requires at least 2 control centers.
 Requirement 2 Formula                           := (Get_Design_Ability_Component_Count("Control Center") >= 2)
 Requirement 3 Description                       := Vehicle requires additional crew (5 or fewer) to operate its internal systems.
