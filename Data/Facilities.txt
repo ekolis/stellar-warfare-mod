@@ -759,8 +759,8 @@ Number Of Requirements                          := 1
 Requirements Evaluation Availability            := AND
 Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
-Requirement 1 Description                       := Requires equivalent level in Macro Biology.
-Requirement 1 Formula                           := Get_Empire_Tech_Level("Macro Biology") >= [%Level%]
+Requirement 1 Description                       := Requires equivalent level in Macro Biology, or level 1 in Genetic Manipulation.
+Requirement 1 Formula                           := (Get_Empire_Tech_Level("Macro Biology") >= [%Level%]) or (Get_Empire_Tech_Level("Genetic Manipulation") >= 1)
 Number of Abilities                             := 2
 Ability 1 Type                                  := Plague Prevention
 Ability 1 Description                           := Cures level [%Amount1%] plagues that break out in this system.
